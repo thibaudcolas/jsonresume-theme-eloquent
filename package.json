@@ -27,6 +27,8 @@
   },
   "devDependencies": {
     "resume-cli": "^0.3.11",
+    "jshint": "^2.5.6",
+    "jshint-stylish": "^1.0.0",
     "bootstrap": "^3.3.1",
     "font-awesome": "^4.2.0",
     "gravatar": "^1.1.0",
@@ -38,6 +40,8 @@
     "gulp-inline-source": "^1.1.0"
   },
   "scripts": {
-    "test": "resume test"
+    "start": "resume serve",
+    "test": "echo 'not implemented yet' && exit 0",
+    "lint": "jshint --reporter node_modules/jshint-stylish/stylish.js index.js"
   }
 }

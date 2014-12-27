@@ -26,3 +26,8 @@ node_modules
 
 # Users Environment Variables
 .lock-wscript
+
+# Resume-related
+resume.json
+resume.pdf
+resume.html
