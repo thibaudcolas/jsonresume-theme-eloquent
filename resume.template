@@ -48,13 +48,13 @@
 		{{#if email}}
 		<div class="email">
 			<strong>Email</strong>
-			{{email}}
+			<a href="mailto:{{email}}" itemprop="TODO">{{email}}</a>
 		</div>
 		{{/if}}
 		{{#if phone}}
 		<div class="phone">
 			<strong>Phone</strong>
-			{{phone}}
+			<a href="tel:{{sanitizePhone phone}}" itemprop="TODO">{{phone}}</a>
 		</div>
 		{{/if}}
 		</div>
@@ -138,16 +138,16 @@
 			<div class="date">
 				{{#if startDate}}
 				<span class="startDate">
-					{{startDate}}
+					<time datetime="{{startDate}}" itemprop="TODO">{{formatMMMMYYYY startDate}}</time>
 				</span>
 				{{/if}}
 				{{#if endDate}}
 				<span class="endDate">
-					- {{endDate}}
+					— <time datetime="{{endDate}}" itemprop="TODO">{{formatMMMMYYYY endDate}}</time>
 				</span>
 				{{else}}
 				<span class="endDate">
-					- Present
+					— <time itemprop="TODO">Today</time>
 				</span>
 				{{/if}}
 			</div>
@@ -191,16 +191,16 @@
 			<div class="date">
 				{{#if startDate}}
 				<span class="startDate">
-					{{startDate}}
+					<time datetime="{{startDate}}" itemprop="TODO">{{formatMMMMYYYY startDate}}</time>
 				</span>
 				{{/if}}
 				{{#if endDate}}
 				<span class="endDate">
-					- {{endDate}}
+					— <time datetime="{{endDate}}" itemprop="TODO">{{formatMMMMYYYY endDate}}</time>
 				</span>
 				{{else}}
 				<span class="endDate">
-					- Present
+					— <time itemprop="TODO">Today</time>
 				</span>
 				{{/if}}
 			</div>
@@ -239,16 +239,16 @@
 			<div class="date">
 				{{#if startDate}}
 				<span class="startDate">
-					{{startDate}}
+					<time datetime="{{startDate}}" itemprop="TODO">{{formatMMMMYYYY startDate}}</time>
 				</span>
 				{{/if}}
 				{{#if endDate}}
 				<span class="endDate">
-					- {{endDate}}
+					— <time datetime="{{endDate}}" itemprop="TODO">{{formatMMMMYYYY endDate}}</time>
 				</span>
 				{{else}}
 				<span class="endDate">
-					- Present
+					— <time itemprop="TODO">Today</time>
 				</span>
 				{{/if}}
 			</div>
@@ -296,7 +296,7 @@
 			{{/if}}
 			{{#if date}}
 			<div class="date">
-				{{date}}
+				<time datetime="{{date}}" itemprop="TODO">{{formatDDMMYYYY date}}</time>
 			</div>
 			{{/if}}
 			{{#if awarder}}
@@ -331,7 +331,7 @@
 			{{/if}}
 			{{#if releaseDate}}
 			<div class="releaseDate">
-				{{releaseDate}}
+				<time datetime="{{releaseDate}}" itemprop="TODO">{{formatDDMMYYYY releaseDate}}</time>
 			</div>
 			{{/if}}
 			{{#if website}}
