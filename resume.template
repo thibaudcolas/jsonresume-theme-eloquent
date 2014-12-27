@@ -42,7 +42,7 @@
 		{{#if website}}
 		<div class="website">
 			<strong>Website</strong>
-			{{website}}
+			<a href="{{website}}" rel="author" itemprop="TODO">{{sanitizeURL website}}</a>
 		</div>
 		{{/if}}
 		{{#if email}}
