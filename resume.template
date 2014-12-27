@@ -296,7 +296,7 @@
 			{{/if}}
 			{{#if date}}
 			<div class="date">
-				<time datetime="{{date}}" itemprop="TODO">{{formatDDMMYYYY date}}</time>
+				<time datetime="{{date}}" itemprop="TODO">{{formatMMMDDYYYY date}}</time>
 			</div>
 			{{/if}}
 			{{#if awarder}}
@@ -331,7 +331,7 @@
 			{{/if}}
 			{{#if releaseDate}}
 			<div class="releaseDate">
-				<time datetime="{{releaseDate}}" itemprop="TODO">{{formatDDMMYYYY releaseDate}}</time>
+				<time datetime="{{releaseDate}}" itemprop="TODO">{{formatMMMDDYYYY releaseDate}}</time>
 			</div>
 			{{/if}}
 			{{#if website}}

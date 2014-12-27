@@ -6,6 +6,7 @@ var render = function(resume) {
   var css = fs.readFileSync(__dirname + '/style.css', 'utf-8');
   var template = fs.readFileSync(__dirname + '/resume.template', 'utf-8');
 
+  // TODO: Inline helper
 
   return Handlebars.compile(template)({
     css: css,
@@ -25,9 +26,9 @@ Handlebars.registerHelper('formatMMMMYYYY', function(value) {
   return new Handlebars.SafeString(html);
 });
 
-Handlebars.registerHelper('formatDDMMYYYY', function(value) {
+Handlebars.registerHelper('formatMMMDDYYYY', function(value) {
   value = value || '';
-  var html = moment(new Date((value))).format('DD/MM/YYYY');
+  var html = moment(new Date((value))).format('MMM DD, YYYY');
   return new Handlebars.SafeString(html);
 });
 

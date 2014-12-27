@@ -23,7 +23,8 @@
     "curriculum"
   ],
   "dependencies": {
-    "handlebars": "^2.0.0"
+    "handlebars": "^2.0.0",
+    "moment": "^2.8.4"
   },
   "devDependencies": {
     "resume-cli": "^0.3.11",
@@ -31,9 +32,7 @@
     "jshint-stylish": "^1.0.0",
     "bootstrap": "^3.3.1",
     "font-awesome": "^4.2.0",
-    "gravatar": "^1.1.0",
-    "lodash": "^2.4.1",
-    "moment": "^2.8.4"
+    "lodash": "^2.4.1"
   },
   "scripts": {
     "start": "resume serve",
