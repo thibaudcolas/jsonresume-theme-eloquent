@@ -33,11 +33,7 @@
     "font-awesome": "^4.2.0",
     "gravatar": "^1.1.0",
     "lodash": "^2.4.1",
-    "moment": "^2.8.4",
-    "underscore": "^1.7.0",
-    "gulp-inline": "0.0.8",
-    "gulp-inline-css": "^1.0.1",
-    "gulp-inline-source": "^1.1.0"
+    "moment": "^2.8.4"
   },
   "scripts": {
     "start": "resume serve",
