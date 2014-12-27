@@ -1,0 +1,43 @@
+{
+  "name": "jsonresume-theme-eloquent",
+  "version": "0.1.0",
+  "description": "An eloquent JSON Resume theme: fluent, persuasive, for developers.",
+  "author": "Thibaud Colas",
+  "license": "ISC",
+  "main": "index.js",
+  "homepage": "https://github.com/ThibWeb/jsonresume-theme-eloquent",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ThibWeb/jsonresume-theme-eloquent.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ThibWeb/jsonresume-theme-eloquent/issues"
+  },
+  "keywords": [
+    "jsonresume",
+    "theme",
+    "jsonresume-theme",
+    "eloquent",
+    "resume",
+    "cv",
+    "curriculum"
+  ],
+  "dependencies": {
+    "handlebars": "^2.0.0"
+  },
+  "devDependencies": {
+    "resume-cli": "^0.3.11",
+    "bootstrap": "^3.3.1",
+    "font-awesome": "^4.2.0",
+    "gravatar": "^1.1.0",
+    "lodash": "^2.4.1",
+    "moment": "^2.8.4",
+    "underscore": "^1.7.0",
+    "gulp-inline": "0.0.8",
+    "gulp-inline-css": "^1.0.1",
+    "gulp-inline-source": "^1.1.0"
+  },
+  "scripts": {
+    "test": "resume test"
+  }
+}
