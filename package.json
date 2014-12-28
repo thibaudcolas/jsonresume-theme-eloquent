@@ -47,7 +47,7 @@
   "scripts": {
     "start": "nodemon server.js -w lib -w assets -e js,css",
     "test": "echo 'not implemented yet' && exit 0",
-    "lint": "jshint --reporter node_modules/jshint-stylish/stylish.js index.js",
+    "lint": "jshint --reporter node_modules/jshint-stylish/stylish.js index.js server.js lib/*.js",
     "webfonts": "webfont-dl 'https://fonts.googleapis.com/css?family=Lato:400' -o assets/styles/webfonts.css --woff1=data --woff2=omit --svg=omit --ttf=omit --eot=omit"
   }
 }

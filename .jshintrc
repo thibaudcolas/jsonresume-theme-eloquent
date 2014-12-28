@@ -58,7 +58,7 @@
   "white"         : false,
 
   "maxerr"        : 100,
-  "maxlen"        : 120,
+  "maxlen"        : 160,
   "maxcomplexity" : 10,
   "predef"        : [
       "define",
