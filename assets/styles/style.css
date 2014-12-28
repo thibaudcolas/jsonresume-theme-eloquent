@@ -10,13 +10,25 @@ html {
 
 body {
   min-width: 320px;
-  max-width: 2400px;
+  /* TODO max-width: 1280px; */
+  font-size: 16px;
+  font-family: 'Lato', 'Lato Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 300;
+  background: #f0f0f0;
   color: #292f33;
+  padding: 5px;
 }
 
 * {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 24px;
 }
 
 ::selection {
@@ -29,58 +41,209 @@ body {
 
 /* Above: global */
 
-body {
-	background: #fff;
-	font-size: 15px;
-  font-family: 'Lato', 'Lato Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	line-height: 1.4;
-	margin: 50px 0;
-	margin-bottom: 100px;
+.clear-margin {
+  margin: 0;
 }
-em {
-	color: #999;
+.space-top {
+  margin-top: 10px;
 }
-p {
-	line-height: 1.4;
+.space-right {
+  margin-right: 10px;
 }
-ul {
-	margin-bottom: 0;
+.icon-left {
+  margin-right: 5px;
 }
-section {
-	margin-bottom: 2em;
+.icon-right {
+  margin-left: 5px;
 }
-blockquote {
-	margin: 0;
-	margin-bottom: 1em;
+.labels {
+  word-spacing: 5px;
+  line-height: 2;
 }
-.item {
-	margin-bottom: 1em;
+.label-keyword {
+  display: inline-block;
+  background: #7eb0db;
+  color: white;
+  font-size: 0.9em;
+  padding: 5px;
+  border: 1px solid #357ebd;
 }
-#resume {
-	margin: 0 auto;
-	max-width: 480px;
-	padding: 0 20px;
+.link-disguise {
+  color: inherit;
 }
-#basics {
-	margin-bottom: -10px;
+.link-disguise:hover {
+  color: inherit;
 }
-#basics h3 {
-	margin-top: 1.5em;
-}
-#basics .contact strong,
-#location strong {
-	clear: both;
-	float: left;
-	line-height: 1.3;
-	width: 120px;
-}
-#profiles,
-#skills {
-	overflow: hidden;
-}
-#profiles .item,
-#skills .item {
-	float: left;
-	width: 50%;
+@media (max-width: 992px) {
+  .clear-margin-sm {
+    margin-bottom: 0;
+  }
 }
 
+.card {
+  background: #ffffff;
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+  min-height: 300px;
+  padding: 10px;
+}
+.card-nested {
+  min-height: 0;
+  margin-bottom: 10px;
+  border-width: 1px 0 0 0;
+}
+.card-nested:before,
+.card-nested:after {
+  content: " ";
+  display: table;
+}
+.card-nested:after {
+  clear: both;
+}
+@media (max-width: 480px) {
+  .card-nested {
+    padding: 5px 0;
+  }
+}
+.background-card {
+  padding: 10px 20px;
+}
+.card-wrapper {
+  padding: 5px;
+}
+@media (max-width: 992px) {
+  .card-wrapper {
+    float: none !important;
+  }
+}
+.text-bolder {
+  font-weight: bold;
+}
+.background-details .detail {
+  display: table;
+  padding: 10px 0;
+}
+.background-details .detail .icon {
+  min-width: 45px;
+  max-width: 45px;
+  text-align: center;
+}
+.background-details .detail .info {
+  width: 100%;
+}
+.background-details .detail .title,
+.background-details .detail .icon {
+  color: #707070;
+}
+.background-details .detail .mobile-title {
+  display: none;
+}
+@media (max-width: 480px) {
+  .background-details .detail .mobile-title {
+    display: inline-block;
+    margin-left: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    vertical-align: middle;
+  }
+}
+.background-details .detail .icon,
+.background-details .detail .info {
+  display: table-cell;
+  padding: 0 10px;
+}
+@media (max-width: 480px) {
+  .background-details .detail {
+    display: block;
+  }
+  .background-details .detail .icon {
+    max-width: inherit;
+    min-width: inherit;
+    text-align: left;
+  }
+  .background-details .detail .icon,
+  .background-details .detail .info {
+    display: block;
+    padding: 10px 0;
+  }
+  .background-details .detail .title {
+    display: none;
+  }
+}
+.info .content.has-sidebar {
+  width: 80%;
+  box-sizing: border-box;
+  float: left;
+  padding: 0 10px;
+  border-right: 1px solid #cdcdcd;
+}
+@media (max-width: 992px) {
+  .info .content.has-sidebar {
+    width: 100%;
+    border-right: 0;
+  }
+}
+@media (max-width: 480px) {
+  .info .content.has-sidebar {
+    padding: 0 2px;
+  }
+}
+.info .sidebar {
+  margin-left: 80%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+@media (max-width: 480px) {
+  ul {
+    padding-left: 25px;
+  }
+}
+
+.social-links {
+  line-height: 2.5;
+}
+.social-link {
+  margin-left: 5px;
+  min-width: 35px;
+  display: inline-block;
+}
+.social-link:first-child {
+  margin-left: 0;
+}
+.social-link:hover {
+  text-decoration: none;
+}
+
+.card-skills {
+  position: relative;
+}
+.skill-level {
+  border-radius: 3px;
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 0;
+  width: 10px;
+  box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.2);
+}
+.skill-level .skill-progress {
+  position: absolute;
+  border-radius: 3px;
+  bottom: 0;
+  width: 100%;
+  transition: height 1s ease;
+}
+.skill-info {
+  margin-left: 10px;
+}
+
+@media (max-width: 480px) {
+  .skill-info {
+    margin-left: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .quote {
+    font-size: inherit;
+  }
+}

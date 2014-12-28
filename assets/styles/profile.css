@@ -1,0 +1,93 @@
+@media (max-width: 992px) {
+  .profile-card-wrapper {
+    position: relative;
+  }
+}
+
+.profile-pic {
+  width: 128px;
+  height: 128px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 992px) {
+  h1, h2, .profile-pic {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+}
+
+.basics .basics-item {
+  padding: 10px 0;
+}
+
+@media (max-width: 992px) {
+  .basics .basics-item {
+    float: left;
+    width: 20%;
+  }
+}
+
+@media (max-width: 768px) {
+  .basics .basics-item {
+    width: 100%;
+  }
+}
+
+.basics .basics-item .icon {
+  padding: 0 10px;
+  color: #777;
+  vertical-align: middle;
+}
+
+.basics .basics-item .info {
+  font-size: 0.8em;
+  vertical-align: middle;
+}
+
+/* Contact details */
+
+@media (max-width: 768px) {
+  .cccontact-details {
+    text-align: center;
+  }
+}
+
+@media (max-width: 992px) {
+  .cccontact-details .detail .icon {
+    padding: 0 5px 0 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .cccontact-details .detail {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  .cccontact-details .detail {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding: 10px;
+  }
+  .cccontact-details .detail .icon,
+  .cccontact-details .detail .info {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+  .cccontact-details .detail {
+    float: left;
+    width: 25%;
+  }
+}
