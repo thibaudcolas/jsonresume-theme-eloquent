@@ -27,16 +27,18 @@
     "moment": "^2.8.4"
   },
   "devDependencies": {
-    "resume-cli": "^0.3.11",
-    "jshint": "^2.5.6",
-    "jshint-stylish": "^1.0.0",
     "bootstrap": "^3.3.1",
     "font-awesome": "^4.2.0",
-    "lodash": "^2.4.1"
+    "jshint": "^2.5.6",
+    "jshint-stylish": "^1.0.0",
+    "lodash": "^2.4.1",
+    "resume-cli": "^0.3.11",
+    "webfont-dl": "^0.1.1"
   },
   "scripts": {
     "start": "resume serve",
     "test": "echo 'not implemented yet' && exit 0",
-    "lint": "jshint --reporter node_modules/jshint-stylish/stylish.js index.js"
+    "lint": "jshint --reporter node_modules/jshint-stylish/stylish.js index.js",
+    "webfonts": "webfont-dl 'https://fonts.googleapis.com/css?family=Lato:400' -o assets/styles/webfonts.css --woff1=data --woff2=omit --svg=omit --ttf=omit --eot=omit"
   }
 }

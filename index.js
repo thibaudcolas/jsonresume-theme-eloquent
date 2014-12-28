@@ -1,18 +1,22 @@
 var fs = require('fs');
+var path = require('path');
 var Handlebars = require('handlebars');
 var moment = require('moment');
 
 var render = function(resume) {
-  var css = fs.readFileSync(__dirname + '/style.css', 'utf-8');
   var template = fs.readFileSync(__dirname + '/resume.template', 'utf-8');
 
   // TODO: Inline helper
 
   return Handlebars.compile(template)({
-    css: css,
     resume: resume
   });
 };
+
+Handlebars.registerPartial({
+  webfonts: fs.readFileSync(path.join(__dirname, '/assets/styles/webfonts.css'), 'utf-8'),
+  style: fs.readFileSync(path.join(__dirname, '/assets/styles/style.css'), 'utf-8')
+});
 
 Handlebars.registerHelper('nl2br', function(value) {
   value = value || '';

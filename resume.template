@@ -5,9 +5,8 @@
   <meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=1, minimal-ui">
   <title>{{resume.basics.name}}{{#if resume.basics.label}} — {{resume.basics.label}}{{/if}}</title>
 
-  <style>
-    {{{css}}}
-  </style>
+  <style>{{> webfonts}}</style>
+  <style>{{> style}}</style>
 
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
