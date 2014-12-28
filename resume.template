@@ -37,7 +37,7 @@
 </head>
 <body class="container-fluid" itemscope itemtype="http://schema.org/Person" role="document">
   <div class="row">
-    <section id="profile" class="col-md-3 card-wrapper profile-card-wrapper affix">
+    <section id="profile" class="col-md-3 card-wrapper profile-card-wrapper">
       <div class="card">
         {{#resume.basics}}
           <img class="profile-pic media-object img-circle center-block" src="{{picture}}" alt="128x128" width="128" height="128" itemprop="image">
@@ -50,36 +50,42 @@
           <ul class="basics nav nav-stacked">
             {{#if phone}}
               <li class="basics-item">
-                <span class="icon"><i class="fa fa-lg fa-phone"></i></span>
-                <span class="info"><a href="tel:{{sanitizePhone phone}}" itemprop="telephone"></a>{{phone}}</span>
+                <a href="tel:{{sanitizePhone phone}}">
+                  <span class="icon"><i class="fa fa-lg fa-phone"></i></span>
+                  <span class="info" itemprop="telephone">{{phone}}</span>
+                </a>
               </li>
             {{/if}}
             {{#if location}}
               <li class="basics-item">
-                <span class="icon"><i class="fa fa-lg fa-location-arrow"></i></span>
                 {{#location}}
-                  <span class="info">
-                    <a href="{{mapURL this}}" target="_blank" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                  <a href="{{mapURL this}}" target="_blank" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                    <span class="icon"><i class="fa fa-lg fa-location-arrow"></i></span>
+                    <span class="info">
                       <span itemprop="streetAddress">{{#if address}}{{address}},{{/if}}</span>
                       <span itemprop="addressLocality">{{#if city}}{{city}},{{/if}}</span>
                       <span itemprop="postalCode">{{#if postalCode}}{{postalCode}},{{/if}}</span>
                       <span itemprop="addressRegion">{{#if region}}{{region}},{{/if}}</span>
                       <span itemprop="addressCountry">{{#if countryCode}}{{countryCode}}{{/if}}</span>
-                    </a>
-                  </span>
+                    </span>
+                  </a>
                 {{/location}}
               </li>
             {{/if}}
             {{#if email}}
               <li class="basics-item">
-                <span class="icon"><i class="fa fa-lg fa-envelope"></i></span>
-                <span class="info"><a href="mailto:{{email}}" itemprop="email">{{email}}</a></span>
+                <a href="mailto:{{email}}">
+                  <span class="icon"><i class="fa fa-lg fa-envelope"></i></span>
+                  <span class="info" itemprop="email">{{email}}</span>
+                </a>
               </li>
             {{/if}}
             {{#if website}}
               <li class="basics-item">
-                <span class="icon"><i class="fa fa-lg fa-link"></i></span>
-                <span class="info"><a href="{{website}}" rel="author" target="_blank" itemprop="url">{{sanitizeURL website}}</a></span>
+                <a href="{{website}}" rel="author" target="_blank" itemprop="url">
+                  <span class="icon"><i class="fa fa-lg fa-link"></i></span>
+                  <span class="info">{{sanitizeURL website}}</span>
+                </a>
               </li>
             {{/if}}
           </ul>
@@ -155,23 +161,20 @@
                       <p class="text-muted visible-xs visible-sm">
                         <small>
                           <span class="space-right">
-                            {{formatMMMMYYYY startDate}} -
+                            <time datetime="{{startDate}}" itemprop="TODO">{{formatMMMMYYYY startDate}}</time> -
                             {{#if endDate}}
-                              {{formatMMMMYYYY endDate}}
+                              <time datetime="{{endDate}}" itemprop="TODO">{{formatMMMMYYYY endDate}}</time>
                             {{else}}
-                              Present
+                              <time itemprop="TODO">Present</time>
                             {{/if}}
                           </span>
-
-                          {{#if duration}}
-                            <span>
-                              <i class="fa fa-clock-o icon-left"></i>
-                              {{duration}}
-                            </span>
-                          {{/if}}
+                          <span>
+                            <i class="fa fa-clock-o icon-left"></i>
+                            {{humaneDuration startDate endDate}}
+                          </span>
                         </small>
                       </p>
-                      <p>{{summary}}</p>
+                      <p>{{nl2br summary}}</p>
                       {{#if highlights}}
                         <ul>
                           {{#each highlights}}
@@ -185,26 +188,24 @@
                       {{#if startDate}}
                         <p>
                           <strong>Joined:</strong>&nbsp;
-                          {{formatMMMMYYYY startDate}}
+                          <time datetime="{{startDate}}" itemprop="TODO">{{formatMMMMYYYY startDate}}</time>
                         </p>
 
                         <p>
                           {{#if endDate}}
                             <strong>Left:</strong>&nbsp;
-                            {{formatMMMMYYYY endDate}}
+                            <time datetime="{{endDate}}" itemprop="TODO">{{formatMMMMYYYY endDate}}</time>
                           {{else}}
                             <span class="label label-success">
-                              Currently Working
+                              <time itemprop="TODO">Currently Working</time>
                             </span>
                           {{/if}}
                         </p>
                       {{/if}}
-                      {{#if duration}}
-                        <p>
-                          <i class="fa fa-clock-o icon-left"></i>
-                          {{duration}}
-                        </p>
-                      {{/if}}
+                      <p>
+                        <i class="fa fa-clock-o icon-left"></i>
+                        {{humaneDuration startDate endDate}}
+                      </p>
                     </div>
                   </li>
                 {{/each}}
@@ -226,12 +227,6 @@
                 <ul class="list-unstyled">
                   {{#each resume.skills}}
                     <li class="card card-nested card-skills">
-                      {{#if display_progress_bar}}
-                        <div class="skill-level js-tooltip" title="{{level}}" data-placement="left">
-                          <div class="skill-progress {{skill_class}}">
-                          </div>
-                        </div>
-                      {{/if}}
                       <div class="skill-info">
                         <strong>{{name}}</strong>
 
@@ -269,11 +264,11 @@
                         </p>
                         <p class="visible-xs visible-sm text-muted">
                           <small>
-                            {{formatYYYY startDate}} -
+                            <time datetime="{{startDate}}" itemprop="TODO">{{formatYYYY startDate}}</time> -
                             {{#if endDate}}
-                              {{formatYYYY endDate}}
+                              <time datetime="{{endDate}}" itemprop="TODO">{{formatYYYY endDate}}</time>
                             {{else}}
-                              Present
+                              <time itemprop="TODO">Present</time>
                             {{/if}}
                           </small>
                         </p>
@@ -287,15 +282,15 @@
                       <div class="sidebar text-muted text-center hidden-xs hidden-sm">
                         <p>
                           <strong>Started:</strong>&nbsp;
-                          {{formatYYYY startDate}}
+                          <time datetime="{{startDate}}" itemprop="TODO">{{formatYYYY startDate}}</time>
                         </p>
                         <p>
                           {{#if endDate}}
                             <strong>Completion:</strong>&nbsp;
-                            {{formatYYYY endDate}}
+                            <time datetime="{{endDate}}" itemprop="TODO">{{formatYYYY endDate}}</time>
                           {{else}}
                             <span class="label label-success">
-                              Currently Pursuing
+                              <time itemprop="TODO">Currently Pursuing</time>
                             </span>
                           {{/if}}
                         </p>
@@ -329,15 +324,15 @@
                           </p>
                           <p class="visible-xs visible-sm text-muted">
                             <small>
-                              Awarded on: {{formatMMMDDYYYY date}}
+                              Awarded on: <time datetime="{{date}}" itemprop="TODO">{{formatMMMDDYYYY date}}</time>
                             </small>
                           </p>
-                          <p class="clear-margin"> {{summary}} </p>
+                          <p class="clear-margin"> {{nl2br summary}} </p>
                         </div>
                         <div class="sidebar text-muted text-center hidden-xs hidden-sm">
                           <p>
                             <strong>Awarded on:</strong>&nbsp;
-                            {{formatMMMDDYYYY date}}
+                            <time datetime="{{date}}" itemprop="TODO">{{formatMMMDDYYYY date}}</time>
                           </p>
                         </div>
                       </li>
@@ -370,15 +365,15 @@
                           </p>
                           <p class="visible-xs visible-sm text-muted">
                             <small>
-                              {{formatMMMMYYYY startDate}} -
+                              <time datetime="{{startDate}}" itemprop="TODO">{{formatMMMMYYYY startDate}}</time> -
                               {{#if endDate}}
-                                {{formatMMMMYYYY endDate}}
+                                <time datetime="{{endDate}}" itemprop="TODO">{{formatMMMMYYYY endDate}}</time>
                               {{else}}
-                                Present
+                                <time itemprop="TODO">Present</time>
                               {{/if}}
                             </small>
                           </p>
-                          <p>{{summary}}</p>
+                          <p>{{nl2br summary}}</p>
                           <ul>
                             {{#each highlights}}
                               <li> {{.}} </li>
@@ -388,12 +383,12 @@
                         <div class="sidebar hidden-xs hidden-sm text-muted text-center">
                           <p>
                             <strong>Since:</strong>&nbsp;
-                            {{formatMMMMYYYY startDate}}
+                            <time datetime="{{startDate}}" itemprop="TODO">{{formatMMMMYYYY startDate}}</time>
                           </p>
                           <p>
                             {{#if endDate}}
                               <strong>Until:</strong>&nbsp;
-                              {{formatMMMMYYYY endDate}}
+                              <time datetime="{{endDate}}" itemprop="TODO">{{formatMMMMYYYY endDate}}</time>
                             {{else}}
                               <span class="label label-success">
                                 Currently Volunteering
@@ -437,15 +432,15 @@
                           </p>
                           <p class="visible-xs visible-sm text-muted">
                             <small>
-                              Published on: {{formatMMMDDYYYY releaseDate}}
+                              Published on: <time datetime="{{releaseDate}}" itemprop="TODO">{{formatMMMDDYYYY releaseDate}}</time>
                             </small>
                           </p>
-                          <p class="clear-margin">{{summary}}</p>
+                          <p class="clear-margin">{{nl2br summary}}</p>
                         </div>
                         <div class="sidebar text-muted text-center hidden-sm hidden-xs">
                           <p>
                             <strong>Published on:</strong>&nbsp;
-                            {{formatMMMDDYYYY releaseDate}}
+                            <time datetime="{{releaseDate}}" itemprop="TODO">{{formatMMMDDYYYY releaseDate}}</time>
                           </p>
                         </div>
                       </li>
