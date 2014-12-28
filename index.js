@@ -1,7 +1,10 @@
 var fs = require('fs');
-var path = require('path');
 var Handlebars = require('handlebars');
 var moment = require('moment');
+
+var partials = require('./lib/partials');
+
+Handlebars.registerPartial(partials);
 
 var render = function(resume) {
   var template = fs.readFileSync(__dirname + '/resume.template', 'utf-8');
@@ -13,10 +16,7 @@ var render = function(resume) {
   });
 };
 
-Handlebars.registerPartial({
-  webfonts: fs.readFileSync(path.join(__dirname, '/assets/styles/webfonts.css'), 'utf-8'),
-  style: fs.readFileSync(path.join(__dirname, '/assets/styles/style.css'), 'utf-8')
-});
+
 
 Handlebars.registerHelper('nl2br', function(value) {
   value = value || '';
