@@ -103,14 +103,8 @@
       </div>
     </section>
 
-
-
-
-    <section class="col-md-9 card-wrapper pull-right">
+    <section class="col-md-9 card-wrapper">
       <div class="card background-card">
-        <h4 class="text-uppercase text-bolder">Background</h4>
-        <hr>
-
         <div class="background-details">
           <div class="detail" id="about">
             <div class="icon">
