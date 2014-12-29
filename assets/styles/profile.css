@@ -66,6 +66,7 @@
   }
 }
 
-.profile-item a {
+.social-profiles .profile-item a {
+  padding: 10px;
   color: inherit;
 }
