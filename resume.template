@@ -110,8 +110,9 @@
       </div>
     </section>
 
-<!--     <section class="col-md-9 card-wrapper pull-right">
+    <section class="col-md-9 card-wrapper pull-right" style="padding-bottom: 0px;">
       <div class="card">
+
         {{#if resume.basics.summary}}
           <div class="detail" id="about">
             <h3 class="text-uppercase text-muted"><i class="fa fa-lg fa-user"></i> About</h3>
@@ -124,22 +125,10 @@
           </div>
         {{/if}}
       </div>
-    </section> -->
+    </section>
 
     <section class="col-md-9 card-wrapper pull-right">
       <div class="card">
-
-        {{#if resume.basics.summary}}
-          <div class="detail" id="about">
-            <h3 class="text-uppercase text-muted"><i class="fa fa-lg fa-user"></i> About</h3>
-
-            <div class="row">
-              <div class="col-xs-12">
-                <p itemprop="description">{{nl2br resume.basics.summary}}</p>
-              </div>
-            </div>
-          </div>
-        {{/if}}
 
         {{#if resume.work}}
           <div class="detail" id="work-experience">
