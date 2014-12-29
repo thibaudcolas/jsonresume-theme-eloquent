@@ -1,9 +1,7 @@
 .clear-margin {
   margin: 0;
 }
-.space-top {
-  margin-top: 10px;
-}
+
 .space-right {
   margin-right: 10px;
 }
@@ -12,18 +10,6 @@
 }
 .icon-right {
   margin-left: 5px;
-}
-.labels {
-  word-spacing: 5px;
-  line-height: 2;
-}
-.label-keyword {
-  display: inline-block;
-  background: #7eb0db;
-  color: white;
-  font-size: 0.9em;
-  padding: 5px;
-  border: 1px solid #357ebd;
 }
 
 @media (max-width: 992px) {
@@ -48,30 +34,33 @@
 }
 
 .detail-item {
-  margin-bottom: 10px;
-  border: 1px solid #66757f;
-  border-width: 1px 0 0 0;
+  padding: 10px 0;
+  margin: 0 3px;
+  border-top: 1px solid #ccd6dd;
 }
 
-.content.has-sidebar {
-  border-right: 1px solid #cdcdcd;
+.detail-item-content {
+  padding: 0;
 }
 
-.card-skills {
-  position: relative;
-}
-.skill-level {
-  border-radius: 3px;
-  position: absolute;
-  top: 10px;
-  bottom: 10px;
-  left: 0;
-  width: 10px;
-  box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.2);
+.detail-item-content.col-sm-9 {
+  border-right: 1px solid #ccd6dd;
 }
 
-@media (max-width: 480px) {
-  .skill-info {
-    margin-left: 20px;
-  }
+.labels {
+  line-height: 2;
+  word-spacing: 5px;
+}
+
+.label-keyword {
+  font-size: inherit;
+  background-color: #7eb0db;
+}
+
+#skills h4, #interests h4 {
+  font-weight: bold;
+}
+
+#references .detail-item {
+  border: none;
 }

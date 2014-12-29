@@ -44,8 +44,17 @@ h3 {
   font-size: 22px;
 }
 
+h4 {
+  font-size: 16px;
+}
+
 .text-muted {
   color: #66757f;
+}
+
+blockquote {
+  margin: 0;
+  border-left: 5px solid #e1e8ed;
 }
 
 blockquote footer {

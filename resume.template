@@ -114,7 +114,7 @@
       <div class="card">
         {{#if resume.basics.summary}}
           <div class="detail" id="about">
-            <h3 class="title text-uppercase text-muted"><i class="fa fa-lg fa-user"></i> About</h3>
+            <h3 class="text-uppercase text-muted"><i class="fa fa-lg fa-user"></i> About</h3>
 
             <div class="row">
               <div class="col-xs-12">
@@ -131,7 +131,7 @@
 
         {{#if resume.basics.summary}}
           <div class="detail" id="about">
-            <h3 class="title text-uppercase text-muted"><i class="fa fa-lg fa-user"></i> About</h3>
+            <h3 class="text-uppercase text-muted"><i class="fa fa-lg fa-user"></i> About</h3>
 
             <div class="row">
               <div class="col-xs-12">
@@ -143,15 +143,15 @@
 
         {{#if resume.work}}
           <div class="detail" id="work-experience">
-            <h3 class="title text-uppercase text-muted"><i class="fa fa-lg fa-building"></i> Work Experience</h3>
+            <h3 class="text-uppercase text-muted"><i class="fa fa-lg fa-building"></i> Work Experience</h3>
 
             <ul class="list-unstyled">
               {{#each resume.work}}
                 <li class="detail-item row">
-                  <div class="col-sm-9 has-sidebar">
-                    <p class="clear-margin-sm">
+                  <div class="col-sm-9 detail-item-content">
+                    <h4 class="clear-margin-sm">
                       <strong>{{position}}</strong>,&nbsp;{{company}}
-                    </p>
+                    </h4>
                     <p class="text-muted visible-xs visible-sm">
                       <small>
                         <span class="space-right">
@@ -178,7 +178,7 @@
                     {{/if}}
                   </div>
 
-                  <div class="col-sm-3 sidebar text-muted text-center hidden-xs hidden-sm">
+                  <div class="col-sm-3 detail-item-sidebar text-muted text-center hidden-xs hidden-sm">
                     {{#if startDate}}
                       <p>
                         <strong>Joined:</strong>&nbsp;
@@ -209,19 +209,21 @@
 
         {{#if resume.skills}}
           <div class="detail" id="skills">
-            <h3 class="title text-uppercase text-muted"><i class="fa fa-lg fa-code"></i> Skills</h3>
+            <h3 class="text-uppercase text-muted"><i class="fa fa-lg fa-code"></i> Skills</h3>
 
             <ul class="list-unstyled">
               {{#each resume.skills}}
-                <li class="detail-item row card-skills">
-                  <div class="skill-info col-xs-12">
-                    <strong>{{name}}</strong>
+                <li class="detail-item row">
+                  <div class="col-xs-12 detail-item-content">
+                    <h4>{{name}}</h4>
 
-                    <div class="space-top labels">
-                      {{#keywords}}
-                        <span class="label label-keyword">{{.}}</span>
-                      {{/keywords}}
-                    </div>
+                    {{#if keywords}}
+                      <ul class="list-inline labels">
+                        {{#keywords}}
+                          <li class="label label-keyword">{{.}}</li>
+                        {{/keywords}}
+                      </ul>
+                    {{/if}}
                   </div>
                 </li>
               {{/each}}
@@ -231,16 +233,16 @@
 
         {{#if resume.education}}
           <div class="detail" id="education">
-            <h3 class="title text-uppercase text-muted"><i class="fa fa-lg fa-mortar-board"></i> Education</h3>
+            <h3 class="text-uppercase text-muted"><i class="fa fa-lg fa-mortar-board"></i> Education</h3>
 
             <ul class="list-unstyled">
               {{#each resume.education}}
                 <li class="detail-item row">
-                  <div class="col-sm-9 has-sidebar">
-                    <p class="clear-margin-sm">
+                  <div class="col-sm-9 detail-item-content">
+                    <h4 class="clear-margin-sm">
                       <strong>{{area}}, {{studyType}}</strong>,&nbsp;
                       {{institution}}
-                    </p>
+                    </h4>
                     <p class="visible-xs visible-sm text-muted">
                       <small>
                         <time datetime="{{startDate}}" itemprop="TODO">{{formatYYYY startDate}}</time> -
@@ -252,13 +254,13 @@
                       </small>
                     </p>
                     <i>{{gpa}}</i>
-                    <div class="space-top labels">
+                    <div class="labels">
                       {{#courses}}
                         <span class="label label-keyword">{{.}}</span>
                       {{/courses}}
                     </div>
                   </div>
-                  <div class="col-sm-3 sidebar text-muted text-center hidden-xs hidden-sm">
+                  <div class="col-sm-3 detail-item-sidebar text-muted text-center hidden-xs hidden-sm">
                     <p>
                       <strong>Started:</strong>&nbsp;
                       <time datetime="{{startDate}}" itemprop="TODO">{{formatYYYY startDate}}</time>
@@ -282,16 +284,16 @@
 
         {{#if resume.awards}}
           <div class="detail" id="awards">
-            <h3 class="title text-uppercase text-muted"><i class="fa fa-lg fa-trophy"></i> Awards</h3>
+            <h3 class="text-uppercase text-muted"><i class="fa fa-lg fa-trophy"></i> Awards</h3>
 
             <ul class="list-unstyled">
               {{#each resume.awards}}
                 <li class="detail-item row">
-                  <div class="col-sm-9 has-sidebar">
-                    <p class="clear-margin-sm" itemprop="award">
+                  <div class="col-sm-9 detail-item-content">
+                    <h4 class="clear-margin-sm" itemprop="award">
                       <strong>{{title}}</strong>,&nbsp;
                       {{awarder}}
-                    </p>
+                    </h4>
                     <p class="visible-xs visible-sm text-muted">
                       <small>
                         Awarded on: <time datetime="{{date}}" itemprop="TODO">{{formatMMMDDYYYY date}}</time>
@@ -299,7 +301,7 @@
                     </p>
                     <p class="clear-margin"> {{nl2br summary}} </p>
                   </div>
-                  <div class="col-sm-3 sidebar text-muted text-center hidden-xs hidden-sm">
+                  <div class="col-sm-3 detail-item-sidebar text-muted text-center hidden-xs hidden-sm">
                     <p>
                       <strong>Awarded on:</strong>&nbsp;
                       <time datetime="{{date}}" itemprop="TODO">{{formatMMMDDYYYY date}}</time>
@@ -313,16 +315,16 @@
 
         {{#if resume.volunteer}}
           <div class="detail" id="volunteer-work">
-            <h3 class="title text-uppercase text-muted"><i class="fa fa-lg fa-child"></i> Volunteer Work</h3>
+            <h3 class="text-uppercase text-muted"><i class="fa fa-lg fa-child"></i> Volunteer Work</h3>
 
             <ul class="list-unstyled">
               {{#each resume.volunteer}}
                 <li class="detail-item row">
-                  <div class="col-sm-9 has-sidebar">
-                    <p class="clear-margin-sm">
+                  <div class="col-sm-9 detail-item-content">
+                    <h4 class="clear-margin-sm">
                       <strong>{{position}}</strong>,&nbsp;
                       {{organization}}
-                    </p>
+                    </h4>
                     <p class="visible-xs visible-sm text-muted">
                       <small>
                         <time datetime="{{startDate}}" itemprop="TODO">{{formatMMMMYYYY startDate}}</time> -
@@ -340,7 +342,7 @@
                       {{/each}}
                     </ul>
                   </div>
-                  <div class="col-sm-3 sidebar hidden-xs hidden-sm text-muted text-center">
+                  <div class="col-sm-3 detail-item-sidebar hidden-xs hidden-sm text-muted text-center">
                     <p>
                       <strong>Since:</strong>&nbsp;
                       <time datetime="{{startDate}}" itemprop="TODO">{{formatMMMMYYYY startDate}}</time>
@@ -364,13 +366,13 @@
 
         {{#if resume.publications}}
           <div class="detail" id="publications">
-            <h3 class="title text-uppercase text-muted"><i class="fa fa-lg fa-book"></i> Publications</h3>
+            <h3 class="text-uppercase text-muted"><i class="fa fa-lg fa-book"></i> Publications</h3>
 
             <ul class="list-unstyled">
               {{#each resume.publications}}
                 <li class="detail-item row">
-                  <div class="col-sm-9 has-sidebar">
-                    <p class="clear-margin-sm">
+                  <div class="col-sm-9 detail-item-content">
+                    <h4 class="clear-margin-sm">
                       <strong>
                         {{#if website}}
                           <a href="{{website}}"  target="_blank">{{name}}</a>
@@ -379,7 +381,7 @@
                         {{/if}}
                       </strong>,&nbsp;
                       {{publisher}}
-                    </p>
+                    </h4>
                     <p class="visible-xs visible-sm text-muted">
                       <small>
                         Published on: <time datetime="{{releaseDate}}" itemprop="TODO">{{formatMMMDDYYYY releaseDate}}</time>
@@ -387,7 +389,7 @@
                     </p>
                     <p class="clear-margin">{{nl2br summary}}</p>
                   </div>
-                  <div class="col-sm-3 sidebar text-muted text-center hidden-sm hidden-xs">
+                  <div class="col-sm-3 detail-item-sidebar text-muted text-center hidden-sm hidden-xs">
                     <p>
                       <strong>Published on:</strong>&nbsp;
                       <time datetime="{{releaseDate}}" itemprop="TODO">{{formatMMMDDYYYY releaseDate}}</time>
@@ -401,19 +403,21 @@
 
         {{#if resume.interests}}
           <div class="detail" id="interests">
-            <h3 class="title text-uppercase text-muted"><i class="fa fa-lg fa-heart"></i> Interests</h3>
+            <h3 class="text-uppercase text-muted"><i class="fa fa-lg fa-heart"></i> Interests</h3>
 
             <ul class="list-unstyled">
               {{#each resume.interests}}
                 <li class="detail-item row">
-                  <div class="col-xs-12">
-                    <p><strong>{{name}}</strong></p>
+                  <div class="col-xs-12 detail-item-content">
+                    <h4>{{name}}</h4>
 
-                    <div class="space-top labels">
-                      {{#keywords}}
-                        <span class="label label-keyword">{{.}}</span>
-                      {{/keywords}}
-                    </div>
+                    {{#if keywords}}
+                      <ul class="list-inline labels">
+                        {{#keywords}}
+                          <li class="label label-keyword">{{.}}</li>
+                        {{/keywords}}
+                      </ul>
+                    {{/if}}
                   </div>
                 </li>
               {{/each}}
@@ -423,15 +427,15 @@
 
         {{#if resume.references}}
           <div class="detail" id="references">
-            <h3 class="title text-uppercase text-muted"><i class="fa fa-lg fa-thumbs-up"></i> References</h3>
+            <h3 class="text-uppercase text-muted"><i class="fa fa-lg fa-thumbs-up"></i> References</h3>
 
             <ul class="list-unstyled">
               {{#each resume.references}}
                 <li class="detail-item row">
-                  <div class="col-xs-12">
+                  <div class="col-xs-12 detail-item-content">
                     <blockquote>
                       <p>{{reference}}</p>
-                      <footer><cite title="{{name}}">{{name}}</cite></footer>
+                      <footer itemprop="knows" itemscope itemtype="http://schema.org/Person"><cite title="{{name}}" itemprop="description">{{name}}</cite></footer>
                     </blockquote>
                   </div>
                 </li>
