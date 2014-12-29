@@ -8,17 +8,13 @@ html, body, button {
   font-smoothing: antialiased;
 }
 
-html {
-  background-color: #292f33;
-}
-
 body {
   min-width: 320px;
   /* TODO max-width: 1280px; */
   font-size: 16px;
   font-family: 'Lato', 'Lato Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 300;
-  background: #e1e8ed;
+  background-color: #e1e8ed;
   color: #292f33;
 }
 
@@ -83,5 +79,5 @@ hr {
 }
 
 .nav > li > a:active {
-  background-color: #f5f8fa;
+  background-color: #ccd6dd;
 }
