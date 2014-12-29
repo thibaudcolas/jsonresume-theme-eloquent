@@ -11,3 +11,7 @@ $ npm test
 $ npm lint
 $ npm start
 ~~~
+
+## TODO
+
+- https://github.com/lokesh/color-thief

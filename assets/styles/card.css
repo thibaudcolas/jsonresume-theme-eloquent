@@ -1,0 +1,32 @@
+.card-wrapper {
+  padding: 10px;
+}
+
+.card {
+  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+}
+
+.card-nested {
+  margin-bottom: 10px;
+  border-width: 1px 0 0 0;
+  box-shadow: none;
+}
+
+.card-nested:before,
+.card-nested:after {
+  content: " ";
+  display: table;
+}
+
+.card-nested:after {
+  clear: both;
+}
+
+@media (max-width: 480px) {
+  .card-nested {
+    padding: 5px 0;
+  }
+}
