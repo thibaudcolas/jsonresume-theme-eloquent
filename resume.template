@@ -267,42 +267,60 @@
                 <li class="detail-item row">
                   <div class="col-sm-9 detail-item-content">
                     <h4>
-                      <strong>{{area}}, {{studyType}}</strong>,&nbsp;
-                      {{institution}}
+                      <strong>{{area}}</strong>
+                      {{#if studyType}}
+                        ,&nbsp;<span>{{studyType}}</span>
+                      {{/if}}
                     </h4>
-                    <p class="visible-xs text-muted">
-                      <small>
-                        <time datetime="{{startDate}}" itemprop="TODO">{{formatYYYY startDate}}</time> -
+
+                    {{#if startDate}}
+                      <p class="visible-xs text-muted">
+                        <small>
+                          <strong>Years:</strong>&nbsp;
+                          <time datetime="{{startDate}}" itemprop="TODO">{{formatYYYY startDate}}</time>
+                          &nbsp;—&nbsp;
+                          {{#if endDate}}
+                            <time datetime="{{endDate}}" itemprop="TODO">{{formatYYYY endDate}}</time>
+                          {{else}}
+                            <time>Present</time>
+                          {{/if}}
+                        </small>
+                      </p>
+                    {{/if}}
+
+                    {{#if institution}}
+                      <p class="text-muted">
+                        {{institution}}
+                        {{#if gpa}}
+                          ,&nbsp;GPA: {{gpa}}
+                        {{/if}}
+                      </p>
+                    {{/if}}
+
+                    {{#if courses}}
+                      <ul class="list-inline labels">
+                        {{#courses}}
+                          <li class="label label-keyword">{{.}}</li>
+                        {{/courses}}
+                      </ul>
+                    {{/if}}
+                  </div>
+
+                  {{#if startDate}}
+                    <div class="col-sm-3 detail-item-sidebar text-muted text-center hidden-xs">
+                      <p>
+                        <strong>Years:</strong>
+                        <br>
+                        <time datetime="{{startDate}}" itemprop="TODO">{{formatYYYY startDate}}</time>
+                        &nbsp;—&nbsp;
                         {{#if endDate}}
                           <time datetime="{{endDate}}" itemprop="TODO">{{formatYYYY endDate}}</time>
                         {{else}}
-                          <time itemprop="TODO">Present</time>
+                          <time>Present</time>
                         {{/if}}
-                      </small>
-                    </p>
-                    <i>{{gpa}}</i>
-                    <div class="labels">
-                      {{#courses}}
-                        <span class="label label-keyword">{{.}}</span>
-                      {{/courses}}
+                      </p>
                     </div>
-                  </div>
-                  <div class="col-sm-3 detail-item-sidebar text-muted text-center hidden-xs">
-                    <p>
-                      <strong>Started:</strong>&nbsp;
-                      <time datetime="{{startDate}}" itemprop="TODO">{{formatYYYY startDate}}</time>
-                    </p>
-                    <p>
-                      {{#if endDate}}
-                        <strong>Completion:</strong>&nbsp;
-                        <time datetime="{{endDate}}" itemprop="TODO">{{formatYYYY endDate}}</time>
-                      {{else}}
-                        <span class="label label-success">
-                          <time itemprop="TODO">Currently Pursuing</time>
-                        </span>
-                      {{/if}}
-                    </p>
-                  </div>
+                  {{/if}}
                 </li>
               {{/each}}
             </ul>
