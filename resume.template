@@ -430,7 +430,7 @@
                         </p>
                       {{/if}}
 
-                      <p>{{nl2br summary}}</p>
+                      <p itemprop="description">{{nl2br summary}}</p>
                     </div>
 
                     {{#if releaseDate}}
@@ -481,7 +481,7 @@
                   <li class="detail-item row">
                     <div class="col-xs-12 detail-item-content">
                       <blockquote>
-                        <p>{{reference}}</p>
+                        <p itemprop="description">{{reference}}</p>
                         <footer itemprop="knows" itemscope itemtype="http://schema.org/Person"><cite title="{{name}}" itemprop="description">{{name}}</cite></footer>
                       </blockquote>
                     </div>
