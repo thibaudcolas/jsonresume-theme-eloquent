@@ -108,6 +108,10 @@
             </ul>
           {{/if}}
         {{/resume.basics}}
+
+        <ul class="nav nav-justified hidden-xs hidden-sm">
+          <li><a href="#" class="text-muted" data-scroll><i class="fa fa-chevron-up"></i></a></li>
+        </ul>
       </div>
     </section>
 
@@ -485,11 +489,14 @@
             </ul>
           </div>
         {{/if}}
+
+        <ul class="nav nav-justified visible-xs visible-sm">
+          <li><a href="#" class="text-muted" data-scroll><i class="fa fa-chevron-up"></i></a></li>
+        </ul>
       </div>
     </section>
   </div>
 
-  <a href="#" data-scroll>Go to top</a>
   <script>
     {{> domReady}}
     {{> FastClick}}

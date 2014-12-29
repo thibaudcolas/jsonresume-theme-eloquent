@@ -75,3 +75,13 @@ hr {
     float: none !important;
   }
 }
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+  outline: none;
+  background-color: #e1e8ed;
+}
+
+.nav > li > a:active {
+  background-color: #f5f8fa;
+}
