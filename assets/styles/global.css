@@ -1,3 +1,7 @@
+* {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
 html, body, button {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -18,8 +22,12 @@ body {
   color: #292f33;
 }
 
-* {
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
+::selection {
+  background: #c2f990;
+}
+
+::-moz-selection {
+  background: #c2f990;
 }
 
 h1 {
@@ -32,19 +40,23 @@ h2 {
   margin-top: 10px;
 }
 
+h3 {
+  font-size: 22px;
+}
+
 .text-muted {
   color: #66757f;
+}
+
+blockquote footer {
+  color: #66757f;
+}
+
+blockquote footer cite {
+  font-style: normal;
 }
 
 hr {
   margin-top: 10px;
   margin-bottom: 10px;
-}
-
-::selection {
-  background: #c2f990;
-}
-
-::-moz-selection {
-  background: #c2f990;
 }

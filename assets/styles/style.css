@@ -32,85 +32,29 @@
   }
 }
 
-.text-bolder {
-  font-weight: bold;
+.detail {
+  padding: 10px 50px;
 }
-.background-details .detail {
-  display: table;
-  padding: 10px 0;
+
+.detail h3 {
+  position: relative;
+  left: -44px;
 }
-.background-details .detail .icon {
-  min-width: 45px;
-  max-width: 45px;
+
+.detail h3 i {
+  min-width: 40px;
+  min-height: 20px;
   text-align: center;
 }
-.background-details .detail .info {
-  width: 100%;
+
+.detail-item {
+  margin-bottom: 10px;
+  border: 1px solid #66757f;
+  border-width: 1px 0 0 0;
 }
-.background-details .detail .title,
-.background-details .detail .icon {
-  color: #707070;
-}
-.background-details .detail .mobile-title {
-  display: none;
-}
-@media (max-width: 480px) {
-  .background-details .detail .mobile-title {
-    display: inline-block;
-    margin-left: 5px;
-    font-weight: bold;
-    text-transform: uppercase;
-    vertical-align: middle;
-  }
-}
-.background-details .detail .icon,
-.background-details .detail .info {
-  display: table-cell;
-  padding: 0 10px;
-}
-@media (max-width: 480px) {
-  .background-details .detail {
-    display: block;
-  }
-  .background-details .detail .icon {
-    max-width: inherit;
-    min-width: inherit;
-    text-align: left;
-  }
-  .background-details .detail .icon,
-  .background-details .detail .info {
-    display: block;
-    padding: 10px 0;
-  }
-  .background-details .detail .title {
-    display: none;
-  }
-}
-.info .content.has-sidebar {
-  width: 80%;
-  float: left;
-  padding: 0 10px;
+
+.content.has-sidebar {
   border-right: 1px solid #cdcdcd;
-}
-@media (max-width: 992px) {
-  .info .content.has-sidebar {
-    width: 100%;
-    border-right: 0;
-  }
-}
-@media (max-width: 480px) {
-  .info .content.has-sidebar {
-    padding: 0 2px;
-  }
-}
-.info .sidebar {
-  margin-left: 80%;
-  padding: 10px;
-}
-@media (max-width: 480px) {
-  ul {
-    padding-left: 25px;
-  }
 }
 
 .card-skills {
@@ -125,24 +69,9 @@
   width: 10px;
   box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.2);
 }
-.skill-level .skill-progress {
-  position: absolute;
-  border-radius: 3px;
-  bottom: 0;
-  width: 100%;
-  transition: height 1s ease;
-}
-.skill-info {
-  margin-left: 10px;
-}
 
 @media (max-width: 480px) {
   .skill-info {
     margin-left: 20px;
-  }
-}
-@media (max-width: 768px) {
-  .quote {
-    font-size: inherit;
   }
 }

@@ -39,6 +39,7 @@
 </head>
 <body class="container-fluid" itemscope itemtype="http://schema.org/Person" role="document">
   <div class="row">
+
     <section id="profile" class="col-md-3 card-wrapper profile-card-wrapper affix">
       <div class="card">
         {{#resume.basics}}
@@ -109,379 +110,335 @@
       </div>
     </section>
 
+<!--     <section class="col-md-9 card-wrapper pull-right">
+      <div class="card">
+        {{#if resume.basics.summary}}
+          <div class="detail" id="about">
+            <h3 class="title text-uppercase text-muted"><i class="fa fa-lg fa-user"></i> About</h3>
+
+            <div class="row">
+              <div class="col-xs-12">
+                <p itemprop="description">{{nl2br resume.basics.summary}}</p>
+              </div>
+            </div>
+          </div>
+        {{/if}}
+      </div>
+    </section> -->
+
     <section class="col-md-9 card-wrapper pull-right">
       <div class="card">
-        <div class="background-details">
-          <div class="detail" id="about">
-            <div class="icon">
-              <i class="fa fa-lg fa-user"></i>
-              <span class="mobile-title">About</span>
-            </div>
-            <div class="info">
-              <h4 class="title text-uppercase">About</h4>
 
-              <div class="content" itemprop="description">
-                {{nl2br resume.basics.summary}}
+        {{#if resume.basics.summary}}
+          <div class="detail" id="about">
+            <h3 class="title text-uppercase text-muted"><i class="fa fa-lg fa-user"></i> About</h3>
+
+            <div class="row">
+              <div class="col-xs-12">
+                <p itemprop="description">{{nl2br resume.basics.summary}}</p>
               </div>
             </div>
           </div>
+        {{/if}}
 
+        {{#if resume.work}}
           <div class="detail" id="work-experience">
-            <div class="icon">
-              <i class="fa fa-lg fa-building"></i>
-              <span class="mobile-title">Work Experience</span>
-            </div>
-            <div class="info">
-              <h4 class="title text-uppercase">Work Experience</h4>
+            <h3 class="title text-uppercase text-muted"><i class="fa fa-lg fa-building"></i> Work Experience</h3>
 
-              <ul class="list-unstyled">
-                {{#each resume.work}}
-                  <li class="card card-nested clearfix">
-                    <div class="content has-sidebar">
-                      <p class="clear-margin-sm">
-                        <strong>{{position}}</strong>,&nbsp;{{company}}
-                      </p>
-                      <p class="text-muted visible-xs visible-sm">
-                        <small>
-                          <span class="space-right">
-                            <time datetime="{{startDate}}" itemprop="TODO">{{formatMMMMYYYY startDate}}</time> -
-                            {{#if endDate}}
-                              <time datetime="{{endDate}}" itemprop="TODO">{{formatMMMMYYYY endDate}}</time>
-                            {{else}}
-                              <time itemprop="TODO">Present</time>
-                            {{/if}}
-                          </span>
-                          <span>
-                            <i class="fa fa-clock-o icon-left"></i>
-                            {{humaneDuration startDate endDate}}
-                          </span>
-                        </small>
-                      </p>
-                      <p>{{nl2br summary}}</p>
-                      {{#if highlights}}
-                        <ul>
-                          {{#each highlights}}
-                            <li> {{.}} </li>
-                          {{/each}}
-                        </ul>
-                      {{/if}}
-                    </div>
-
-                    <div class="sidebar text-muted text-center hidden-xs hidden-sm">
-                      {{#if startDate}}
-                        <p>
-                          <strong>Joined:</strong>&nbsp;
-                          <time datetime="{{startDate}}" itemprop="TODO">{{formatMMMMYYYY startDate}}</time>
-                        </p>
-
-                        <p>
+            <ul class="list-unstyled">
+              {{#each resume.work}}
+                <li class="detail-item row">
+                  <div class="col-sm-9 has-sidebar">
+                    <p class="clear-margin-sm">
+                      <strong>{{position}}</strong>,&nbsp;{{company}}
+                    </p>
+                    <p class="text-muted visible-xs visible-sm">
+                      <small>
+                        <span class="space-right">
+                          <time datetime="{{startDate}}" itemprop="TODO">{{formatMMMMYYYY startDate}}</time> -
                           {{#if endDate}}
-                            <strong>Left:</strong>&nbsp;
                             <time datetime="{{endDate}}" itemprop="TODO">{{formatMMMMYYYY endDate}}</time>
                           {{else}}
-                            <span class="label label-success">
-                              <time itemprop="TODO">Currently Working</time>
-                            </span>
+                            <time itemprop="TODO">Present</time>
                           {{/if}}
-                        </p>
-                      {{/if}}
+                        </span>
+                        <span>
+                          <i class="fa fa-clock-o icon-left"></i>
+                          {{humaneDuration startDate endDate}}
+                        </span>
+                      </small>
+                    </p>
+                    <p>{{nl2br summary}}</p>
+                    {{#if highlights}}
+                      <ul>
+                        {{#each highlights}}
+                          <li> {{.}} </li>
+                        {{/each}}
+                      </ul>
+                    {{/if}}
+                  </div>
+
+                  <div class="col-sm-3 sidebar text-muted text-center hidden-xs hidden-sm">
+                    {{#if startDate}}
                       <p>
-                        <i class="fa fa-clock-o icon-left"></i>
-                        {{humaneDuration startDate endDate}}
+                        <strong>Joined:</strong>&nbsp;
+                        <time datetime="{{startDate}}" itemprop="TODO">{{formatMMMMYYYY startDate}}</time>
                       </p>
-                    </div>
-                  </li>
-                {{/each}}
-              </ul>
-            </div>
-          </div>
 
+                      <p>
+                        {{#if endDate}}
+                          <strong>Left:</strong>&nbsp;
+                          <time datetime="{{endDate}}" itemprop="TODO">{{formatMMMMYYYY endDate}}</time>
+                        {{else}}
+                          <span class="label label-success">
+                            <time itemprop="TODO">Currently Working</time>
+                          </span>
+                        {{/if}}
+                      </p>
+                    {{/if}}
+                    <p>
+                      <i class="fa fa-clock-o icon-left"></i>
+                      {{humaneDuration startDate endDate}}
+                    </p>
+                  </div>
+                </li>
+              {{/each}}
+            </ul>
+          </div>
+        {{/if}}
+
+        {{#if resume.skills}}
           <div class="detail" id="skills">
-            <div class="icon">
-              <i class="fa fa-lg fa-code"></i>
-              <span class="mobile-title">Skills</span>
-            </div>
-            <div class="info">
-              <h4 class="title text-uppercase">Skills</h4>
+            <h3 class="title text-uppercase text-muted"><i class="fa fa-lg fa-code"></i> Skills</h3>
 
-              <div class="content">
-                <ul class="list-unstyled">
-                  {{#each resume.skills}}
-                    <li class="card card-nested card-skills">
-                      <div class="skill-info">
-                        <strong>{{name}}</strong>
+            <ul class="list-unstyled">
+              {{#each resume.skills}}
+                <li class="detail-item row card-skills">
+                  <div class="skill-info col-xs-12">
+                    <strong>{{name}}</strong>
 
-                        <div class="space-top labels">
-                          {{#keywords}}
-                            <span class="label label-keyword">{{.}}</span>
-                          {{/keywords}}
-                        </div>
-                      </div>
-                    </li>
-                  {{/each}}
-                </ul>
-              </div>
-            </div>
+                    <div class="space-top labels">
+                      {{#keywords}}
+                        <span class="label label-keyword">{{.}}</span>
+                      {{/keywords}}
+                    </div>
+                  </div>
+                </li>
+              {{/each}}
+            </ul>
           </div>
+        {{/if}}
 
+        {{#if resume.education}}
           <div class="detail" id="education">
-            <div class="icon">
-              <i class="fa fa-lg fa-mortar-board"></i>
-              <span class="mobile-title">Education</span>
-            </div>
-            <div class="info">
-              <h4 class="title text-uppercase">Education</h4>
+            <h3 class="title text-uppercase text-muted"><i class="fa fa-lg fa-mortar-board"></i> Education</h3>
 
-              <div class="content">
-                <ul class="list-unstyled">
-                  {{#each resume.education}}
-                    <li class="card card-nested">
-                      <div class="content has-sidebar">
-                        <p class="clear-margin-sm">
-                          <strong>{{area}}, {{studyType}}</strong>,&nbsp;
-                          {{institution}}
-                        </p>
-                        <p class="visible-xs visible-sm text-muted">
-                          <small>
-                            <time datetime="{{startDate}}" itemprop="TODO">{{formatYYYY startDate}}</time> -
-                            {{#if endDate}}
-                              <time datetime="{{endDate}}" itemprop="TODO">{{formatYYYY endDate}}</time>
-                            {{else}}
-                              <time itemprop="TODO">Present</time>
-                            {{/if}}
-                          </small>
-                        </p>
-                        <i>{{gpa}}</i>
-                        <div class="space-top labels">
-                          {{#courses}}
-                            <span class="label label-keyword">{{.}}</span>
-                          {{/courses}}
-                        </div>
-                      </div>
-                      <div class="sidebar text-muted text-center hidden-xs hidden-sm">
-                        <p>
-                          <strong>Started:</strong>&nbsp;
-                          <time datetime="{{startDate}}" itemprop="TODO">{{formatYYYY startDate}}</time>
-                        </p>
-                        <p>
-                          {{#if endDate}}
-                            <strong>Completion:</strong>&nbsp;
-                            <time datetime="{{endDate}}" itemprop="TODO">{{formatYYYY endDate}}</time>
-                          {{else}}
-                            <span class="label label-success">
-                              <time itemprop="TODO">Currently Pursuing</time>
-                            </span>
-                          {{/if}}
-                        </p>
-                      </div>
-                    </li>
-                  {{/each}}
-                </ul>
-              </div>
-            </div>
+            <ul class="list-unstyled">
+              {{#each resume.education}}
+                <li class="detail-item row">
+                  <div class="col-sm-9 has-sidebar">
+                    <p class="clear-margin-sm">
+                      <strong>{{area}}, {{studyType}}</strong>,&nbsp;
+                      {{institution}}
+                    </p>
+                    <p class="visible-xs visible-sm text-muted">
+                      <small>
+                        <time datetime="{{startDate}}" itemprop="TODO">{{formatYYYY startDate}}</time> -
+                        {{#if endDate}}
+                          <time datetime="{{endDate}}" itemprop="TODO">{{formatYYYY endDate}}</time>
+                        {{else}}
+                          <time itemprop="TODO">Present</time>
+                        {{/if}}
+                      </small>
+                    </p>
+                    <i>{{gpa}}</i>
+                    <div class="space-top labels">
+                      {{#courses}}
+                        <span class="label label-keyword">{{.}}</span>
+                      {{/courses}}
+                    </div>
+                  </div>
+                  <div class="col-sm-3 sidebar text-muted text-center hidden-xs hidden-sm">
+                    <p>
+                      <strong>Started:</strong>&nbsp;
+                      <time datetime="{{startDate}}" itemprop="TODO">{{formatYYYY startDate}}</time>
+                    </p>
+                    <p>
+                      {{#if endDate}}
+                        <strong>Completion:</strong>&nbsp;
+                        <time datetime="{{endDate}}" itemprop="TODO">{{formatYYYY endDate}}</time>
+                      {{else}}
+                        <span class="label label-success">
+                          <time itemprop="TODO">Currently Pursuing</time>
+                        </span>
+                      {{/if}}
+                    </p>
+                  </div>
+                </li>
+              {{/each}}
+            </ul>
           </div>
+        {{/if}}
 
-          {{#if resume.awards}}
-            <div class="detail" id="awards">
-              <div class="icon">
-                <i class="fa fa-lg fa-trophy"></i>
-                <span class="mobile-title">Awards</span>
-              </div>
-              <div class="info">
-                <h4 class="title text-uppercase">Awards</h4>
+        {{#if resume.awards}}
+          <div class="detail" id="awards">
+            <h3 class="title text-uppercase text-muted"><i class="fa fa-lg fa-trophy"></i> Awards</h3>
 
-                <div class="content">
-                  <ul class="list-unstyled">
-                    {{#each resume.awards}}
-                      <li class="card card-nested">
-                        <div class="content has-sidebar">
-                          <p class="clear-margin-sm" itemprop="award">
-                            <strong>{{title}}</strong>,&nbsp;
-                            {{awarder}}
-                          </p>
-                          <p class="visible-xs visible-sm text-muted">
-                            <small>
-                              Awarded on: <time datetime="{{date}}" itemprop="TODO">{{formatMMMDDYYYY date}}</time>
-                            </small>
-                          </p>
-                          <p class="clear-margin"> {{nl2br summary}} </p>
-                        </div>
-                        <div class="sidebar text-muted text-center hidden-xs hidden-sm">
-                          <p>
-                            <strong>Awarded on:</strong>&nbsp;
-                            <time datetime="{{date}}" itemprop="TODO">{{formatMMMDDYYYY date}}</time>
-                          </p>
-                        </div>
-                      </li>
-                    {{/each}}
-                  </ul>
-                </div>
-              </div>
-            </div>
-          {{/if}}
+            <ul class="list-unstyled">
+              {{#each resume.awards}}
+                <li class="detail-item row">
+                  <div class="col-sm-9 has-sidebar">
+                    <p class="clear-margin-sm" itemprop="award">
+                      <strong>{{title}}</strong>,&nbsp;
+                      {{awarder}}
+                    </p>
+                    <p class="visible-xs visible-sm text-muted">
+                      <small>
+                        Awarded on: <time datetime="{{date}}" itemprop="TODO">{{formatMMMDDYYYY date}}</time>
+                      </small>
+                    </p>
+                    <p class="clear-margin"> {{nl2br summary}} </p>
+                  </div>
+                  <div class="col-sm-3 sidebar text-muted text-center hidden-xs hidden-sm">
+                    <p>
+                      <strong>Awarded on:</strong>&nbsp;
+                      <time datetime="{{date}}" itemprop="TODO">{{formatMMMDDYYYY date}}</time>
+                    </p>
+                  </div>
+                </li>
+              {{/each}}
+            </ul>
+          </div>
+        {{/if}}
 
-          {{#if resume.volunteer}}
-            <div class="detail" id="volunteer-work">
-              <div class="icon">
-                <i class="fa fa-lg fa-child"></i>
-                <span class="mobile-title">Volunteer Work</span>
-              </div>
-              <div class="info">
-                <h4 class="title text-uppercase">Volunteer Work</h4>
+        {{#if resume.volunteer}}
+          <div class="detail" id="volunteer-work">
+            <h3 class="title text-uppercase text-muted"><i class="fa fa-lg fa-child"></i> Volunteer Work</h3>
 
-                <div class="content">
-                  <ul class="list-unstyled">
-                    {{#each resume.volunteer}}
-                      <li class="card card-nested">
-                        <div class="content has-sidebar">
-                          <p class="clear-margin-sm">
-                            <strong>{{position}}</strong>,&nbsp;
-                            {{organization}}
-                          </p>
-                          <p class="visible-xs visible-sm text-muted">
-                            <small>
-                              <time datetime="{{startDate}}" itemprop="TODO">{{formatMMMMYYYY startDate}}</time> -
-                              {{#if endDate}}
-                                <time datetime="{{endDate}}" itemprop="TODO">{{formatMMMMYYYY endDate}}</time>
-                              {{else}}
-                                <time itemprop="TODO">Present</time>
-                              {{/if}}
-                            </small>
-                          </p>
-                          <p>{{nl2br summary}}</p>
-                          <ul>
-                            {{#each highlights}}
-                              <li> {{.}} </li>
-                            {{/each}}
-                          </ul>
-                        </div>
-                        <div class="sidebar hidden-xs hidden-sm text-muted text-center">
-                          <p>
-                            <strong>Since:</strong>&nbsp;
-                            <time datetime="{{startDate}}" itemprop="TODO">{{formatMMMMYYYY startDate}}</time>
-                          </p>
-                          <p>
-                            {{#if endDate}}
-                              <strong>Until:</strong>&nbsp;
-                              <time datetime="{{endDate}}" itemprop="TODO">{{formatMMMMYYYY endDate}}</time>
-                            {{else}}
-                              <span class="label label-success">
-                                Currently Volunteering
-                              </span>
-                            {{/if}}
-                          </p>
-                        </div>
-                      </li>
-                    {{/each}}
-                  </ul>
-                </div>
-              </div>
-            </div>
-          {{/if}}
+            <ul class="list-unstyled">
+              {{#each resume.volunteer}}
+                <li class="detail-item row">
+                  <div class="col-sm-9 has-sidebar">
+                    <p class="clear-margin-sm">
+                      <strong>{{position}}</strong>,&nbsp;
+                      {{organization}}
+                    </p>
+                    <p class="visible-xs visible-sm text-muted">
+                      <small>
+                        <time datetime="{{startDate}}" itemprop="TODO">{{formatMMMMYYYY startDate}}</time> -
+                        {{#if endDate}}
+                          <time datetime="{{endDate}}" itemprop="TODO">{{formatMMMMYYYY endDate}}</time>
+                        {{else}}
+                          <time itemprop="TODO">Present</time>
+                        {{/if}}
+                      </small>
+                    </p>
+                    <p>{{nl2br summary}}</p>
+                    <ul>
+                      {{#each highlights}}
+                        <li> {{.}} </li>
+                      {{/each}}
+                    </ul>
+                  </div>
+                  <div class="col-sm-3 sidebar hidden-xs hidden-sm text-muted text-center">
+                    <p>
+                      <strong>Since:</strong>&nbsp;
+                      <time datetime="{{startDate}}" itemprop="TODO">{{formatMMMMYYYY startDate}}</time>
+                    </p>
+                    <p>
+                      {{#if endDate}}
+                        <strong>Until:</strong>&nbsp;
+                        <time datetime="{{endDate}}" itemprop="TODO">{{formatMMMMYYYY endDate}}</time>
+                      {{else}}
+                        <span class="label label-success">
+                          Currently Volunteering
+                        </span>
+                      {{/if}}
+                    </p>
+                  </div>
+                </li>
+              {{/each}}
+            </ul>
+          </div>
+        {{/if}}
 
-          {{#if resume.publications}}
-            <div class="detail" id="publications">
-              <div class="icon">
-                <i class="fa fa-lg fa-book"></i>
-                <span class="mobile-title">Publications</span>
-              </div>
-              <div class="info">
-                <h4 class="title text-uppercase">Publications</h4>
+        {{#if resume.publications}}
+          <div class="detail" id="publications">
+            <h3 class="title text-uppercase text-muted"><i class="fa fa-lg fa-book"></i> Publications</h3>
 
-                <div class="content">
-                  <ul class="list-unstyled">
-                    {{#each resume.publications}}
-                      <li class="card card-nested">
-                        <div class="content has-sidebar">
-                          <p class="clear-margin-sm">
-                            <strong>
-                              {{#if website}}
-                                <a href="{{website}}"  target="_blank">{{name}}</a>
-                              {{else}}
-                                {{name}}
-                              {{/if}}
-                            </strong>,&nbsp;
-                            {{publisher}}
-                          </p>
-                          <p class="visible-xs visible-sm text-muted">
-                            <small>
-                              Published on: <time datetime="{{releaseDate}}" itemprop="TODO">{{formatMMMDDYYYY releaseDate}}</time>
-                            </small>
-                          </p>
-                          <p class="clear-margin">{{nl2br summary}}</p>
-                        </div>
-                        <div class="sidebar text-muted text-center hidden-sm hidden-xs">
-                          <p>
-                            <strong>Published on:</strong>&nbsp;
-                            <time datetime="{{releaseDate}}" itemprop="TODO">{{formatMMMDDYYYY releaseDate}}</time>
-                          </p>
-                        </div>
-                      </li>
-                    {{/each}}
-                  </ul>
-                </div>
-              </div>
-            </div>
-          {{/if}}
+            <ul class="list-unstyled">
+              {{#each resume.publications}}
+                <li class="detail-item row">
+                  <div class="col-sm-9 has-sidebar">
+                    <p class="clear-margin-sm">
+                      <strong>
+                        {{#if website}}
+                          <a href="{{website}}"  target="_blank">{{name}}</a>
+                        {{else}}
+                          {{name}}
+                        {{/if}}
+                      </strong>,&nbsp;
+                      {{publisher}}
+                    </p>
+                    <p class="visible-xs visible-sm text-muted">
+                      <small>
+                        Published on: <time datetime="{{releaseDate}}" itemprop="TODO">{{formatMMMDDYYYY releaseDate}}</time>
+                      </small>
+                    </p>
+                    <p class="clear-margin">{{nl2br summary}}</p>
+                  </div>
+                  <div class="col-sm-3 sidebar text-muted text-center hidden-sm hidden-xs">
+                    <p>
+                      <strong>Published on:</strong>&nbsp;
+                      <time datetime="{{releaseDate}}" itemprop="TODO">{{formatMMMDDYYYY releaseDate}}</time>
+                    </p>
+                  </div>
+                </li>
+              {{/each}}
+            </ul>
+          </div>
+        {{/if}}
 
-          {{#if resume.interests}}
-            <div class="detail" id="interests">
-              <div class="icon">
-                <i class="fa fa-lg fa-heart"></i>
-                <span class="mobile-title">Interests</span>
-              </div>
-              <div class="info">
-                <h4 class="title text-uppercase">Interests</h4>
+        {{#if resume.interests}}
+          <div class="detail" id="interests">
+            <h3 class="title text-uppercase text-muted"><i class="fa fa-lg fa-heart"></i> Interests</h3>
 
-                <div class="content">
-                  <ul class="list-unstyled">
-                    {{#each resume.interests}}
-                      <li class="card card-nested">
-                        <p>
-                          <strong>{{name}}</strong>
-                        </p>
+            <ul class="list-unstyled">
+              {{#each resume.interests}}
+                <li class="detail-item row">
+                  <div class="col-xs-12">
+                    <p><strong>{{name}}</strong></p>
 
-                        <div class="space-top labels">
-                          {{#keywords}}
-                            <span class="label label-keyword">{{.}}</span>
-                          {{/keywords}}
-                        </div>
-                      </li>
-                    {{/each}}
-                  </ul>
-                </div>
-              </div>
-            </div>
-          {{/if}}
+                    <div class="space-top labels">
+                      {{#keywords}}
+                        <span class="label label-keyword">{{.}}</span>
+                      {{/keywords}}
+                    </div>
+                  </div>
+                </li>
+              {{/each}}
+            </ul>
+          </div>
+        {{/if}}
 
-          {{#if resume.references}}
-            <div class="detail" id="references">
-              <div class="icon">
-                <i class="fa fa-lg fa-thumbs-up"></i>
-                <span class="mobile-title">References</span>
-              </div>
-              <div class="info">
-                <h4 class="title text-uppercase">References</h4>
+        {{#if resume.references}}
+          <div class="detail" id="references">
+            <h3 class="title text-uppercase text-muted"><i class="fa fa-lg fa-thumbs-up"></i> References</h3>
 
-                <div class="content">
-                  <ul class="list-unstyled">
-                    {{#each resume.references}}
-                      <li class="card card-nested">
-                        <p>
-                          <strong>{{name}}</strong>
-                        </p>
-                        <blockquote class="quote">
-                          <p class="clear-margin">{{reference}}</p>
-                        </blockquote>
-                      </li>
-                    {{/each}}
-                  </ul>
-                </div>
-              </div>
-            </div>
-          {{/if}}
-
-        </div>
+            <ul class="list-unstyled">
+              {{#each resume.references}}
+                <li class="detail-item row">
+                  <div class="col-xs-12">
+                    <blockquote>
+                      <p>{{reference}}</p>
+                      <footer><cite title="{{name}}">{{name}}</cite></footer>
+                    </blockquote>
+                  </div>
+                </li>
+              {{/each}}
+            </ul>
+          </div>
+        {{/if}}
       </div>
     </section>
   </div>
