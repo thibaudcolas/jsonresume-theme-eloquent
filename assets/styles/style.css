@@ -43,6 +43,10 @@
   }
 }
 
+.detail-highlights li {
+  margin-bottom: 2px;
+}
+
 .labels {
   line-height: 2;
   word-spacing: 5px;

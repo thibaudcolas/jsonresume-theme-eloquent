@@ -178,7 +178,7 @@
                     <p>{{nl2br summary}}</p>
 
                     {{#if highlights}}
-                      <ul>
+                      <ul class="detail-highlights">
                         {{#each highlights}}
                           <li>{{.}}</li>
                         {{/each}}
@@ -189,13 +189,10 @@
                   {{#if startDate}}
                     <div class="col-sm-3 detail-item-sidebar text-muted text-center hidden-xs">
                       <p>
-                        <strong>Joined:</strong>
-                        <br>
                         <time datetime="{{startDate}}">{{formatMMMMYYYY startDate}}</time>
-                      </p>
-                      <p>
+                        <br>
+                        &nbsp;—&nbsp;
                         {{#if endDate}}
-                          <strong>Left:</strong>
                           <br>
                           <time datetime="{{endDate}}">{{formatMMMMYYYY endDate}}</time>
                         {{else}}
@@ -248,7 +245,7 @@
                     <p itemprop="description">{{nl2br summary}}</p>
 
                     {{#if highlights}}
-                      <ul>
+                      <ul class="detail-highlights">
                         {{#each highlights}}
                           <li>{{.}}</li>
                         {{/each}}
@@ -259,18 +256,18 @@
                   {{#if startDate}}
                     <div class="col-sm-3 detail-item-sidebar text-muted text-center hidden-xs">
                       <p>
-                        <strong>Started:</strong>
-                        <br>
                         <time datetime="{{startDate}}">{{formatMMMMYYYY startDate}}</time>
-                      </p>
-                      <p>
+                        <br>
+                        &nbsp;—&nbsp;
                         {{#if endDate}}
-                          <strong>Until:</strong>
                           <br>
                           <time datetime="{{endDate}}">{{formatMMMMYYYY endDate}}</time>
                         {{else}}
                           <time>Present</time>
                         {{/if}}
+                      </p>
+                      <p>
+                        <i class="fa fa-clock-o icon-left"></i>&nbsp;{{humaneDuration startDate endDate}}
                       </p>
                     </div>
                   {{/if}}
@@ -330,8 +327,6 @@
                   {{#if startDate}}
                     <div class="col-sm-3 detail-item-sidebar text-muted text-center hidden-xs">
                       <p>
-                        <strong>Years:</strong>
-                        <br>
                         <time datetime="{{startDate}}">{{formatYYYY startDate}}</time>
                         &nbsp;—&nbsp;
                         {{#if endDate}}
