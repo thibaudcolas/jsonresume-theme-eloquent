@@ -18,3 +18,4 @@ $ npm start
 - Skill levels
 - Colors!
 - https://github.com/lokesh/color-thief
+- https://github.com/remy/inliner/blob/master/inliner.js

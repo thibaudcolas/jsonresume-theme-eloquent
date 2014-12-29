@@ -11,6 +11,7 @@
     {{> bootstrap}}
     {{> global}}
     {{> card}}
+    {{> networks}}
     {{> profile}}
     {{> style}}
     {{> print}}
@@ -102,7 +103,7 @@
           {{#if profiles}}
             <ul class="social-profiles nav nav-justified">
               {{#each profiles}}
-                <li class="profile-item"><a href="{{url}}" target="_blank"><i class="fa fa-2x {{networkIcon network}}"></i></a></li>
+                <li class="profile-item"><a href="{{url}}" target="_blank"><i class="fa fa-2x fa-{{normalizeNetwork network}} network-{{normalizeNetwork network}}"></i></a></li>
               {{/each}}
             </ul>
           {{/if}}
