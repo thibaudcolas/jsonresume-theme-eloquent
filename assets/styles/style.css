@@ -16,7 +16,6 @@ body {
   font-weight: 300;
   background: #f0f0f0;
   color: #292f33;
-  padding: 5px;
 }
 
 * {
@@ -25,10 +24,12 @@ body {
 
 h1 {
   font-size: 30px;
+  margin-top: 10px;
 }
 
 h2 {
   font-size: 24px;
+  margin-top: 10px;
 }
 
 hr {
@@ -73,12 +74,7 @@ hr {
   padding: 5px;
   border: 1px solid #357ebd;
 }
-.link-disguise {
-  color: inherit;
-}
-.link-disguise:hover {
-  color: inherit;
-}
+
 @media (max-width: 992px) {
   .clear-margin-sm {
     margin-bottom: 0;
@@ -110,17 +106,11 @@ hr {
     padding: 5px 0;
   }
 }
-.background-card {
-  padding: 10px 20px;
-}
+
 .card-wrapper {
-  padding: 5px;
+  padding: 10px;
 }
-@media (max-width: 992px) {
-  .card-wrapper {
-    float: none !important;
-  }
-}
+
 .text-bolder {
   font-weight: bold;
 }
@@ -177,7 +167,6 @@ hr {
 }
 .info .content.has-sidebar {
   width: 80%;
-  box-sizing: border-box;
   float: left;
   padding: 0 10px;
   border-right: 1px solid #cdcdcd;
@@ -195,7 +184,6 @@ hr {
 }
 .info .sidebar {
   margin-left: 80%;
-  box-sizing: border-box;
   padding: 10px;
 }
 @media (max-width: 480px) {

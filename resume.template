@@ -37,13 +37,17 @@
 </head>
 <body class="container-fluid" itemscope itemtype="http://schema.org/Person" role="document">
   <div class="row">
-    <section id="profile" class="col-md-3 card-wrapper profile-card-wrapper affixTODO">
+    <section id="profile" class="col-md-3 card-wrapper profile-card-wrapper affix">
       <div class="card">
         {{#resume.basics}}
-          <img class="profile-pic media-object img-circle center-block" src="{{picture}}" alt="128x128" width="128" height="128" itemprop="image">
+          {{#if picture}}
+            <img class="profile-pic media-object img-circle center-block" src="{{picture}}" alt="128x128" width="128" height="128" itemprop="image">
+          {{/if}}
 
           <h1 class="text-center text-bolder" itemprop="name">{{name}}</h1>
-          <h2 class="text-center text-muted" itemprop="jobTitle">{{label}}</h2>
+          {{#if label}}
+            <h2 class="text-center text-muted" itemprop="jobTitle">{{label}}</h2>
+          {{/if}}
 
           <hr>
 
@@ -103,8 +107,8 @@
       </div>
     </section>
 
-    <section class="col-md-9 card-wrapper">
-      <div class="card background-card">
+    <section class="col-md-9 card-wrapper pull-right">
+      <div class="card">
         <div class="background-details">
           <div class="detail" id="about">
             <div class="icon">
@@ -112,9 +116,7 @@
               <span class="mobile-title">About</span>
             </div>
             <div class="info">
-              <h4 class="title text-uppercase">
-                About
-              </h4>
+              <h4 class="title text-uppercase">About</h4>
 
               <div class="content" itemprop="description">
                 {{nl2br resume.basics.summary}}
@@ -128,9 +130,7 @@
               <span class="mobile-title">Work Experience</span>
             </div>
             <div class="info">
-              <h4 class="title text-uppercase">
-                Work Experience
-              </h4>
+              <h4 class="title text-uppercase">Work Experience</h4>
 
               <ul class="list-unstyled">
                 {{#each resume.work}}
@@ -200,9 +200,7 @@
               <span class="mobile-title">Skills</span>
             </div>
             <div class="info">
-              <h4 class="title text-uppercase">
-                Skills
-              </h4>
+              <h4 class="title text-uppercase">Skills</h4>
 
               <div class="content">
                 <ul class="list-unstyled">
@@ -230,9 +228,7 @@
               <span class="mobile-title">Education</span>
             </div>
             <div class="info">
-              <h4 class="title text-uppercase">
-                Education
-              </h4>
+              <h4 class="title text-uppercase">Education</h4>
 
               <div class="content">
                 <ul class="list-unstyled">
@@ -290,9 +286,7 @@
                 <span class="mobile-title">Awards</span>
               </div>
               <div class="info">
-                <h4 class="title text-uppercase">
-                  Awards
-                </h4>
+                <h4 class="title text-uppercase">Awards</h4>
 
                 <div class="content">
                   <ul class="list-unstyled">
@@ -331,9 +325,7 @@
                 <span class="mobile-title">Volunteer Work</span>
               </div>
               <div class="info">
-                <h4 class="title text-uppercase">
-                  Volunteer Work
-                </h4>
+                <h4 class="title text-uppercase">Volunteer Work</h4>
 
                 <div class="content">
                   <ul class="list-unstyled">
@@ -392,9 +384,7 @@
                 <span class="mobile-title">Publications</span>
               </div>
               <div class="info">
-                <h4 class="title text-uppercase">
-                  Publications
-                </h4>
+                <h4 class="title text-uppercase">Publications</h4>
 
                 <div class="content">
                   <ul class="list-unstyled">
@@ -439,9 +429,7 @@
                 <span class="mobile-title">Interests</span>
               </div>
               <div class="info">
-                <h4 class="title text-uppercase">
-                  Interests
-                </h4>
+                <h4 class="title text-uppercase">Interests</h4>
 
                 <div class="content">
                   <ul class="list-unstyled">
@@ -471,9 +459,7 @@
                 <span class="mobile-title">References</span>
               </div>
               <div class="info">
-                <h4 class="title text-uppercase">
-                  References
-                </h4>
+                <h4 class="title text-uppercase">References</h4>
 
                 <div class="content">
                   <ul class="list-unstyled">
