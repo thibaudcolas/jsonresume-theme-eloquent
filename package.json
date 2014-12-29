@@ -1,7 +1,7 @@
 {
   "name": "jsonresume-theme-eloquent",
   "version": "0.3.2",
-  "description": "An eloquent JSON Resume theme: fluent, persuasive, for developers.",
+  "description": "An eloquent JSON Resume theme: fluent, persuasive, for developers. This theme is a fork of the Elegant theme.",
   "author": "Thibaud Colas",
   "license": "ISC",
   "main": "index.js",
