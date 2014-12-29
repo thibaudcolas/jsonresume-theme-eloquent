@@ -21,6 +21,9 @@ $ npm start
 - Colors!
 - https://github.com/lokesh/color-thief
 - https://github.com/remy/inliner/blob/master/inliner.js
+- Link to download itself
+- Slimmer filesize
+- Handle skill level
 
 ## LICENSE
 
