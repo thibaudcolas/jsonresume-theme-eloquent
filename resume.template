@@ -507,6 +507,7 @@
   </div>
 
   <script async defer>
+    window.downloadName = '{{normalizeName resume.basics.name}}-resume.html';
     {{> domReady}}
     {{> saveAs}}
     {{> smoothScroll}}
