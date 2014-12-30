@@ -73,12 +73,6 @@ hr {
   margin-bottom: 10px;
 }
 
-@media (max-width: 992px) {
-  .card-wrapper {
-    float: none !important;
-  }
-}
-
 .nav > li > a:hover,
 .nav > li > a:focus {
   outline: none;
