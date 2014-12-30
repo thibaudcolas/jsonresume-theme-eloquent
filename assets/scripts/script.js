@@ -1,11 +1,10 @@
-(function(document, domready, FastClick, smoothScroll) {
+(function(document, domready, smoothScroll) {
   'use strict';
 
   domready(function() {
-    FastClick.attach(document.body);
 
     smoothScroll.init({
       speed: 300
     });
   });
-})(document, window.domready, window.FastClick, window.smoothScroll);
+})(document, window.domready, window.smoothScroll);

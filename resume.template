@@ -499,9 +499,8 @@
     </div>
   </div>
 
-  <script>
+  <script async defer>
     {{> domReady}}
-    {{> FastClick}}
     {{> smoothScroll}}
     {{> script}}
   </script>
