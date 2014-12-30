@@ -1,0 +1,13 @@
+{
+  "vars": {},
+  "css": [
+    "print.less",
+    "type.less",
+    "grid.less",
+    "responsive-utilities.less",
+    "navs.less",
+    "labels.less"
+  ],
+  "js": [],
+  "customizerUrl": "http://getbootstrap.com/customize/?id=b8de360b20fa3c7e5e9b"
+}

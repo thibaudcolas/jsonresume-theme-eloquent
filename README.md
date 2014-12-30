@@ -14,6 +14,11 @@ $ npm lint
 $ npm start
 ~~~
 
+# Built with
+
+- [Bootstrap](http://getbootstrap.com/): custom build
+- [IcoMoon](https://icomoon.io/): custom [Font Awesome](https://fortawesome.github.io/Font-Awesome/) build
+
 ## TODO
 
 - Main menu
@@ -22,8 +27,6 @@ $ npm start
 - https://github.com/lokesh/color-thief
 - https://github.com/remy/inliner/blob/master/inliner.js
 - Link to download itself
-- Slimmer filesize
-- Handle skill level
 
 ## LICENSE
 
