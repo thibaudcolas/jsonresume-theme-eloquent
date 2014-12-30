@@ -7,7 +7,7 @@ An eloquent JSON Resume theme: fluent, persuasive. This theme is a fork of the [
 
 ## Get Started
 
-~~~bash
+~~~
 $ npm install
 $ npm test
 $ npm lint
@@ -18,6 +18,9 @@ $ npm start
 
 - [Bootstrap](http://getbootstrap.com/): custom build
 - [IcoMoon](https://icomoon.io/): custom [Font Awesome](https://fortawesome.github.io/Font-Awesome/) build
+- [saveAs polyfill](https://github.com/eligrey/FileSaver.js)
+- [domready](https://github.com/ded/domready)
+- [smoothScroll](https://github.com/cferdinandi/smooth-scroll)
 
 ## TODO
 
@@ -26,7 +29,6 @@ $ npm start
 - Colors!
 - https://github.com/lokesh/color-thief
 - https://github.com/remy/inliner/blob/master/inliner.js
-- Link to download itself
 
 ## LICENSE
 

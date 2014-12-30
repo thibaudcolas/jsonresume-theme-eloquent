@@ -97,6 +97,13 @@
                   </a>
                 </li>
               {{/if}}
+
+                <li class="basics-item">
+                  <a id="js-download" href="#">
+                    <span class="icon text-muted"><i class="icon-lg icon-download"></i></span>
+                    <span class="info">Download this resume</span>
+                  </a>
+                </li>
             </ul>
 
             <hr>
@@ -110,8 +117,8 @@
             {{/if}}
           {{/resume.basics}}
 
-          <ul class="nav nav-justified hidden-xs hidden-sm">
-            <li><a href="#" class="text-muted" data-scroll><i class="icon-chevron-up"></i></a></li>
+          <ul class="nav nav-justified hidden-height hidden-xs hidden-sm">
+            <li><a href="#" class="text-muted" data-scroll title="Scroll to top"><i class="icon-chevron-up"></i></a></li>
           </ul>
         </div>
       </section>
@@ -501,6 +508,7 @@
 
   <script async defer>
     {{> domReady}}
+    {{> saveAs}}
     {{> smoothScroll}}
     {{> script}}
   </script>
