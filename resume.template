@@ -49,7 +49,9 @@
               <img class="profile-pic media-object img-circle center-block" src="{{picture}}" alt="128x128" width="128" height="128" itemprop="image">
             {{/if}}
 
-            <h1 class="text-center" itemprop="name">{{name}}</h1>
+            {{#if name}}
+              <h1 class="text-center" itemprop="name">{{name}}</h1>
+            {{/if}}
             {{#if label}}
               <h2 class="text-center text-muted" itemprop="jobTitle">{{label}}</h2>
             {{/if}}
