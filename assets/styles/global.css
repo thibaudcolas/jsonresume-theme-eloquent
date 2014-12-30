@@ -8,6 +8,13 @@ html, body, button {
   font-smoothing: antialiased;
 }
 
+[class^="icon-"], [class*=" icon-"] {
+  display: inline-block;
+  font: normal normal normal 14px/1 'icomoon';
+  font-size: inherit;
+  text-rendering: auto;
+}
+
 body {
   min-width: 320px;
   /* TODO max-width: 1280px; */
@@ -80,4 +87,14 @@ hr {
 
 .nav > li > a:active {
   background-color: #ccd6dd;
+}
+
+.icon-lg {
+  font-size: 1.33333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+
+.icon-2x {
+  font-size: 2em;
 }
