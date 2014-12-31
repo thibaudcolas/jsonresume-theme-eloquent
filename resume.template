@@ -1,3 +1,7 @@
+<!--
+  This awesome resume was created {{#if name}}by {{name}} {{/if}}with the JSON resume schema: https://jsonresume.org/
+  It uses the Eloquent theme: https://github.com/ThibWeb/jsonresume-theme-eloquent
+-->
 <!doctype html>
 <html lang="en">
 <head>
