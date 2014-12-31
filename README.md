@@ -12,8 +12,11 @@ An eloquent JSON Resume theme: fluent, persuasive. This theme is a fork of the [
 - Simple theme based on standard Bootstrap, top browser compatibility.
 - Download your resume with a single click, in a single file.
 - View your resume even without internet connection, the theme is self-contained (NB: your picture should be inlined for this to fully work).
-- Great Font Awesome icons
+- Great Font Awesome icons.
+- Gorgeous Open Sans web font.
 - All fields are optional, pick what you need!
+
+> [Theme demo](http://themes.jsonresume.org/eloquent)
 
 ## Get Started
 
@@ -24,10 +27,11 @@ $ npm lint
 $ npm start
 ~~~
 
-# Built with
+## Built with
 
 - [Bootstrap](http://getbootstrap.com/): custom build
 - [IcoMoon](https://icomoon.io/): custom [Font Awesome](https://fortawesome.github.io/Font-Awesome/) build
+- [Open Sans](http://www.google.com/fonts/specimen/Open+Sans): great web font-face, taken from Google Fonts
 - [saveAs polyfill](https://github.com/eligrey/FileSaver.js)
 - [domready](https://github.com/ded/domready)
 - [smoothScroll](https://github.com/cferdinandi/smooth-scroll)
