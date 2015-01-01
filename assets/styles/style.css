@@ -21,7 +21,7 @@
 }
 
 .detail h3 {
-  position: relative;
+  position: static;
   left: -44px;
 }
 
@@ -31,7 +31,7 @@
   }
 
   .detail h3 {
-    position: static;
+    position: relative;
   }
 }
 

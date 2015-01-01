@@ -9,7 +9,7 @@ An eloquent JSON Resume theme: fluent, persuasive. This theme is a fork of the [
 
 ## Features
 
-- Simple theme based on standard Bootstrap, top browser compatibility.
+- Mobile First theme based on Bootstrap.
 - Download your resume with a single click, in a single file.
 - View your resume even without internet connection, the theme is self-contained (NB: your picture should be inlined for this to fully work).
 - Great Font Awesome icons.
@@ -39,7 +39,6 @@ $ npm start
 ## TODO
 
 - Main menu
-- Skill levels
 - Colors!
 - https://github.com/lokesh/color-thief
 - https://github.com/remy/inliner/blob/master/inliner.js
