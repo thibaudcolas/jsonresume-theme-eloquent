@@ -14,6 +14,7 @@ An eloquent JSON Resume theme: fluent, persuasive. This theme is a fork of the [
 - View your resume even without internet connection, the theme is self-contained (NB: your picture should be inlined for this to fully work).
 - Great Font Awesome icons.
 - Gorgeous Open Sans web font.
+- The theme is fully compatible for print.
 - All fields are optional, pick what you need!
 
 > [Theme demo](http://themes.jsonresume.org/eloquent)

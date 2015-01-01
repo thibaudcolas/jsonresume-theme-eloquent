@@ -104,7 +104,7 @@
                 </li>
               {{/if}}
 
-                <li class="basics-item">
+                <li class="basics-item hidden-print">
                   <a id="js-download" href="#">
                     <span class="icon text-muted"><i class="icon-lg icon-download"></i></span>
                     <span class="info">Download this resume</span>
@@ -145,7 +145,7 @@
         </section>
       {{/if}}
 
-      <section class="col-md-8 card-wrapper">
+      <section class="col-md-8 card-wrapper details-card-wrapper">
         <div class="card">
 
           {{#if resume.work}}
@@ -503,7 +503,7 @@
             </div>
           {{/if}}
 
-          <ul class="nav nav-justified visible-xs visible-sm">
+          <ul class="nav nav-justified visible-xs visible-sm hidden-print">
             <li><a href="#" class="text-muted" data-scroll><i class="icon-chevron-up"></i></a></li>
           </ul>
         </div>
