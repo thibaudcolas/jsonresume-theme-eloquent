@@ -1,22 +1,23 @@
 .profile-card-wrapper {
-  padding-right: 0;
-  height: 100%;
+  position: relative;
+  padding-bottom: 0;
+  padding-right: 10px;
 }
 
-@media (max-width: 991px) {
+@media (min-width: 992px) {
   .profile-card-wrapper {
-    position: relative;
-    padding-bottom: 0;
-    padding-right: 10px;
+    position: fixed;
+    height: 100%;
+    padding-right: 0;
   }
 
   .card-wrapper {
-    float: none !important;
+    float: right;
   }
 }
 
 .detail {
-  padding: 10px 10px 10px 50px;
+  padding: 10px;
 }
 
 .detail h3 {
@@ -24,9 +25,9 @@
   left: -44px;
 }
 
-@media (max-width: 767px) {
+@media (min-width: 768px) {
   .detail {
-    padding: 10px;
+    padding-left: 50px;
   }
 
   .detail h3 {
@@ -50,13 +51,9 @@
   padding: 0 10px 0 0;
 }
 
-.detail-item-content.col-sm-9 {
-  border-right: 1px solid #ccd6dd;
-}
-
-@media (max-width: 767px) {
+@media (min-width: 768px) {
   .detail-item-content.col-sm-9 {
-    border: none;
+    border-right: 1px solid #ccd6dd;
   }
 }
 

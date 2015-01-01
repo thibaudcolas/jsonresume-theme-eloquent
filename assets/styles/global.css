@@ -38,12 +38,14 @@ body {
 
 h1 {
   font-size: 30px;
-  margin-top: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 h2 {
   font-size: 24px;
-  margin-top: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 h3 {

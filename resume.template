@@ -46,7 +46,7 @@
   <div class="container-fluid" itemscope itemtype="http://schema.org/Person" role="document">
     <div class="row">
 
-      <section id="profile" class="col-md-4 card-wrapper profile-card-wrapper affix">
+      <section id="profile" class="col-md-4 card-wrapper profile-card-wrapper">
         <div class="card">
           {{#resume.basics}}
             {{#if picture}}
@@ -130,7 +130,7 @@
       </section>
 
       {{#if resume.basics.summary}}
-        <section class="col-md-8 card-wrapper pull-right" style="padding-bottom: 0px;">
+        <section class="col-md-8 card-wrapper" style="padding-bottom: 0px;">
           <div class="card">
             <div class="detail" id="about">
               <h3 class="text-uppercase text-muted"><i class="icon-lg icon-user"></i> About</h3>
@@ -145,7 +145,7 @@
         </section>
       {{/if}}
 
-      <section class="col-md-8 card-wrapper pull-right">
+      <section class="col-md-8 card-wrapper">
         <div class="card">
 
           {{#if resume.work}}
