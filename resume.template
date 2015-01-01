@@ -77,11 +77,11 @@
                     <a href="{{mapURL this}}" target="_blank" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
                       <span class="icon text-muted"><i class="icon-lg icon-location-arrow"></i></span>
                       <span class="info">
-                        <span itemprop="streetAddress">{{#if address}}{{address}},{{/if}}</span>
-                        <span itemprop="addressLocality">{{#if city}}{{city}},{{/if}}</span>
-                        <span itemprop="postalCode">{{#if postalCode}}{{postalCode}},{{/if}}</span>
-                        <span itemprop="addressRegion">{{#if region}}{{region}},{{/if}}</span>
-                        <span itemprop="addressCountry">{{#if countryCode}}{{countryCode}}{{/if}}</span>
+                        {{#if address}}<span itemprop="streetAddress">{{address}},</span>{{/if}}
+                        {{#if city}}<span itemprop="addressLocality">{{city}},</span>{{/if}}
+                        {{#if postalCode}}<span itemprop="postalCode">{{postalCode}},</span>{{/if}}
+                        {{#if region}}<span itemprop="addressRegion">{{region}},</span>{{/if}}
+                        {{#if countryCode}}<span itemprop="addressCountry">{{countryCode}}</span>{{/if}}
                       </span>
                     </a>
                   {{/location}}
@@ -129,10 +129,9 @@
         </div>
       </section>
 
-      <section class="col-md-8 card-wrapper pull-right" style="padding-bottom: 0px;">
-        <div class="card">
-
-          {{#if resume.basics.summary}}
+      {{#if resume.basics.summary}}
+        <section class="col-md-8 card-wrapper pull-right" style="padding-bottom: 0px;">
+          <div class="card">
             <div class="detail" id="about">
               <h3 class="text-uppercase text-muted"><i class="icon-lg icon-user"></i> About</h3>
 
@@ -142,9 +141,9 @@
                 </div>
               </div>
             </div>
-          {{/if}}
-        </div>
-      </section>
+          </div>
+        </section>
+      {{/if}}
 
       <section class="col-md-8 card-wrapper pull-right">
         <div class="card">
@@ -513,7 +512,8 @@
   </div>
 
   <script async defer>
-    window.downloadName = '{{normalizeName resume.basics.name}}-resume.html';
+    var name = '{{normalizeName resume.basics.name}}';
+    window.downloadName = (name ? name + '-' : '') + 'resume.html';
     {{> domReady}}
     {{> saveAs}}
     {{> smoothScroll}}
