@@ -1,5 +1,6 @@
 .profile-card-wrapper {
   padding-right: 0;
+  height: 100%;
 }
 
 @media (max-width: 991px) {

@@ -35,3 +35,7 @@
     text-align: left;
   }
 }
+
+.profile-card-wrapper .card {
+  height: 100%;
+}
