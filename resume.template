@@ -130,7 +130,7 @@
       </section>
 
       {{#if resume.basics.summary}}
-        <section class="col-md-8 card-wrapper" style="padding-bottom: 0px;">
+        <section class="col-md-8 card-wrapper">
           <div class="card">
             <div class="detail" id="about">
               <h3 class="text-uppercase text-muted"><i class="icon-lg icon-user"></i> About</h3>
