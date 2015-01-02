@@ -11,10 +11,10 @@ An eloquent JSON Resume theme: fluent, persuasive. This theme is a fork of the [
 
 - Mobile First theme based on Bootstrap.
 - Download your resume with a single click, in a single file.
-- View your resume even without internet connection, the theme is self-contained (NB: your picture should be inlined for this to fully work).
+- View your resume even without an internet connection: the theme is self-contained (NB: your picture should be inlined for this to fully work).
 - Great Font Awesome icons.
 - Gorgeous Open Sans web font.
-- The theme is fully compatible for print.
+- Custom print styles.
 - All fields are optional, pick what you need!
 
 > [Theme demo](http://themes.jsonresume.org/eloquent)
@@ -39,10 +39,10 @@ $ npm start
 
 ## TODO
 
-- Main menu
-- Colors!
-- https://github.com/lokesh/color-thief
-- https://github.com/remy/inliner/blob/master/inliner.js
+- Main menu with links to each resume section
+- More colors in the theme! (https://github.com/lokesh/color-thief ?)
+- New build system? https://github.com/remy/inliner/blob/master/inliner.js
+- "Print this resume" button? http://css-tricks.com/quick-tip-making-a-print-this-page-button/
 
 ## LICENSE
 
