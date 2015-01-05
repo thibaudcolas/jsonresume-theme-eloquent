@@ -43,7 +43,7 @@ $ npm start
 - New build system? https://github.com/remy/inliner/blob/master/inliner.js
 - "Print this resume" button? http://css-tricks.com/quick-tip-making-a-print-this-page-button/
 
-## LICENSE
+## LICENSE (ISC)
 
 Copyright (c) 2014, Thibaud Colas
 
