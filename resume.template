@@ -121,9 +121,10 @@
                 {{/each}}
               </ul>
             {{/if}}
+
           {{/resume.basics}}
 
-          <ul class="nav nav-justified hidden-height hidden-xs hidden-sm">
+          <ul class="nav nav-justified hidden-xs hidden-sm">
             <li><a href="#top" class="text-muted" data-scroll title="Scroll to top"><i aria-hidden="true" class="icon-chevron-up"></i><span class="sr-only">Go to top</span></a></li>
           </ul>
         </div>

@@ -10,6 +10,7 @@
     height: 100%;
     padding-right: 0;
     padding-bottom: 10px;
+    overflow-y: hidden;
   }
 
   .card-wrapper {

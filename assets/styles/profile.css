@@ -39,4 +39,5 @@
 
 .profile-card-wrapper .card {
   height: 100%;
+  overflow-y: scroll;
 }

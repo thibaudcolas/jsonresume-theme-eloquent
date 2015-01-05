@@ -78,6 +78,10 @@ hr {
   margin-bottom: 10px;
 }
 
+.nav > li > a {
+  padding: 8px 15px;
+}
+
 .nav > li > a:hover,
 .nav > li > a:focus {
   outline: none;
@@ -96,10 +100,4 @@ hr {
 
 .icon-2x {
   font-size: 2em;
-}
-
-@media (max-height: 630px) {
-  .hidden-height {
-    display: none;
-  }
 }
