@@ -66,7 +66,7 @@
               {{#if phone}}
                 <li class="basics-item">
                   <a href="tel:{{sanitizePhone phone}}">
-                    <span class="icon text-muted"><i class="icon-lg icon-phone"></i></span>
+                    <span class="icon text-muted"><i aria-hidden="true" class="icon-lg icon-phone"></i></span>
                     <span class="info" itemprop="telephone">{{phone}}</span>
                   </a>
                 </li>
@@ -75,7 +75,7 @@
                 <li class="basics-item">
                   {{#location}}
                     <a href="{{mapURL this}}" target="_blank" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                      <span class="icon text-muted"><i class="icon-lg icon-location-arrow"></i></span>
+                      <span class="icon text-muted"><i aria-hidden="true" class="icon-lg icon-location-arrow"></i></span>
                       <span class="info">
                         {{#if address}}<span itemprop="streetAddress">{{address}},</span>{{/if}}
                         {{#if city}}<span itemprop="addressLocality">{{city}},</span>{{/if}}
@@ -90,7 +90,7 @@
               {{#if email}}
                 <li class="basics-item">
                   <a href="mailto:{{email}}">
-                    <span class="icon text-muted"><i class="icon-lg icon-envelope"></i></span>
+                    <span class="icon text-muted"><i aria-hidden="true" class="icon-lg icon-envelope"></i></span>
                     <span class="info" itemprop="email">{{email}}</span>
                   </a>
                 </li>
@@ -98,7 +98,7 @@
               {{#if website}}
                 <li class="basics-item">
                   <a href="{{website}}" rel="author" target="_blank" itemprop="url">
-                    <span class="icon text-muted"><i class="icon-lg icon-chain"></i></span>
+                    <span class="icon text-muted"><i aria-hidden="true" class="icon-lg icon-chain"></i></span>
                     <span class="info">{{sanitizeURL website}}</span>
                   </a>
                 </li>
@@ -106,7 +106,7 @@
 
                 <li class="basics-item hidden-print">
                   <a id="js-download" href="#download">
-                    <span class="icon text-muted"><i class="icon-lg icon-download"></i></span>
+                    <span class="icon text-muted"><i aria-hidden="true" class="icon-lg icon-download"></i></span>
                     <span class="info">Download this resume</span>
                   </a>
                 </li>
@@ -117,14 +117,14 @@
             {{#if profiles}}
               <ul class="social-profiles nav nav-justified">
                 {{#each profiles}}
-                  <li class="profile-item"><a href="{{url}}" target="_blank"><i class="icon-2x icon-{{normalizeNetwork network}} network-{{normalizeNetwork network}}"></i></a></li>
+                  <li class="profile-item"><a href="{{url}}" target="_blank"><i aria-hidden="true" class="icon-2x icon-{{normalizeNetwork network}} network-{{normalizeNetwork network}}"></i><span class="sr-only">{{network}}</span></a></li>
                 {{/each}}
               </ul>
             {{/if}}
           {{/resume.basics}}
 
           <ul class="nav nav-justified hidden-height hidden-xs hidden-sm">
-            <li><a href="#top" class="text-muted" data-scroll title="Scroll to top"><i class="icon-chevron-up"></i></a></li>
+            <li><a href="#top" class="text-muted" data-scroll title="Scroll to top"><i aria-hidden="true" class="icon-chevron-up"></i><span class="sr-only">Go to top</span></a></li>
           </ul>
         </div>
       </section>
@@ -133,7 +133,7 @@
         <section class="col-md-8 card-wrapper">
           <div class="card">
             <div class="detail" id="about">
-              <h3 class="text-uppercase text-muted"><i class="icon-lg icon-user"></i> About</h3>
+              <h3 class="text-uppercase text-muted"><i aria-hidden="true" class="icon-lg icon-user"></i> About</h3>
 
               <div class="row">
                 <div class="col-xs-12">
@@ -150,7 +150,7 @@
 
           {{#if resume.work}}
             <div class="detail" id="work-experience">
-              <h3 class="text-uppercase text-muted"><i class="icon-lg icon-building"></i> Experience</h3>
+              <h3 class="text-uppercase text-muted"><i aria-hidden="true" class="icon-lg icon-building"></i> Experience</h3>
 
               <ul class="list-unstyled">
                 {{#each resume.work}}
@@ -177,7 +177,7 @@
                             {{else}}
                               <time>Present</time>
                             {{/if}}
-                            &nbsp;<span><i class="icon-clock-o"></i>&nbsp;{{humaneDuration startDate endDate}}</span>
+                            &nbsp;<span><i aria-hidden="true" class="icon-clock-o"></i>&nbsp;{{humaneDuration startDate endDate}}</span>
                           </small>
                         </p>
                       {{/if}}
@@ -207,7 +207,7 @@
                           {{/if}}
                         </p>
                         <p>
-                          <i class="icon-clock-o icon-left"></i>&nbsp;{{humaneDuration startDate endDate}}
+                          <i aria-hidden="true" class="icon-clock-o icon-left"></i>&nbsp;{{humaneDuration startDate endDate}}
                         </p>
                       </div>
                     {{/if}}
@@ -219,7 +219,7 @@
 
           {{#if resume.volunteer}}
             <div class="detail" id="volunteer-work">
-              <h3 class="text-uppercase text-muted"><i class="icon-lg icon-bookmark"></i> Projects</h3>
+              <h3 class="text-uppercase text-muted"><i aria-hidden="true" class="icon-lg icon-bookmark"></i> Projects</h3>
 
               <ul class="list-unstyled">
                 {{#each resume.volunteer}}
@@ -274,7 +274,7 @@
                           {{/if}}
                         </p>
                         <p>
-                          <i class="icon-clock-o icon-left"></i>&nbsp;{{humaneDuration startDate endDate}}
+                          <i aria-hidden="true" class="icon-clock-o icon-left"></i>&nbsp;{{humaneDuration startDate endDate}}
                         </p>
                       </div>
                     {{/if}}
@@ -286,7 +286,7 @@
 
           {{#if resume.education}}
             <div class="detail" id="education">
-              <h3 class="text-uppercase text-muted"><i class="icon-lg icon-graduation-cap"></i> Education</h3>
+              <h3 class="text-uppercase text-muted"><i aria-hidden="true" class="icon-lg icon-graduation-cap"></i> Education</h3>
 
               <ul class="list-unstyled">
                 {{#each resume.education}}
@@ -352,7 +352,7 @@
 
           {{#if resume.skills}}
             <div class="detail" id="skills">
-              <h3 class="text-uppercase text-muted"><i class="icon-lg icon-code"></i> Skills</h3>
+              <h3 class="text-uppercase text-muted"><i aria-hidden="true" class="icon-lg icon-code"></i> Skills</h3>
 
               <ul class="list-unstyled">
                 {{#each resume.skills}}
@@ -376,7 +376,7 @@
 
           {{#if resume.awards}}
             <div class="detail" id="awards">
-              <h3 class="text-uppercase text-muted"><i class="icon-lg icon-trophy"></i> Awards</h3>
+              <h3 class="text-uppercase text-muted"><i aria-hidden="true" class="icon-lg icon-trophy"></i> Awards</h3>
 
               <ul class="list-unstyled">
                 {{#each resume.awards}}
@@ -417,7 +417,7 @@
 
           {{#if resume.publications}}
             <div class="detail" id="publications">
-              <h3 class="text-uppercase text-muted"><i class="icon-lg icon-book"></i> Publications</h3>
+              <h3 class="text-uppercase text-muted"><i aria-hidden="true" class="icon-lg icon-book"></i> Publications</h3>
 
               <ul class="list-unstyled">
                 {{#each resume.publications}}
@@ -462,7 +462,7 @@
 
           {{#if resume.interests}}
             <div class="detail" id="interests">
-              <h3 class="text-uppercase text-muted"><i class="icon-lg icon-heart"></i> Interests</h3>
+              <h3 class="text-uppercase text-muted"><i aria-hidden="true" class="icon-lg icon-heart"></i> Interests</h3>
 
               <ul class="list-unstyled">
                 {{#each resume.interests}}
@@ -486,7 +486,7 @@
 
           {{#if resume.languages}}
             <div class="detail" id="languages">
-              <h3 class="text-uppercase text-muted"><i class="icon-lg icon-comment"></i> Languages</h3>
+              <h3 class="text-uppercase text-muted"><i aria-hidden="true" class="icon-lg icon-comment"></i> Languages</h3>
 
               <ul class="list-unstyled">
                 {{#each resume.languages}}
@@ -508,7 +508,7 @@
 
           {{#if resume.references}}
             <div class="detail" id="references">
-              <h3 class="text-uppercase text-muted"><i class="icon-lg icon-thumbs-up"></i> References</h3>
+              <h3 class="text-uppercase text-muted"><i aria-hidden="true" class="icon-lg icon-thumbs-up"></i> References</h3>
 
               <ul class="list-unstyled">
                 {{#each resume.references}}
@@ -526,7 +526,7 @@
           {{/if}}
 
           <ul class="nav nav-justified visible-xs-block visible-sm-block hidden-print">
-            <li><a href="#top" class="text-muted" data-scroll><i class="icon-chevron-up"></i></a></li>
+            <li><a href="#top" class="text-muted" data-scroll><i aria-hidden="true" class="icon-chevron-up"></i><span class="sr-only">Go to top</span></a></li>
           </ul>
         </div>
       </section>
