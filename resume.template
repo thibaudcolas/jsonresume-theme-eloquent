@@ -484,6 +484,28 @@
             </div>
           {{/if}}
 
+          {{#if resume.languages}}
+            <div class="detail" id="languages">
+              <h3 class="text-uppercase text-muted"><i class="icon-lg icon-comment"></i> Languages</h3>
+
+              <ul class="list-unstyled">
+                {{#each resume.languages}}
+                  <li class="detail-item row">
+                    <div class="col-xs-12 detail-item-content">
+                      <h4>
+                        <strong>{{language}}</strong>
+                        {{~#if fluency~}}
+                          ,&nbsp;<span>{{fluency}}</span>
+                        {{/if}}
+                      </h4>
+
+                    </div>
+                  </li>
+                {{/each}}
+              </ul>
+            </div>
+          {{/if}}
+
           {{#if resume.references}}
             <div class="detail" id="references">
               <h3 class="text-uppercase text-muted"><i class="icon-lg icon-thumbs-up"></i> References</h3>

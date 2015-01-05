@@ -1,7 +1,7 @@
 {
 	"metadata": {
 		"name": "eloquent",
-		"lastOpened": 1419925696183,
+		"lastOpened": 1419926481402,
 		"created": 1419901633895
 	},
 	"iconSets": [
@@ -105,7 +105,11 @@
 				},
 				{
 					"id": 22,
-					"order": 28
+					"order": 24,
+					"prevSize": 28,
+					"code": 61463,
+					"name": "clock-o",
+					"tempChar": ""
 				},
 				{
 					"id": 23,
@@ -113,11 +117,11 @@
 				},
 				{
 					"id": 24,
-					"order": 17,
+					"order": 15,
 					"prevSize": 28,
 					"code": 61465,
 					"name": "download",
-					"tempChar": ""
+					"tempChar": ""
 				},
 				{
 					"id": 25,
@@ -193,7 +197,7 @@
 					"prevSize": 28,
 					"code": 61485,
 					"name": "book",
-					"tempChar": ""
+					"tempChar": ""
 				},
 				{
 					"id": 43,
@@ -201,7 +205,7 @@
 					"prevSize": 28,
 					"code": 61486,
 					"name": "bookmark",
-					"tempChar": ""
+					"tempChar": ""
 				},
 				{
 					"id": 44,
@@ -473,7 +477,11 @@
 				},
 				{
 					"id": 110,
-					"order": 0
+					"order": 25,
+					"prevSize": 28,
+					"code": 61557,
+					"name": "comment",
+					"tempChar": ""
 				},
 				{
 					"id": 111,
@@ -481,11 +489,11 @@
 				},
 				{
 					"id": 112,
-					"order": 6,
+					"order": 5,
 					"prevSize": 28,
 					"code": 61559,
 					"name": "chevron-up",
-					"tempChar": ""
+					"tempChar": ""
 				},
 				{
 					"id": 113,
@@ -585,7 +593,7 @@
 				},
 				{
 					"id": 136,
-					"order": 16,
+					"order": 14,
 					"prevSize": 28,
 					"code": 61585,
 					"name": "trophy",
@@ -605,7 +613,7 @@
 				},
 				{
 					"id": 140,
-					"order": 9,
+					"order": 8,
 					"prevSize": 28,
 					"code": 61589,
 					"name": "phone",
@@ -625,7 +633,7 @@
 				},
 				{
 					"id": 144,
-					"order": 7,
+					"order": 6,
 					"prevSize": 28,
 					"code": 61593,
 					"name": "twitter",
@@ -633,7 +641,7 @@
 				},
 				{
 					"id": 145,
-					"order": 18,
+					"order": 16,
 					"prevSize": 28,
 					"code": 61594,
 					"name": "facebook",
@@ -641,7 +649,7 @@
 				},
 				{
 					"id": 146,
-					"order": 8,
+					"order": 7,
 					"prevSize": 28,
 					"code": 61595,
 					"name": "github",
@@ -737,7 +745,7 @@
 				},
 				{
 					"id": 169,
-					"order": 12,
+					"order": 10,
 					"prevSize": 28,
 					"code": 61633,
 					"name": "chain",
@@ -817,7 +825,7 @@
 				},
 				{
 					"id": 188,
-					"order": 19,
+					"order": 0,
 					"prevSize": 28,
 					"code": 61653,
 					"name": "google-plus",
@@ -861,19 +869,19 @@
 				},
 				{
 					"id": 198,
-					"order": 10,
+					"order": 9,
 					"prevSize": 28,
 					"code": 61664,
 					"name": "envelope",
-					"tempChar": ""
+					"tempChar": ""
 				},
 				{
 					"id": 199,
-					"order": 20,
+					"order": 17,
 					"prevSize": 28,
 					"code": 61665,
 					"name": "linkedin",
-					"tempChar": ""
+					"tempChar": ""
 				},
 				{
 					"id": 200,
@@ -1105,11 +1113,11 @@
 				},
 				{
 					"id": 257,
-					"order": 15,
+					"order": 13,
 					"prevSize": 28,
 					"code": 61729,
 					"name": "code",
-					"tempChar": ""
+					"tempChar": ""
 				},
 				{
 					"id": 258,
@@ -1121,7 +1129,11 @@
 				},
 				{
 					"id": 260,
-					"order": 27
+					"order": 23,
+					"prevSize": 28,
+					"code": 61732,
+					"name": "location-arrow",
+					"tempChar": ""
 				},
 				{
 					"id": 261,
@@ -1361,7 +1373,11 @@
 				},
 				{
 					"id": 320,
-					"order": 25
+					"order": 22,
+					"prevSize": 28,
+					"code": 61796,
+					"name": "thumbs-up",
+					"tempChar": ""
 				},
 				{
 					"id": 321,
@@ -1409,11 +1425,11 @@
 				},
 				{
 					"id": 332,
-					"order": 24,
+					"order": 21,
 					"prevSize": 28,
 					"code": 61809,
 					"name": "bitbucket",
-					"tempChar": ""
+					"tempChar": ""
 				},
 				{
 					"id": 333,
@@ -1461,19 +1477,19 @@
 				},
 				{
 					"id": 344,
-					"order": 21,
+					"order": 18,
 					"prevSize": 28,
 					"code": 61821,
 					"name": "dribbble",
-					"tempChar": ""
+					"tempChar": ""
 				},
 				{
 					"id": 345,
-					"order": 22,
+					"order": 19,
 					"prevSize": 28,
 					"code": 61822,
 					"name": "skype",
-					"tempChar": ""
+					"tempChar": ""
 				},
 				{
 					"id": 346,
@@ -1589,11 +1605,11 @@
 				},
 				{
 					"id": 374,
-					"order": 14,
+					"order": 12,
 					"prevSize": 28,
 					"code": 61853,
 					"name": "graduation-cap",
-					"tempChar": ""
+					"tempChar": ""
 				},
 				{
 					"id": 375,
@@ -1653,11 +1669,11 @@
 				},
 				{
 					"id": 389,
-					"order": 13,
+					"order": 11,
 					"prevSize": 28,
 					"code": 61869,
 					"name": "building",
-					"tempChar": ""
+					"tempChar": ""
 				},
 				{
 					"id": 390,
@@ -1721,11 +1737,11 @@
 				},
 				{
 					"id": 405,
-					"order": 23,
+					"order": 20,
 					"prevSize": 28,
 					"code": 61886,
 					"name": "soundcloud",
-					"tempChar": ""
+					"tempChar": ""
 				},
 				{
 					"id": 406,
@@ -2221,7 +2237,7 @@
 					],
 					"defaultCode": 61453,
 					"grid": 14,
-					"matchesSearch": true
+					"matchesSearch": false
 				},
 				{
 					"id": 14,
@@ -2343,7 +2359,7 @@
 					],
 					"defaultCode": 61463,
 					"grid": 14,
-					"matchesSearch": true
+					"matchesSearch": false
 				},
 				{
 					"id": 23,
@@ -3157,7 +3173,7 @@
 					],
 					"defaultCode": 61527,
 					"grid": 14,
-					"matchesSearch": true
+					"matchesSearch": false
 				},
 				{
 					"id": 83,
@@ -3222,7 +3238,7 @@
 					],
 					"defaultCode": 61532,
 					"grid": 14,
-					"matchesSearch": true
+					"matchesSearch": false
 				},
 				{
 					"id": 88,
@@ -7593,7 +7609,7 @@
 					],
 					"defaultCode": 61890,
 					"grid": 14,
-					"matchesSearch": false
+					"matchesSearch": true
 				},
 				{
 					"id": 409,
