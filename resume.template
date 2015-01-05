@@ -516,7 +516,7 @@
                   <li class="detail-item row">
                     <div class="col-xs-12 detail-item-content">
                       <blockquote>
-                        <p itemprop="description">{{reference}}</p>
+                        <p itemprop="description">{{nl2br reference}}</p>
                         <footer itemprop="knows" itemscope itemtype="http://schema.org/Person"><cite title="{{name}}" itemprop="description">{{name}}</cite></footer>
                       </blockquote>
                     </div>
