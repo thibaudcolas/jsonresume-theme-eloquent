@@ -537,10 +537,10 @@
   <script async defer>
     var name = '{{normalizeName resume.basics.name}}';
     window.downloadName = (name ? name + '-' : '') + 'resume.html';
-    {{> domReady}}
     {{> saveAs}}
     {{> smoothScroll}}
     {{> script}}
+
   </script>
 </body>
 </html>
