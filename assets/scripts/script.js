@@ -8,6 +8,10 @@
       saveAs(blob, downloadName);
     });
 
+    if(window.location.protocol.indexOf('http') === -1) {
+      document.getElementsByClassName('js-download-trigger')[0].style.display = 'none';
+    }
+
     smoothScroll.init({
       speed: 300
     });
