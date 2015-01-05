@@ -104,12 +104,12 @@
                 </li>
               {{/if}}
 
-                <li class="basics-item hidden-print js-download-trigger">
-                  <a id="js-download" href="#download">
-                    <span class="icon text-muted"><i aria-hidden="true" class="icon-lg icon-download"></i></span>
-                    <span class="info">Download this resume</span>
-                  </a>
-                </li>
+              <li class="basics-item hidden-print js-download-trigger" style="display: none;">
+                <a id="js-download" href="#download">
+                  <span class="icon text-muted"><i aria-hidden="true" class="icon-lg icon-download"></i></span>
+                  <span class="info">Download this resume</span>
+                </a>
+              </li>
             </ul>
 
             <hr>
