@@ -43,7 +43,7 @@
   <![endif]-->
 </head>
 <body>
-  <div class="container-fluid" itemscope itemtype="http://schema.org/Person" role="document">
+  <div id="top" class="container-fluid" itemscope itemtype="http://schema.org/Person" role="document">
     <div class="row">
 
       <section id="profile" class="col-md-4 card-wrapper profile-card-wrapper">
@@ -105,7 +105,7 @@
               {{/if}}
 
                 <li class="basics-item hidden-print">
-                  <a id="js-download" href="#">
+                  <a id="js-download" href="#download">
                     <span class="icon text-muted"><i class="icon-lg icon-download"></i></span>
                     <span class="info">Download this resume</span>
                   </a>
@@ -124,7 +124,7 @@
           {{/resume.basics}}
 
           <ul class="nav nav-justified hidden-height hidden-xs hidden-sm">
-            <li><a href="#" class="text-muted" data-scroll title="Scroll to top"><i class="icon-chevron-up"></i></a></li>
+            <li><a href="#top" class="text-muted" data-scroll title="Scroll to top"><i class="icon-chevron-up"></i></a></li>
           </ul>
         </div>
       </section>
@@ -169,7 +169,7 @@
                       </h4>
 
                       {{#if startDate}}
-                        <p class="visible-xs text-muted">
+                        <p class="visible-xs-block text-muted">
                           <small>
                             <time datetime="{{startDate}}">{{formatMMMMYYYY startDate}}</time>&nbsp;—&nbsp;
                             {{#if endDate}}
@@ -237,7 +237,7 @@
                       </h4>
 
                       {{#if startDate}}
-                        <p class="visible-xs text-muted">
+                        <p class="visible-xs-block text-muted">
                           <small>
                             <time datetime="{{startDate}}">{{formatMMMMYYYY startDate}}</time>&nbsp;—&nbsp;
                             {{#if endDate}}
@@ -300,7 +300,7 @@
                       </h4>
 
                       {{#if startDate}}
-                        <p class="visible-xs text-muted">
+                        <p class="visible-xs-block text-muted">
                           <small>
                             <time datetime="{{startDate}}">{{formatYYYY startDate}}</time>
                             &nbsp;—&nbsp;
@@ -390,7 +390,7 @@
                       </h4>
 
                       {{#if date}}
-                        <p class="visible-xs text-muted">
+                        <p class="visible-xs-block text-muted">
                           <small>
                             Awarded on:&nbsp;<time datetime="{{date}}">{{formatMMMDDYYYY date}}</time>
                           </small>
@@ -437,7 +437,7 @@
                       </h4>
 
                       {{#if releaseDate}}
-                        <p class="visible-xs text-muted">
+                        <p class="visible-xs-block text-muted">
                           <small>Published on:&nbsp;<time datetime="{{releaseDate}}" itemprop="datePublished">{{formatMMMDDYYYY releaseDate}}</time></small>
                         </p>
                       {{/if}}
@@ -525,8 +525,8 @@
             </div>
           {{/if}}
 
-          <ul class="nav nav-justified visible-xs visible-sm hidden-print">
-            <li><a href="#" class="text-muted" data-scroll><i class="icon-chevron-up"></i></a></li>
+          <ul class="nav nav-justified visible-xs-block visible-sm-block hidden-print">
+            <li><a href="#top" class="text-muted" data-scroll><i class="icon-chevron-up"></i></a></li>
           </ul>
         </div>
       </section>
