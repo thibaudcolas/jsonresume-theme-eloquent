@@ -23,7 +23,7 @@
 }
 
 .detail {
-  padding: 10px;
+  padding: 5px;
 }
 
 .detail h3 {
@@ -31,13 +31,21 @@
   left: -44px;
 }
 
+.detail-highlights {
+  padding-left: 20px;
+}
+
 @media (min-width: 768px) {
   .detail {
-    padding-left: 50px;
+    padding: 10px 10px 10px 50px;
   }
 
   .detail h3 {
     position: relative;
+  }
+
+  .detail-highlights {
+    padding-left: 40px;
   }
 }
 
@@ -54,10 +62,14 @@
 }
 
 .detail-item-content {
-  padding: 0 10px 0 0;
+  padding: 0;
 }
 
 @media (min-width: 768px) {
+  .detail-item-content {
+    padding-right: 10px;
+  }
+
   .detail-item-content.col-sm-9 {
     border-right: 1px solid #ccd6dd;
   }
