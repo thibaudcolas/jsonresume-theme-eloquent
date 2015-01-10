@@ -246,6 +246,7 @@
                             {{else}}
                               <time>Present</time>
                             {{/if}}
+                            &nbsp;<span><i aria-hidden="true" class="icon-clock-o"></i>&nbsp;{{humaneDuration startDate endDate}}</span>
                           </small>
                         </p>
                       {{/if}}
