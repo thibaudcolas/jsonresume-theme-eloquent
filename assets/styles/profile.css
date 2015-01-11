@@ -12,13 +12,13 @@
   }
 }
 
-.basics .basics-item .icon {
+.basics-item .icon, .profile-item .icon {
   position: absolute;
   top: 50%;
   margin-top: -10px;
 }
 
-.basics .basics-item .info {
+.basics-item .info, .profile-item .info {
   position: relative;
   left: 30px;
   padding-right: 30px;
@@ -26,14 +26,24 @@
 }
 
 .social-profiles .profile-item a {
-  padding: 10px;
+  padding: 5px 15px;
   color: inherit;
   text-align: left;
 }
 
 @media (min-width: 768px) {
   .social-profiles .profile-item a {
+    padding: 5px;
     text-align: center;
+  }
+
+  .profile-item .icon {
+    position: static;
+    margin-top: 0;
+  }
+
+  .profile-item .icon-lg {
+    font-size: 2em;
   }
 }
 

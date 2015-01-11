@@ -117,7 +117,12 @@
             {{#if profiles}}
               <ul class="social-profiles nav nav-justified">
                 {{#each profiles}}
-                  <li class="profile-item"><a href="{{url}}" target="_blank"><i aria-hidden="true" class="icon-2x icon-{{normalizeNetwork network}} network-{{normalizeNetwork network}}"></i><span class="sr-only">{{network}}</span></a></li>
+                  <li class="profile-item">
+                    <a href="{{url}}" target="_blank">
+                      <span class="icon"><i aria-hidden="true" class="icon-lg icon-{{normalizeNetwork network}} network-{{normalizeNetwork network}}"></i></span>
+                      <span class="info text-muted hidden-sm hidden-md hidden-lg">{{network}}</span>
+                    </a>
+                  </li>
                 {{/each}}
               </ul>
             {{/if}}
