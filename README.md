@@ -5,6 +5,8 @@ jsonresume-theme-eloquent
 
 An eloquent JSON Resume theme: fluent, persuasive. This theme is a fork of the [Elegant](https://github.com/mudassir0909/jsonresume-theme-elegant) theme.
 
+> See for yourself! — [Demo](http://themes.jsonresume.org/eloquent)
+
 [![NPM](https://nodei.co/npm/jsonresume-theme-eloquent.png?downloads=true&stars=true)](https://www.npmjs.com/package/jsonresume-theme-eloquent)
 
 ## Features
@@ -16,8 +18,6 @@ An eloquent JSON Resume theme: fluent, persuasive. This theme is a fork of the [
 - Gorgeous Open Sans web font.
 - Optimized for print and screen readers.
 - All fields are optional, pick what you need!
-
-> [Theme demo](http://themes.jsonresume.org/eloquent)
 
 ## Get Started
 
@@ -42,6 +42,8 @@ $ npm start
 - Main menu with links to each resume section
 - New build system? https://github.com/remy/inliner/blob/master/inliner.js
 - "Print this resume" button? http://css-tricks.com/quick-tip-making-a-print-this-page-button/
+- Minify HTML? https://www.npmjs.com/package/html-minifier
+- Switch partials to be loaded on render, livereload without nodemon
 
 ## LICENSE (ISC)
 
