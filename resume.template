@@ -327,9 +327,7 @@
 
                       {{#if courses}}
                         <ul class="list-inline labels">
-                          {{#courses}}
-                            <li class="label label-keyword">{{.}}</li>
-                          {{/courses}}
+                          {{#courses}}<li class="label label-keyword">{{.}}</li>{{/courses}}
                         </ul>
                       {{/if}}
                     </div>
@@ -368,9 +366,7 @@
 
                       {{#if keywords}}
                         <ul class="list-inline labels">
-                          {{#keywords}}
-                            <li class="label label-keyword">{{.}}</li>
-                          {{/keywords}}
+                          {{#keywords}}<li class="label label-keyword">{{.}}</li>{{/keywords}}
                         </ul>
                       {{/if}}
                     </div>
@@ -478,9 +474,7 @@
 
                       {{#if keywords}}
                         <ul class="list-inline labels">
-                          {{#keywords}}
-                            <li class="label label-keyword">{{.}}</li>
-                          {{/keywords}}
+                          {{#keywords}}<li class="label label-keyword">{{.}}</li>{{/keywords}}
                         </ul>
                       {{/if}}
                     </div>

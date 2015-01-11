@@ -87,6 +87,7 @@
 .label-keyword {
   font-size: inherit;
   background-color: #7eb0db;
+  margin-right: 5px;
 }
 
 #skills h4, #interests h4 {
