@@ -112,3 +112,25 @@ hr {
 .icon-2x {
   font-size: 2em;
 }
+
+.card-wrapper {
+  padding: 10px;
+}
+
+.card {
+  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+}
+
+@media print {
+  .basics a[href]:after {
+    content: none !important;
+  }
+
+  .profile-pic {
+    border-radius: 0 !important;
+    margin-bottom: 20px;
+  }
+}

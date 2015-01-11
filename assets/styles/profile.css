@@ -51,3 +51,71 @@
   height: 100%;
   overflow-y: scroll;
 }
+
+.network-github {
+  color: #454545;
+}
+
+.network-twitter {
+  color: #33ccff;
+}
+
+.network-linkedin {
+  color: #007bb6;
+}
+
+.network-skype {
+  color: #12a5f4;
+}
+
+.network-stackoverflow {
+  color: #8e8e92;
+}
+
+.network-soundcloud {
+  color: #e8822d;
+}
+
+.network-pinterest {
+  color: #bd091f;
+}
+
+.network-vimeo {
+  color: #17b3e8;
+}
+
+.network-behance {
+  color: #2c98cf;
+}
+
+.network-codepen {
+  color: #1c1c1c;
+}
+
+.network-foursquare {
+  color: #fa4778;
+}
+
+.network-reddit {
+  color: #545454;
+}
+
+.network-spotify {
+  color: #acd200;
+}
+
+.network-dribbble {
+  color: #ce366f;
+}
+
+.network-facebook {
+  color: #4b6daa;
+}
+
+.network-angellist {
+  color: #000000;
+}
+
+.network-bitbucket {
+  color: #205081;
+}

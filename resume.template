@@ -14,11 +14,8 @@
     {{> icomoon}}
     {{> bootstrap}}
     {{> global}}
-    {{> card}}
-    {{> networks}}
     {{> profile}}
     {{> style}}
-    {{> print}}
   </style>
 
   <meta name="HandheldFriendly" content="True">
@@ -544,7 +541,6 @@
     {{> saveAs}}
     {{> smoothScroll}}
     {{> script}}
-
   </script>
 </body>
 </html>
