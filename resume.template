@@ -136,7 +136,12 @@
         <section class="col-md-8 card-wrapper">
           <div class="card">
             <div class="detail" id="about">
-              <h3 class="text-uppercase text-muted"><i aria-hidden="true" class="icon-lg icon-user"></i> About</h3>
+              <h3 class="text-uppercase">
+                <a class="anchor-link text-muted" data-scroll href="#about">
+                  <i aria-hidden="true" class="icon-lg icon-user"></i> About
+                  <span class="anchor-icon" aria-hidden="true"></span>
+                </a>
+              </h3>
 
               <div class="row">
                 <div class="col-xs-12">
@@ -152,8 +157,13 @@
         <div class="card">
 
           {{#if resume.work}}
-            <div class="detail" id="work-experience">
-              <h3 class="text-uppercase text-muted"><i aria-hidden="true" class="icon-lg icon-building"></i> Experience</h3>
+            <div class="detail" id="experience">
+              <h3 class="text-uppercase">
+                <a class="anchor-link text-muted" data-scroll href="#experience">
+                  <i aria-hidden="true" class="icon-lg icon-building"></i> Experience
+                  <span class="anchor-icon" aria-hidden="true"></span>
+                </a>
+              </h3>
 
               <ul class="list-unstyled">
                 {{#each resume.work}}
@@ -221,8 +231,13 @@
           {{/if}}
 
           {{#if resume.volunteer}}
-            <div class="detail" id="volunteer-work">
-              <h3 class="text-uppercase text-muted"><i aria-hidden="true" class="icon-lg icon-bookmark"></i> Projects</h3>
+            <div class="detail" id="projects">
+              <h3 class="text-uppercase">
+                <a class="anchor-link text-muted" data-scroll href="#projects">
+                  <i aria-hidden="true" class="icon-lg icon-bookmark"></i> Projects
+                  <span class="anchor-icon" aria-hidden="true"></span>
+                </a>
+              </h3>
 
               <ul class="list-unstyled">
                 {{#each resume.volunteer}}
@@ -290,7 +305,12 @@
 
           {{#if resume.education}}
             <div class="detail" id="education">
-              <h3 class="text-uppercase text-muted"><i aria-hidden="true" class="icon-lg icon-graduation-cap"></i> Education</h3>
+              <h3 class="text-uppercase">
+                <a class="anchor-link text-muted" data-scroll href="#education">
+                  <i aria-hidden="true" class="icon-lg icon-graduation-cap"></i> Education
+                  <span class="anchor-icon" aria-hidden="true"></span>
+                </a>
+              </h3>
 
               <ul class="list-unstyled">
                 {{#each resume.education}}
@@ -358,7 +378,12 @@
 
           {{#if resume.skills}}
             <div class="detail" id="skills">
-              <h3 class="text-uppercase text-muted"><i aria-hidden="true" class="icon-lg icon-code"></i> Skills</h3>
+              <h3 class="text-uppercase">
+                <a class="anchor-link text-muted" data-scroll href="#skills">
+                  <i aria-hidden="true" class="icon-lg icon-code"></i> Skills
+                  <span class="anchor-icon" aria-hidden="true"></span>
+                </a>
+              </h3>
 
               <ul class="list-unstyled">
                 {{#each resume.skills}}
@@ -380,7 +405,12 @@
 
           {{#if resume.awards}}
             <div class="detail" id="awards">
-              <h3 class="text-uppercase text-muted"><i aria-hidden="true" class="icon-lg icon-trophy"></i> Awards</h3>
+              <h3 class="text-uppercase">
+                <a class="anchor-link text-muted" data-scroll href="#awards">
+                  <i aria-hidden="true" class="icon-lg icon-trophy"></i> Awards
+                  <span class="anchor-icon" aria-hidden="true"></span>
+                </a>
+              </h3>
 
               <ul class="list-unstyled">
                 {{#each resume.awards}}
@@ -421,7 +451,12 @@
 
           {{#if resume.publications}}
             <div class="detail" id="publications">
-              <h3 class="text-uppercase text-muted"><i aria-hidden="true" class="icon-lg icon-book"></i> Publications</h3>
+              <h3 class="text-uppercase">
+                <a class="anchor-link text-muted" data-scroll href="#publications">
+                  <i aria-hidden="true" class="icon-lg icon-book"></i> Publications
+                  <span class="anchor-icon" aria-hidden="true"></span>
+                </a>
+              </h3>
 
               <ul class="list-unstyled">
                 {{#each resume.publications}}
@@ -466,7 +501,12 @@
 
           {{#if resume.interests}}
             <div class="detail" id="interests">
-              <h3 class="text-uppercase text-muted"><i aria-hidden="true" class="icon-lg icon-heart"></i> Interests</h3>
+              <h3 class="text-uppercase">
+                <a class="anchor-link text-muted" data-scroll href="#interests">
+                  <i aria-hidden="true" class="icon-lg icon-heart"></i> Interests
+                  <span class="anchor-icon" aria-hidden="true"></span>
+                </a>
+              </h3>
 
               <ul class="list-unstyled">
                 {{#each resume.interests}}
@@ -488,7 +528,12 @@
 
           {{#if resume.languages}}
             <div class="detail" id="languages">
-              <h3 class="text-uppercase text-muted"><i aria-hidden="true" class="icon-lg icon-comment"></i> Languages</h3>
+              <h3 class="text-uppercase">
+                <a class="anchor-link text-muted" data-scroll href="#languages">
+                  <i aria-hidden="true" class="icon-lg icon-comment"></i> Languages
+                  <span class="anchor-icon" aria-hidden="true"></span>
+                </a>
+              </h3>
 
               <ul class="list-unstyled">
                 {{#each resume.languages}}
@@ -510,7 +555,12 @@
 
           {{#if resume.references}}
             <div class="detail" id="references">
-              <h3 class="text-uppercase text-muted"><i aria-hidden="true" class="icon-lg icon-thumbs-up"></i> References</h3>
+              <h3 class="text-uppercase">
+                <a class="anchor-link text-muted" data-scroll href="#references">
+                  <i aria-hidden="true" class="icon-lg icon-thumbs-up"></i> References
+                  <span class="anchor-icon" aria-hidden="true"></span>
+                </a>
+              </h3>
 
               <ul class="list-unstyled">
                 {{#each resume.references}}

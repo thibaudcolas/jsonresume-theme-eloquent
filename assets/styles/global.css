@@ -8,6 +8,11 @@ html, body, button {
   font-smoothing: antialiased;
 }
 
+a[href], button {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
 [class^="icon-"], [class*=" icon-"] {
   display: inline-block;
   font: normal normal normal 14px/1 'icomoon';
@@ -50,6 +55,33 @@ h2 {
 
 h3 {
   font-size: 22px;
+}
+
+.anchor-link {
+  display: block;
+  text-decoration: none;
+}
+
+.anchor-link:hover, .anchor-link:focus {
+  text-decoration: none;
+}
+
+.anchor-icon {
+  display: none;
+  position: relative;
+  top: -3px;
+  font-size: 50%;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.anchor-icon:before {
+  content: '◄';
+}
+
+.anchor-link:hover .anchor-icon, .anchor-link:focus .anchor-icon {
+  display: inline;
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
 }
 
 h4 {
