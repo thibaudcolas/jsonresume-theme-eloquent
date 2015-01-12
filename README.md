@@ -39,7 +39,7 @@ $ npm start
 
 ## TODO
 
-- Main menu with links to each resume section
+- Main menu
 - New build system? https://github.com/remy/inliner/blob/master/inliner.js
 - "Print this resume" button? http://css-tricks.com/quick-tip-making-a-print-this-page-button/
 - Minify HTML? https://www.npmjs.com/package/html-minifier
