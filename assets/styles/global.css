@@ -75,13 +75,23 @@ h3 {
 }
 
 .anchor-icon:before {
-  content: '◄';
+  content: '#';
 }
 
 .anchor-link:hover .anchor-icon, .anchor-link:focus .anchor-icon {
   display: inline;
   color: rgba(0, 0, 0, 0.5);
   text-decoration: none;
+}
+
+.anchor-link.item-anchor {
+  float: right;
+  font-size: 14px;
+  color: #E1E8ED;
+}
+
+.anchor-link.item-anchor:hover, .anchor-link.item-anchor:focus {
+  color: #66757f;
 }
 
 h4 {
@@ -164,5 +174,9 @@ hr {
   .profile-pic {
     border-radius: 0 !important;
     margin-bottom: 20px;
+  }
+
+  .anchor-link.item-anchor {
+    display: none;
   }
 }

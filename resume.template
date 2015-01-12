@@ -167,8 +167,9 @@
 
               <ul class="list-unstyled">
                 {{#each resume.work}}
-                  <li class="detail-item row" itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
+                  <li class="detail-item row" id="{{itemID 'experience' @index}}" itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
                     <div class="col-sm-9 detail-item-content">
+                      <a class="anchor-link item-anchor" data-scroll href="#{{itemID 'experience' @index}}">#</a>
                       <h4>
                         <strong>{{position}}</strong>
                         {{~#if company~}}
@@ -241,8 +242,9 @@
 
               <ul class="list-unstyled">
                 {{#each resume.volunteer}}
-                  <li class="detail-item row" itemprop="memberOf" itemscope itemtype="http://schema.org/Organization">
+                  <li class="detail-item row" id="{{itemID 'project' @index}}" itemprop="memberOf" itemscope itemtype="http://schema.org/Organization">
                     <div class="col-sm-9 detail-item-content">
+                      <a class="anchor-link item-anchor" data-scroll href="#{{itemID 'project' @index}}">#</a>
                       <h4>
                         {{#if website}}
                           <a href="{{website}}"  target="_blank" itemprop="url"><strong itemprop="name">{{organization}}</strong></a>
@@ -314,8 +316,9 @@
 
               <ul class="list-unstyled">
                 {{#each resume.education}}
-                  <li class="detail-item row" itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization">
+                  <li class="detail-item row" id="{{itemID 'education' @index}}" itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization">
                     <div class="col-sm-9 detail-item-content">
+                      <a class="anchor-link item-anchor" data-scroll href="#{{itemID 'education' @index}}">#</a>
                       <h4>
                         <strong>{{area}}</strong>
                         {{~#if studyType~}}
@@ -387,8 +390,9 @@
 
               <ul class="list-unstyled">
                 {{#each resume.skills}}
-                  <li class="detail-item row">
+                  <li class="detail-item row" id="{{itemID 'skill' @index}}">
                     <div class="col-xs-12 detail-item-content">
+                      <a class="anchor-link item-anchor" data-scroll href="#{{itemID 'skill' @index}}">#</a>
                       <h4>{{name}} {{#if level}}<span class="text-muted">— <em>{{level}}</em></span>{{/if}}</h4>
 
                       {{#if keywords}}
@@ -414,8 +418,9 @@
 
               <ul class="list-unstyled">
                 {{#each resume.awards}}
-                  <li class="detail-item row">
+                  <li class="detail-item row" id="{{itemID 'award' @index}}">
                     <div class="col-sm-9 detail-item-content">
+                      <a class="anchor-link item-anchor" data-scroll href="#{{itemID 'award' @index}}">#</a>
                       <h4 itemprop="award">
                         <strong>{{title}}</strong>
                         {{~#if awarder~}}
@@ -460,8 +465,9 @@
 
               <ul class="list-unstyled">
                 {{#each resume.publications}}
-                  <li class="detail-item row" itemscope itemtype="http://schema.org/CreativeWork">
+                  <li class="detail-item row" id="{{itemID 'publication' @index}}" itemscope itemtype="http://schema.org/CreativeWork">
                     <div class="col-sm-9 detail-item-content">
+                      <a class="anchor-link item-anchor" data-scroll href="#{{itemID 'publication' @index}}">#</a>
                       <h4>
                         <strong>
                           {{#if website}}
@@ -510,8 +516,9 @@
 
               <ul class="list-unstyled">
                 {{#each resume.interests}}
-                  <li class="detail-item row">
+                  <li class="detail-item row" id="{{itemID 'interest' @index}}">
                     <div class="col-xs-12 detail-item-content">
+                      <a class="anchor-link item-anchor" data-scroll href="#{{itemID 'interest' @index}}">#</a>
                       <h4>{{name}}</h4>
 
                       {{#if keywords}}
@@ -537,8 +544,9 @@
 
               <ul class="list-unstyled">
                 {{#each resume.languages}}
-                  <li class="detail-item row">
+                  <li class="detail-item row" id="{{itemID 'language' @index}}">
                     <div class="col-xs-12 detail-item-content">
+                      <a class="anchor-link item-anchor" data-scroll href="#{{itemID 'language' @index}}">#</a>
                       <h4>
                         <strong>{{language}}</strong>
                         {{~#if fluency~}}
@@ -564,8 +572,9 @@
 
               <ul class="list-unstyled">
                 {{#each resume.references}}
-                  <li class="detail-item row">
+                  <li class="detail-item row" id="{{itemID 'reference' @index}}">
                     <div class="col-xs-12 detail-item-content">
+                      <a class="anchor-link item-anchor" data-scroll href="#{{itemID 'reference' @index}}">#</a>
                       <blockquote>
                         <p itemprop="description">{{nl2br reference}}</p>
                         <footer itemprop="knows" itemscope itemtype="http://schema.org/Person"><cite title="{{name}}" itemprop="description">{{name}}</cite></footer>
