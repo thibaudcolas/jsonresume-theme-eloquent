@@ -32,6 +32,11 @@
 }
 
 @media (min-width: 768px) {
+  .profile-card-wrapper .card {
+    height: 100%;
+    overflow-y: scroll;
+  }
+
   .social-profiles .profile-item a {
     padding: 5px;
     text-align: center;
@@ -45,11 +50,6 @@
   .profile-item .icon-lg {
     font-size: 2em;
   }
-}
-
-.profile-card-wrapper .card {
-  height: 100%;
-  overflow-y: scroll;
 }
 
 .network-github {
