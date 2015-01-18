@@ -14,6 +14,7 @@ An eloquent JSON Resume theme: fluent, persuasive. This theme is a fork of the [
 - Mobile First theme based on Bootstrap.
 - Download your resume with a single click, in a single file.
 - View your resume even without an internet connection: the theme is self-contained (NB: your picture should be inlined for this to fully work).
+- Obfuscates your email address from spam bots.
 - Great Font Awesome icons.
 - Gorgeous Open Sans web font.
 - Optimized for print and screen readers.
@@ -43,7 +44,6 @@ $ npm start
 - New build system? https://github.com/remy/inliner/blob/master/inliner.js
 - "Print this resume" button? http://css-tricks.com/quick-tip-making-a-print-this-page-button/
 - Minify HTML? https://www.npmjs.com/package/html-minifier
-- Switch partials to be loaded on render, livereload without nodemon
 
 ## LICENSE (ISC)
 
