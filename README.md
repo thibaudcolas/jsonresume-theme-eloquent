@@ -5,19 +5,20 @@ jsonresume-theme-eloquent
 
 An eloquent JSON Resume theme: fluent, persuasive. This theme is a fork of the [Elegant](https://github.com/mudassir0909/jsonresume-theme-elegant) theme.
 
-> See for yourself! — [Demo](http://themes.jsonresume.org/eloquent)
+[![Theme screenshot](raw/theme-screenshot.png)](http://themes.jsonresume.org/eloquent)
 
-[![NPM](https://nodei.co/npm/jsonresume-theme-eloquent.png?downloads=true&stars=true)](https://www.npmjs.com/package/jsonresume-theme-eloquent)
+> [Online Demo](http://themes.jsonresume.org/eloquent)
 
 ## Features
 
 - Mobile First theme based on Bootstrap.
 - Download your resume with a single click, in a single file.
-- View your resume even without an internet connection: the theme is self-contained (NB: your picture should be inlined for this to fully work).
+- Keep your resume offline if you want to: the theme is self-contained (NB: your picture should be inlined for this to fully work).
 - Obfuscates your email address from spam bots.
 - Great Font Awesome icons.
 - Gorgeous Open Sans web font.
 - Optimized for print and screen readers.
+- Contains Schema.org markup to make the most of your content.
 - All fields are optional, pick what you need!
 
 ## Get Started
