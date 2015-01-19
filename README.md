@@ -47,7 +47,7 @@ $ npm start
 
 ## LICENSE (ISC)
 
-Copyright (c) 2014, Thibaud Colas
+Copyright (c) 2015, Thibaud Colas
 
 Permission to use, copy, modify, and/or distribute this software for any
 purpose with or without fee is hereby granted, provided that the above
