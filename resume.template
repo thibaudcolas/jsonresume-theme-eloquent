@@ -27,6 +27,8 @@
   <meta http-equiv="cleartype" content="on">
   <meta name="theme-color" content="#2d89ef">
 
+  <link rel="shortcut icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAGFBMVEUAAAAgTncgT3oiUHkiUHshUHsiUHojUnw5b/uJAAAAB3RSTlMAIVJvfqzpPQmrVgAAAFtJREFUCB1jYGAQCUt1ZAAC5nIgMAAywksVhcJLgQJlCgwMTOkGDOJFjGGpAuqFDO4BYuXliawlDOEK4eXlpUylDOkC6eXlZYxlCAZcCq4Yrh1uINwKhKVQZwAA6X0fv/bHKYEAAAAASUVORK5CYII=">
+
   <meta name="apple-mobile-web-app-title" content="{{resume.basics.name}}">
   <meta name="application-name" content="{{resume.basics.name}}">
 
