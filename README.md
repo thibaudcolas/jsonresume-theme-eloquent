@@ -14,7 +14,7 @@ An eloquent JSON Resume theme: fluent, persuasive. This theme is a fork of the [
 - Mobile First theme based on Bootstrap.
 - Download your resume with a single click, in a single file.
 - Keep your resume offline if you want to: the theme is self-contained (NB: your picture should be inlined for this to fully work).
-- Obfuscates your email address from spam bots.
+- Obfuscates your email address and phone number from spam bots.
 - Great Font Awesome icons.
 - Gorgeous Open Sans web font.
 - Optimized for print and screen readers.

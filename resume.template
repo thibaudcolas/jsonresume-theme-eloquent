@@ -64,9 +64,9 @@
             <ul class="basics nav nav-stacked">
               {{#if phone}}
                 <li class="basics-item">
-                  <a href="tel:{{sanitizePhone phone}}">
+                  <a href="tel:{{scramblePhone phone}}" data-scrambled-phone-link>
                     <span class="icon text-muted"><i aria-hidden="true" class="icon-lg icon-phone"></i></span>
-                    <span class="info" itemprop="telephone">{{phone}}</span>
+                    <span class="info" data-scrambled-phone-text>{{scrambleText phone}}</span>
                   </a>
                 </li>
               {{/if}}
@@ -88,9 +88,9 @@
               {{/if}}
               {{#if email}}
                 <li class="basics-item">
-                  <a href="mailto:{{scrambleEmail email}}" data-scrambled-mailto>
+                  <a href="mailto:{{scrambleText email}}" data-scrambled-email-link>
                     <span class="icon text-muted"><i aria-hidden="true" class="icon-lg icon-envelope"></i></span>
-                    <span data-scrambled-email class="info">{{scrambleEmail email}}</span>
+                    <span data-scrambled-email-text class="info">{{scrambleText email}}</span>
                   </a>
                 </li>
               {{/if}}
