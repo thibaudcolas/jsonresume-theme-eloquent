@@ -90,7 +90,7 @@
                 <li class="basics-item">
                   <a href="mailto:{{scrambleEmail email}}" data-scrambled-mailto>
                     <span class="icon text-muted"><i aria-hidden="true" class="icon-lg icon-envelope"></i></span>
-                    <span data-scrambled-email class="info" itemprop="email">{{scrambleEmail email}}</span>
+                    <span data-scrambled-email class="info">{{scrambleEmail email}}</span>
                   </a>
                 </li>
               {{/if}}

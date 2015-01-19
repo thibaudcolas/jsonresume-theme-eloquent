@@ -11,13 +11,12 @@
     });
   }
 
-  var decode = emailScramble.decoder(12);
-
   var linkText = document.querySelectorAll('[data-scrambled-email]')[0];
   var mailtoLink = document.querySelectorAll('[data-scrambled-mailto]')[0];
-  var encodedMail = mailtoLink.href.replace('mailto:', '');
-  mailtoLink.href = 'mailto:' + decode(encodedMail);
-  linkText.innerHTML = decode(encodedMail).split('@').join('@<span style="display:none;">foo</span>');
+  var decodedMail = emailScramble.decode(mailtoLink.href.replace('mailto:', ''));
+  mailtoLink.href = 'mailto:' + decodedMail;
+  linkText.innerHTML = decodedMail;
+  linkText.setAttribute('itemprop', 'email');
 
 
   smoothScroll.init({
