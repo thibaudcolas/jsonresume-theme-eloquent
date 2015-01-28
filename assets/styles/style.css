@@ -32,7 +32,21 @@
 }
 
 .detail-highlights {
-  padding-left: 20px;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.detail-highlights li {
+  padding-left: 1em;
+}
+
+.detail-highlights li:before {
+  content: '-';
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+  color: #66757f;
+  font-weight: bold;
 }
 
 @media (min-width: 768px) {
@@ -42,10 +56,6 @@
 
   .detail h3 {
     position: relative;
-  }
-
-  .detail-highlights {
-    padding-left: 40px;
   }
 }
 
