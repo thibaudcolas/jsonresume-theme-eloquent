@@ -39,13 +39,6 @@ $ npm start
 - [domready](https://github.com/ded/domready)
 - [smoothScroll](https://github.com/cferdinandi/smooth-scroll)
 
-## TODO
-
-- Main menu
-- New build system? https://github.com/remy/inliner/blob/master/inliner.js
-- "Print this resume" button? http://css-tricks.com/quick-tip-making-a-print-this-page-button/
-- Minify HTML? https://www.npmjs.com/package/html-minifier
-
 ## LICENSE (ISC)
 
 Copyright (c) 2015, Thibaud Colas
