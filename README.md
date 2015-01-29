@@ -1,9 +1,9 @@
 jsonresume-theme-eloquent
 =========================
 
-[![npm](https://img.shields.io/npm/v/jsonresume-theme-eloquent.svg?style=flat-square)](https://www.npmjs.com/package/jsonresume-theme-eloquent) [![Dependency Status](https://img.shields.io/david/ThibWeb/jsonresume-theme-eloquent.svg?style=flat-square)](https://david-dm.org/ThibWeb/jsonresume-theme-eloquent) [![devDependency Status](https://img.shields.io/david/dev/ThibWeb/jsonresume-theme-eloquent.svg?style=flat-square)](https://david-dm.org/ThibWeb/jsonresume-theme-eloquent#info=devDependencies) [![Code Climate](https://img.shields.io/codeclimate/github/ThibWeb/jsonresume-theme-eloquent.svg?style=flat-square)](https://codeclimate.com/github/ThibWeb/jsonresume-theme-eloquent)
+[![npm](https://img.shields.io/npm/v/jsonresume-theme-eloquent.svg?style=flat-square)](https://www.npmjs.com/package/jsonresume-theme-eloquent) [![Dependency Status](https://img.shields.io/david/ThibWeb/jsonresume-theme-eloquent.svg?style=flat-square)](https://david-dm.org/ThibWeb/jsonresume-theme-eloquent) [![Code Climate](https://img.shields.io/codeclimate/github/ThibWeb/jsonresume-theme-eloquent.svg?style=flat-square)](https://codeclimate.com/github/ThibWeb/jsonresume-theme-eloquent)
 
-An eloquent JSON Resume theme: fluent, persuasive.
+An eloquent JSON Resume theme: fluent, persuasive, for developers.
 
 [![Theme screenshot](raw/theme-screenshot.png)](http://themes.jsonresume.org/eloquent)
 
@@ -13,7 +13,7 @@ An eloquent JSON Resume theme: fluent, persuasive.
 
 - Mobile First theme based on Bootstrap.
 - Download your resume with a single click, in a single file.
-- Keep your resume offline if you want to: the theme is self-contained (NB: your picture should be inlined for this to fully work).
+- Keep your resume offline if you want to: the theme is self-contained.
 - Obfuscates your email address and phone number from spam bots.
 - Great Font Awesome icons.
 - Gorgeous Open Sans web font.
