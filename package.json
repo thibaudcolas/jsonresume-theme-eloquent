@@ -1,7 +1,7 @@
 {
   "name": "jsonresume-theme-eloquent",
   "version": "0.8.1",
-  "description": "An eloquent JSON Resume theme: fluent, persuasive, for developers. This theme is a fork of the Elegant theme.",
+  "description": "An eloquent JSON Resume theme: fluent, persuasive, for developers.",
   "author": "Thibaud Colas",
   "license": "ISC",
   "main": "index.js",
@@ -15,9 +15,11 @@
   },
   "keywords": [
     "jsonresume",
-    "theme",
     "jsonresume-theme",
+    "jsonresume-theme-eloquent",
+    "theme",
     "eloquent",
+    "elegant",
     "resume",
     "cv",
     "curriculum"
@@ -41,8 +43,7 @@
   },
   "scripts": {
     "start": "nodemon server.js -w lib -w assets -e js,css",
-    "test": "echo 'not implemented yet' && exit 0",
-    "lint": "jshint index.js server.js lib/*.js",
+    "test": "jshint index.js server.js lib/*.js",
     "webfont": "webfont-dl 'https://fonts.googleapis.com/css?family=Open+Sans:400' -o assets/styles/opensans.css --woff1=data --woff2=omit --svg=omit --ttf=omit --eot=omit"
   }
 }
