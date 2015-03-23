@@ -17,7 +17,7 @@ var getResume = function() {
 
 // BrowserSync watches those two files, nodemon takes care of the others.
 browserSync.init({
-  files: ['resume.template', 'resume.json'],
+  files: ['resume.hbs', 'resume.json'],
   server: {
     baseDir: './',
     middleware: function (req, res, next) {

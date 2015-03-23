@@ -9,7 +9,7 @@ Handlebars.registerHelper(helpers);
 
 module.exports = {
   render: function(resume) {
-    var template = fs.readFileSync(__dirname + '/resume.template', 'utf-8');
+    var template = fs.readFileSync(__dirname + '/resume.hbs', 'utf-8');
 
     return Handlebars.compile(template)({
       resume: resume
