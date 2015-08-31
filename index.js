@@ -8,11 +8,11 @@ Handlebars.registerPartial(partials);
 Handlebars.registerHelper(helpers);
 
 module.exports = {
-  render: function(resume) {
-    var template = fs.readFileSync(__dirname + '/resume.hbs', 'utf-8');
+    render: function(resume) {
+        var template = fs.readFileSync(__dirname + '/resume.hbs', 'utf-8');
 
-    return Handlebars.compile(template)({
-      resume: resume
-    });
-  }
+        return Handlebars.compile(template)({
+            resume: resume,
+        });
+    },
 };
