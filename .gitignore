@@ -28,6 +28,6 @@ node_modules
 .lock-wscript
 
 # Resume-related
-resume.json
-resume.pdf
-resume.html
+test/resume.pdf
+test/resume.html
+test/old-resume.html
