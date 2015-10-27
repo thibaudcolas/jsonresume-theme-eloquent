@@ -45,7 +45,10 @@
     "start": "nodemon server.js -w lib -w assets -e js,css",
     "lint": "jshint index.js server.js lib/*.js",
     "pretest": "npm run lint -s",
-    "test": "node test/render.js",
+    "test:unit": "mocha --compilers js:babel/register",
+    "test:unit:watch": "mocha --watch --compilers js:babel/register",
+    "test:render": "node test/render.js",
+    "test": "npm run test:unit -s && npm run test:render -s",
     "webfont": "webfont-dl 'https://fonts.googleapis.com/css?family=Open+Sans:400' -o assets/styles/opensans.css --woff1=data --woff2=omit --svg=omit --ttf=omit --eot=omit"
   }
 }
