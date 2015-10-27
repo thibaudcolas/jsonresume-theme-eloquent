@@ -8,6 +8,17 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 
 - Introduce this [Change Log](http://keepachangelog.com/).
+- Added usage and contributing sections to README.
+
+### Changed
+
+- Upgrade autoprefixer to latest major release.
+- Upgrade Handlebars to latest major release.
+- Use CSSO `minify` instead of `justDoIt`.
+
+### Fixed
+
+- Always parse dates as UTC, ignoring timezones. Fixes #2. This will cause the output to be different when resumes are rendered in timezones that are after UTC (GMT-1 to GMT-12).
 
 ## [[1.2.0]](https://github.com/ThibWeb/jsonresume-theme-eloquent/releases/tag/1.2.0) - 2015-08-31
 
