@@ -21,12 +21,58 @@ An eloquent JSON Resume theme: fluent, persuasive, for developers. Have a look a
 - Contains Schema.org markup to make the most of your content.
 - All fields are optional, pick what you need!
 
-## Get Started
+## Usage
 
-~~~
-$ npm install
-$ npm start
-~~~
+Install the theme with `npm install --save jsonresume-theme-eloquent`, then:
+
+```sh
+'use strict';
+
+var fs = require('fs');
+var path = require('path');
+var eloquent = require('jsonresume-theme-eloquent');
+
+var resumeJSON = JSON.parse(fs.readFileSync(path.join(__dirname, '/resume.json'), 'utf-8'));
+var resumeHTML = eloquent.render(resumeJSON);
+
+fs.writeFile(path.join(__dirname, '/resume.html'), resumeHTML, function(err) {
+    console.log(err || 'Resume exported to resume.html');
+});
+
+```
+
+## Contributing
+
+Install the project with:
+
+```sh
+git clone git@github.com:ThibWeb/jsonresume-theme-eloquent.git
+cd jsonresume-theme-eloquent
+npm install
+./.githooks/deploy
+# To actively work on the theme.
+npm run start
+```
+
+To run the tests locally:
+
+```sh
+# To create a reference resume export.
+npm run test
+mv test/resume.html test/old-resume.html
+# To compare the result of your changes against the reference.
+npm run test
+diff -u test/old-resume.html test/resume.html
+```
+
+To release a new version:
+
+```sh
+npm version minor -m "Release %s"
+git push origin master
+git push --tags
+npm publish
+```
 
 ## Built with
 
