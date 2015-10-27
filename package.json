@@ -36,7 +36,9 @@
   },
   "devDependencies": {
     "browser-sync": "^2.8.2",
+    "chai": "^3.4.0",
     "jshint": "^2.5.6",
+    "mocha": "^2.3.3",
     "nodemon": "^1.2.1",
     "resume-schema": "0.0.16",
     "webfont-dl": "^0.1.1"
