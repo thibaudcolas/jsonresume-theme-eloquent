@@ -25,7 +25,7 @@ An eloquent JSON Resume theme: fluent, persuasive, for developers. Have a look a
 
 Install the theme with `npm install --save jsonresume-theme-eloquent`, then:
 
-```sh
+```js
 'use strict';
 
 var fs = require('fs');
