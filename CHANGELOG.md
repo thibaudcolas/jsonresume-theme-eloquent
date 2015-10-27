@@ -5,6 +5,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [[2.0.0]](https://github.com/ThibWeb/jsonresume-theme-eloquent/releases/tag/2.0.0) - 2015-10-27
+
 ### Added
 
 - Introduce this [Change Log](http://keepachangelog.com/).
@@ -18,7 +20,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Fixed
 
-- Always parse dates as UTC, ignoring timezones. Fixes #2. This will cause the output to be different when resumes are rendered in timezones that are after UTC (GMT-1 to GMT-12).
+- Always parse dates as UTC, ignoring timezones. Fixes [#2](https://github.com/ThibWeb/jsonresume-theme-eloquent/issues/2). This will cause the output to be different when resumes are rendered in timezones that are after UTC (GMT-1 to GMT-12).
 
 ## [[1.2.0]](https://github.com/ThibWeb/jsonresume-theme-eloquent/releases/tag/1.2.0) - 2015-08-31
 
@@ -38,9 +40,10 @@ First stable release!
 
 ## Changes
 
-- https://github.com/ThibWeb/jsonresume-theme-eloquent/compare/1.1.0...1.2.0
-- https://github.com/ThibWeb/jsonresume-theme-eloquent/compare/1.0.0...1.1.0
-- https://github.com/ThibWeb/jsonresume-theme-eloquent/compare/7eba30345bc67ac7e13d99c9e7cebd813a0435d1...1.0.0
+- [1.2.0...2.0.0](https://github.com/ThibWeb/jsonresume-theme-eloquent/compare/1.2.0...2.0.0)
+- [1.1.0...1.2.0](https://github.com/ThibWeb/jsonresume-theme-eloquent/compare/1.1.0...1.2.0)
+- [1.0.0...1.1.0](https://github.com/ThibWeb/jsonresume-theme-eloquent/compare/1.0.0...1.1.0)
+- [...1.0.0](https://github.com/ThibWeb/jsonresume-theme-eloquent/compare/7eba30345bc67ac7e13d99c9e7cebd813a0435d1...1.0.0)
 
 ## [[x.y.z]](https://github.com/ThibWeb/jsonresume-theme-eloquent/releases/tag/x.y.z) - YYYY-MM-DD (Template: http://keepachangelog.com/)
 
