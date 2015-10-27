@@ -43,7 +43,9 @@
   },
   "scripts": {
     "start": "nodemon server.js -w lib -w assets -e js,css",
-    "test": "jshint index.js server.js lib/*.js",
+    "lint": "jshint index.js server.js lib/*.js",
+    "pretest": "npm run lint -s",
+    "test": "node test/render.js",
     "webfont": "webfont-dl 'https://fonts.googleapis.com/css?family=Open+Sans:400' -o assets/styles/opensans.css --woff1=data --woff2=omit --svg=omit --ttf=omit --eot=omit"
   }
 }
