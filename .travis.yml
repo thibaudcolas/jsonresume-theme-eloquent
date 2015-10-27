@@ -1,0 +1,17 @@
+sudo: false
+language: node_js
+node_js:
+    # - "stable"
+    - "0.12"
+    # - 4.2
+
+install:
+    - npm install
+
+script:
+    - npm run test
+
+notifications:
+    email:
+        on_success: change
+        on_failure: always
