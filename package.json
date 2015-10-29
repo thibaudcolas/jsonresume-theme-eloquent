@@ -46,8 +46,10 @@
     "webfont-dl": "^0.1.1"
   },
   "scripts": {
+    "build:css": "pleeease compile",
     "build:js": "browserify -t babelify assets/scripts/main.js | uglifyjs > dist/bundle.js",
-    "build": "npm run build:js -s",
+    "build:clean": "rm -rf dist/ && mkdir dist/",
+    "build": "npm run build:clean -s && npm run build:js -s && npm run build:css -s",
     "prepublish": "npm run build -s",
     "start": "nodemon server.js -w lib -e js",
     "lint": "jshint index.js server.js lib/*.js",

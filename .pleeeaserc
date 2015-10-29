@@ -1,0 +1,33 @@
+{
+  "in": [
+    "assets/styles/opensans.css",
+    "assets/styles/icomoon.css",
+    "assets/styles/bootstrap.min.css",
+    "assets/styles/global.css",
+    "assets/styles/profile.css",
+    "assets/styles/style.css"
+  ],
+
+  "out": "dist/bundle.css",
+
+  "autoprefixer": {
+    "browsers": [
+      "> 1%",
+      "ie >= 8",
+      "last 2 versions",
+      "Firefox ESR",
+      "Opera 12.1"
+    ],
+    "cascade": true
+  },
+
+  "filters": true,
+  "rem": true,
+  "pseudoElements": true,
+  "opacity": true,
+  "import": true,
+  "minifier": true,
+  "mqpacker": false,
+  "sourcemaps": false,
+  "next": false
+}
