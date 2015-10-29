@@ -24,7 +24,5 @@ browserSync.init({
         }
     },
     injectChanges: false,
-    port: 4000,
-    open: false,
     notify: false
 });
