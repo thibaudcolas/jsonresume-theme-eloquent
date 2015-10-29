@@ -1,3 +1,12 @@
 raw/
-resume.json
+test/
+assets/
+
+.editorconfig
+.gitattributes
+.gitignore
+.jshintrc
+.npmignore
+.travis.yml
+
 server.js
