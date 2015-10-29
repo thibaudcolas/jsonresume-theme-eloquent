@@ -5,6 +5,17 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [[2.1.0]](https://github.com/ThibWeb/jsonresume-theme-eloquent/releases/tag/2.1.0) - 2015-10-29
+
+### Changed
+
+- CSS is now parsed with [Pleeease](http://pleeease.io), with a better cross-browser transform story.
+- JS is now written in ES6 and compiled with [Babel](https://babeljs.io/).
+
+### Fixed
+
+- Switch from runtime compilation of JS & CSS assets to build time before publish. Fixes [#3](https://github.com/ThibWeb/jsonresume-theme-eloquent/issues/3).
+
 ## [[2.0.0]](https://github.com/ThibWeb/jsonresume-theme-eloquent/releases/tag/2.0.0) - 2015-10-27
 
 ### Added
@@ -40,10 +51,11 @@ First stable release!
 
 ## Changes
 
+- [2.0.0...2.1.0](https://github.com/ThibWeb/jsonresume-theme-eloquent/compare/2.0.0...2.1.0)
 - [1.2.0...2.0.0](https://github.com/ThibWeb/jsonresume-theme-eloquent/compare/1.2.0...2.0.0)
 - [1.1.0...1.2.0](https://github.com/ThibWeb/jsonresume-theme-eloquent/compare/1.1.0...1.2.0)
 - [1.0.0...1.1.0](https://github.com/ThibWeb/jsonresume-theme-eloquent/compare/1.0.0...1.1.0)
-- [...1.0.0](https://github.com/ThibWeb/jsonresume-theme-eloquent/compare/7eba30345bc67ac7e13d99c9e7cebd813a0435d1...1.0.0)
+- [start...1.0.0](https://github.com/ThibWeb/jsonresume-theme-eloquent/compare/7eba30345bc67ac7e13d99c9e7cebd813a0435d1...1.0.0)
 
 ## [[x.y.z]](https://github.com/ThibWeb/jsonresume-theme-eloquent/releases/tag/x.y.z) - YYYY-MM-DD (Template: http://keepachangelog.com/)
 
