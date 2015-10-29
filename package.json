@@ -26,16 +26,16 @@
   ],
   "dependencies": {
     "autoprefixer": "^6.0.3",
-    "babel": "^5.8.29",
     "browser-saveas": "^1.0.0",
     "csso": "^1.3.11",
     "email-scramble": "^2.0.0",
     "handlebars": "^4.0.3",
     "moment": "^2.8.4",
-    "smooth-scroll": "git://github.com/cferdinandi/smooth-scroll",
+    "smooth-scroll": "git://github.com/cferdinandi/smooth-scroll.git#v7.1.1",
     "uglify-js": "^2.4.24"
   },
   "devDependencies": {
+    "babel": "^5.8.29",
     "browser-sync": "^2.8.2",
     "chai": "^3.4.0",
     "jshint": "^2.5.6",
