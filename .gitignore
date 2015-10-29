@@ -31,3 +31,5 @@ node_modules
 test/resume.pdf
 test/resume.html
 test/old-resume.html
+
+assets/bundle.js

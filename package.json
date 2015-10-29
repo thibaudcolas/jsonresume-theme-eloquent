@@ -46,9 +46,12 @@
     "webfont-dl": "^0.1.1"
   },
   "scripts": {
+    "build:js": "browserify -t babelify assets/scripts/main.js | uglifyjs > assets/bundle.js",
+    "build": "npm run build:js -s",
+    "prepublish": "npm run build -s",
     "start": "nodemon server.js -w lib -e js",
     "lint": "jshint index.js server.js lib/*.js",
-    "pretest": "npm run lint -s",
+    "pretest": "npm run lint -s && npm run build -s",
     "test:unit": "mocha --compilers js:babel/register",
     "test:unit:watch": "mocha --watch --compilers js:babel/register",
     "test:render": "node test/render.js",
