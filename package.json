@@ -2,7 +2,7 @@
   "name": "jsonresume-theme-eloquent",
   "version": "2.0.0",
   "description": "An eloquent JSON Resume theme: fluent, persuasive, for developers.",
-  "author": "Thibaud Colas",
+  "author": "Thibaud Colas <thib@thib.me> (https://github.com/ThibWeb)",
   "license": "ISC",
   "main": "index.js",
   "homepage": "https://github.com/ThibWeb/jsonresume-theme-eloquent",
