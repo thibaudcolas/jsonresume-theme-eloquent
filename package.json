@@ -14,7 +14,7 @@
     "url": "https://github.com/ThibWeb/jsonresume-theme-eloquent/issues"
   },
   "engines": {
-    "node": ">=5.0"
+    "node": ">=4.0"
   },
   "keywords": [
     "jsonresume",
