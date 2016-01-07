@@ -59,7 +59,7 @@ To run the tests locally:
 ```sh
 # To create a reference resume export.
 npm run test
-mv test/resume.html test/old-resume.html
+cp test/resume.html test/old-resume.html
 # To compare the result of your changes against the reference.
 npm run test
 diff -u test/old-resume.html test/resume.html
