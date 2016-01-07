@@ -29,7 +29,6 @@ node_modules
 
 # Resume-related
 test/resume.pdf
-test/resume.html
 test/old-resume.html
 
 dist/
