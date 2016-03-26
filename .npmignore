@@ -1,6 +1,7 @@
 raw/
 test/
 assets/
+.githooks/
 
 .editorconfig
 .gitattributes
@@ -8,5 +9,7 @@ assets/
 .jshintrc
 .npmignore
 .travis.yml
+.pleeeaserc
 
+CHANGELOG.md
 server.js
