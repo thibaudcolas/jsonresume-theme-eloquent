@@ -5,6 +5,24 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [[2.3.1]](https://github.com/ThibWeb/jsonresume-theme-eloquent/releases/tag/2.3.1) - 2016-03-27
+
+### Removed
+
+- Exclude more files (build tool configuration and changelog) from npm package for faster installs.
+
+## [[2.3.0]](https://github.com/ThibWeb/jsonresume-theme-eloquent/releases/tag/2.3.0) - 2016-02-07
+
+### Fixed
+
+- Bump moment.js version due to security issue.
+
+## [[2.2.3]](https://github.com/ThibWeb/jsonresume-theme-eloquent/releases/tag/2.2.3) - 2016-01-07
+
+### Fixed
+
+- Fix style issue showing a scrollbar when it's not necessary.
+
 ## [[2.1.0]](https://github.com/ThibWeb/jsonresume-theme-eloquent/releases/tag/2.1.0) - 2015-10-29
 
 ### Changed
