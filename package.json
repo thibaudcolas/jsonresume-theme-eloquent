@@ -25,7 +25,12 @@
     "elegant",
     "resume",
     "cv",
-    "curriculum"
+    "curriculum vitae",
+    "curriculum",
+    "portfolio",
+    "json resume",
+    "jsonresume theme",
+    "theme"
   ],
   "dependencies": {
     "email-scramble": "^2.0.0",
