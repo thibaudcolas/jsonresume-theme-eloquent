@@ -5,7 +5,7 @@ jsonresume-theme-eloquent
 
 An eloquent JSON Resume theme: fluent, persuasive, for developers. [See it live](https://rawgit.com/ThibWeb/jsonresume-theme-eloquent/master/test/resume.html).
 
-[![Theme screenshot](raw/theme-screenshot.png)](http://themes.jsonresume.org/eloquent)
+[![Theme screenshot](raw/theme-screenshot.png)](https://rawgit.com/ThibWeb/jsonresume-theme-eloquent/master/test/resume.html)
 
 > [Online demo](https://rawgit.com/ThibWeb/jsonresume-theme-eloquent/master/test/resume.html)
 
