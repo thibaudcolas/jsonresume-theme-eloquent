@@ -28,7 +28,7 @@
   <meta name="application-name" content="{{resume.basics.name}}">
 
   <meta name="author" content="{{resume.basics.name}}">
-  <meta name="description" content="{{resume.basics.name}}{{#if resume.basics.label}} — {{resume.basics.label}}{{/if}}">
+  <meta name="description" content="{{#if resume.basics.summary}}{{truncate resume.basics.summary 120}}{{else}}{{resume.basics.name}}{{#if resume.basics.label}} — {{resume.basics.label}}{{/if}}{{/if}}">
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <!--[if lt IE 9]>
