@@ -3,9 +3,7 @@
 > All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased]
-
-## [[2.3.1]](https://github.com/ThibWeb/jsonresume-theme-eloquent/releases/tag/2.3.1) - 2016-03-27
+## [[2.3.2]](https://github.com/ThibWeb/jsonresume-theme-eloquent/releases/tag/2.3.2) - 2016-03-27
 
 ### Removed
 
@@ -67,13 +65,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 First stable release!
 
-## Changes
-
-- [2.0.0...2.1.0](https://github.com/ThibWeb/jsonresume-theme-eloquent/compare/2.0.0...2.1.0)
-- [1.2.0...2.0.0](https://github.com/ThibWeb/jsonresume-theme-eloquent/compare/1.2.0...2.0.0)
-- [1.1.0...1.2.0](https://github.com/ThibWeb/jsonresume-theme-eloquent/compare/1.1.0...1.2.0)
-- [1.0.0...1.1.0](https://github.com/ThibWeb/jsonresume-theme-eloquent/compare/1.0.0...1.1.0)
-- [start...1.0.0](https://github.com/ThibWeb/jsonresume-theme-eloquent/compare/7eba30345bc67ac7e13d99c9e7cebd813a0435d1...1.0.0)
+-------------
 
 ## [[x.y.z]](https://github.com/ThibWeb/jsonresume-theme-eloquent/releases/tag/x.y.z) - YYYY-MM-DD (Template: http://keepachangelog.com/)
 
