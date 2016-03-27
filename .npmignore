@@ -10,6 +10,7 @@ assets/
 .npmignore
 .travis.yml
 .pleeeaserc
+.nvmrc
 
 CHANGELOG.md
 server.js
