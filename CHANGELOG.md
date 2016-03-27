@@ -3,13 +3,23 @@
 > All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [[2.3.2]](https://github.com/ThibWeb/jsonresume-theme-eloquent/releases/tag/2.3.2) - 2016-03-27
+## [[v3.0.0]](https://github.com/ThibWeb/jsonresume-theme-eloquent/releases/tag/3.0.0) - 2016-03-27
+
+### Added
+
+- Use Twitter meta tags to improve display on social networks / Slack.
+
+### Changed
+
+- Now using the `summary` for the description meta tag, (used by search engines & social networks) instead of the same fields as the title.
+
+## [[v2.3.2]](https://github.com/ThibWeb/jsonresume-theme-eloquent/releases/tag/2.3.2) - 2016-03-27
 
 ### Removed
 
 - Exclude more files (build tool configuration and changelog) from npm package for faster installs.
 
-## [[2.3.0]](https://github.com/ThibWeb/jsonresume-theme-eloquent/releases/tag/2.3.0) - 2016-02-07
+## [[v2.3.0]](https://github.com/ThibWeb/jsonresume-theme-eloquent/releases/tag/2.3.0) - 2016-02-07
 
 ### Fixed
 
