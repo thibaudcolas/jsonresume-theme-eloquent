@@ -31,5 +31,15 @@ describe('Helpers', () => {
         it('should format dates with "YYYY"', () => {
             expect(helpers.formatYYYY('2015-07-01').string).to.equal('2015');
         });
+
+        describe('#truncate', () => {
+            it('should have a truncate function', () => {
+                expect(helpers.truncate).to.be.a('function');
+            });
+
+            it('should truncate text', () => {
+                expect(helpers.truncate('1234567890', 5).string.length).to.equal(5);
+            });
+        });
     });
 });
