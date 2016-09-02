@@ -1,26 +1,22 @@
 sudo: false
 language: node_js
-
 node_js:
-  - '4'
-
+  - 0.12
+  - 4
+  - node
 install:
-  - npm install
-
+- npm install
 script:
-  - npm run test
-
+- npm run test
 notifications:
   email:
     on_success: change
     on_failure: always
-
 deploy:
   provider: npm
-  email: thib@thib.me
+  email: thibaudcolas@gmail.com
   api_key:
-    secure: mUCgO8MbYVaJmBw6ICRRI5p507RJLHImVARisDjmlBOGpczu1B+WjPRtBeCbTc3IUUJO79GW4Hv8/C7FTdZ1Sr4fGAniCY9mM0MnjWz1MuHfUJs4JklbP7cvEdGCGoTkAq+WajZHQXXSqxHMN1llbQrTa8E/96Pd+Shs55YKlhM=
+    secure: SeEYKGKe+DtwhswzCvnCSFAHaLGILQ3MPXIly29zNCuWlTSGIj56jhLDGmJkp2L59RvU2bXSOswzYqOtAouuXdOZawPdzDZe6+MoVZVrNk2021rVhn64MMlEioaY1H17ugLT1IO71vG6V/eaGV8LlJr0AMFOr2zQvSkqmjD1c6Y=
   on:
     tags: true
     repo: ThibWeb/jsonresume-theme-eloquent
-  skip_cleanup: true
