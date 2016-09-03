@@ -54,7 +54,7 @@
     "webfont-dl": "^0.1.1"
   },
   "scripts": {
-    "build:css": "pleeease compile",
+    "build:css": "pleeease-compile",
     "build:js": "browserify -t babelify assets/scripts/main.js | uglifyjs > dist/bundle.js",
     "build:clean": "rm -rf dist/ && mkdir dist/",
     "build": "npm run build:clean -s && npm run build:js -s && npm run build:css -s",
