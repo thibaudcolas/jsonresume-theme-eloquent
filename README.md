@@ -1,13 +1,13 @@
 jsonresume-theme-eloquent
 =========================
 
-[![npm](https://img.shields.io/npm/v/jsonresume-theme-eloquent.svg?style=flat-square)](https://www.npmjs.com/package/jsonresume-theme-eloquent) [![Build Status](https://img.shields.io/travis/ThibWeb/jsonresume-theme-eloquent.svg?style=flat-square)](https://travis-ci.org/ThibWeb/jsonresume-theme-eloquent) [![Dependency Status](https://img.shields.io/david/ThibWeb/jsonresume-theme-eloquent.svg?style=flat-square)](https://david-dm.org/ThibWeb/jsonresume-theme-eloquent) [![Code Climate](https://img.shields.io/codeclimate/github/ThibWeb/jsonresume-theme-eloquent.svg?style=flat-square)](https://codeclimate.com/github/ThibWeb/jsonresume-theme-eloquent)
+[![npm](https://img.shields.io/npm/v/jsonresume-theme-eloquent.svg?style=flat-square)](https://www.npmjs.com/package/jsonresume-theme-eloquent) [![Build Status](https://img.shields.io/travis/thibaudcolas/jsonresume-theme-eloquent.svg?style=flat-square)](https://travis-ci.org/thibaudcolas/jsonresume-theme-eloquent) [![Dependency Status](https://img.shields.io/david/thibaudcolas/jsonresume-theme-eloquent.svg?style=flat-square)](https://david-dm.org/thibaudcolas/jsonresume-theme-eloquent) [![Code Climate](https://img.shields.io/codeclimate/github/thibaudcolas/jsonresume-theme-eloquent.svg?style=flat-square)](https://codeclimate.com/github/thibaudcolas/jsonresume-theme-eloquent)
 
-An eloquent JSON Resume theme: fluent, persuasive, for developers. [See it live](https://rawgit.com/ThibWeb/jsonresume-theme-eloquent/master/test/resume.html).
+An eloquent JSON Resume theme: fluent, persuasive, for developers. [See it live](https://rawgit.com/thibaudcolas/jsonresume-theme-eloquent/master/test/resume.html).
 
-[![Theme screenshot](raw/theme-screenshot.png)](https://rawgit.com/ThibWeb/jsonresume-theme-eloquent/master/test/resume.html)
+[![Theme screenshot](raw/theme-screenshot.png)](https://rawgit.com/thibaudcolas/jsonresume-theme-eloquent/master/test/resume.html)
 
-> [Online demo](https://rawgit.com/ThibWeb/jsonresume-theme-eloquent/master/test/resume.html)
+> [Online demo](https://rawgit.com/thibaudcolas/jsonresume-theme-eloquent/master/test/resume.html)
 
 ## Features
 
@@ -47,7 +47,7 @@ fs.writeFile(path.join(__dirname, '/resume.html'), resumeHTML, function(err) {
 Install the project with:
 
 ```sh
-git clone git@github.com:ThibWeb/jsonresume-theme-eloquent.git
+git clone git@github.com:thibaudcolas/jsonresume-theme-eloquent.git
 cd jsonresume-theme-eloquent
 npm install
 ./.githooks/deploy
