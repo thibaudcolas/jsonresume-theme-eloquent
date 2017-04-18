@@ -38,7 +38,7 @@
     "moment": "^2.11.2"
   },
   "devDependencies": {
-    "babel": "^5.8.29",
+    "babel": "^6.3.26",
     "babelify": "^6.4.0",
     "browser-saveas": "^1.0.0",
     "browser-sync": "^2.8.2",
