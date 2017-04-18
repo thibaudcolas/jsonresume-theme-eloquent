@@ -39,7 +39,7 @@
   },
   "devDependencies": {
     "babel": "^5.8.29",
-    "babelify": "^6.4.0",
+    "babelify": "^7.3.0",
     "browser-saveas": "^1.0.0",
     "browser-sync": "^2.8.2",
     "browserify": "^13.0.1",
