@@ -9,11 +9,3 @@ script:
 - npm run test
 notifications:
   email: false
-deploy:
-  provider: npm
-  email: thibaudcolas@gmail.com
-  api_key:
-    secure: SeEYKGKe+DtwhswzCvnCSFAHaLGILQ3MPXIly29zNCuWlTSGIj56jhLDGmJkp2L59RvU2bXSOswzYqOtAouuXdOZawPdzDZe6+MoVZVrNk2021rVhn64MMlEioaY1H17ugLT1IO71vG6V/eaGV8LlJr0AMFOr2zQvSkqmjD1c6Y=
-  on:
-    tags: true
-    repo: thibaudcolas/jsonresume-theme-eloquent
