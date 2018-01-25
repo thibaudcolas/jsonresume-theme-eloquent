@@ -1,7 +1,7 @@
 jsonresume-theme-eloquent
 =========================
 
-[![npm](https://img.shields.io/npm/v/jsonresume-theme-eloquent.svg?style=flat-square)](https://www.npmjs.com/package/jsonresume-theme-eloquent) [![Build Status](https://img.shields.io/travis/thibaudcolas/jsonresume-theme-eloquent.svg?style=flat-square)](https://travis-ci.org/thibaudcolas/jsonresume-theme-eloquent) [![Dependency Status](https://img.shields.io/david/thibaudcolas/jsonresume-theme-eloquent.svg?style=flat-square)](https://david-dm.org/thibaudcolas/jsonresume-theme-eloquent) [![Code Climate](https://img.shields.io/codeclimate/github/thibaudcolas/jsonresume-theme-eloquent.svg?style=flat-square)](https://codeclimate.com/github/thibaudcolas/jsonresume-theme-eloquent)
+[![npm](https://img.shields.io/npm/v/jsonresume-theme-eloquent.svg?style=flat-square)](https://www.npmjs.com/package/jsonresume-theme-eloquent) [![Build Status](https://img.shields.io/travis/thibaudcolas/jsonresume-theme-eloquent.svg?style=flat-square)](https://travis-ci.org/thibaudcolas/jsonresume-theme-eloquent)
 
 An eloquent JSON Resume theme: fluent, persuasive, for developers. [See it live](https://rawgit.com/thibaudcolas/jsonresume-theme-eloquent/master/test/resume.html).
 
