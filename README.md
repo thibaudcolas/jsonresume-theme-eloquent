@@ -24,19 +24,19 @@ An eloquent JSON Resume theme: fluent, persuasive, for developers. [See it live]
 Install the theme with `npm install --save jsonresume-theme-eloquent`, then:
 
 ```js
-"use strict";
+'use strict';
 
-var fs = require("fs");
-var path = require("path");
-var eloquent = require("jsonresume-theme-eloquent");
+var fs = require('fs');
+var path = require('path');
+var eloquent = require('jsonresume-theme-eloquent');
 
 var resumeJSON = JSON.parse(
-    fs.readFileSync(path.join(__dirname, "/resume.json"), "utf-8")
+    fs.readFileSync(path.join(__dirname, '/resume.json'), 'utf-8')
 );
 var resumeHTML = eloquent.render(resumeJSON);
 
-fs.writeFile(path.join(__dirname, "/resume.html"), resumeHTML, function(err) {
-    console.log(err || "Resume exported to resume.html");
+fs.writeFile(path.join(__dirname, '/resume.html'), resumeHTML, function(err) {
+    console.log(err || 'Resume exported to resume.html');
 });
 ```
 
@@ -79,5 +79,3 @@ npm publish
 * [IcoMoon](https://icomoon.io/): custom [Font Awesome](https://fortawesome.github.io/Font-Awesome/) build
 * [Open Sans](http://www.google.com/fonts/specimen/Open+Sans): great web font-face, taken from Google Fonts
 * [saveAs polyfill](https://github.com/eligrey/FileSaver.js)
-* [domready](https://github.com/ded/domready)
-* [smoothScroll](https://github.com/cferdinandi/smooth-scroll)

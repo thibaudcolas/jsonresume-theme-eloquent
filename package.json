@@ -37,7 +37,7 @@
     "tabWidth": 4,
     "useTabs": false,
     "semi": true,
-    "singleQuote": false,
+    "singleQuote": true,
     "trailingComma": "es5",
     "bracketSpacing": true,
     "arrowParens": "always",
@@ -60,7 +60,6 @@
     "nodemon": "^1.2.1",
     "pleeease-cli": "^4.0.0",
     "resume-schema": "0.0.16",
-    "smooth-scroll": "git://github.com/cferdinandi/smooth-scroll.git#v7.1.1",
     "uglify-js": "^2.5.0",
     "webfont-dl": "^0.1.1"
   },
