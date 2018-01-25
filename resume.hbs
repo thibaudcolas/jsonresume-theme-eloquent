@@ -71,7 +71,7 @@
               {{#if location}}
                 <li class="basics-item">
                   {{#location}}
-                    <a href="{{mapURL this}}" target="_blank" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                    <a href="{{mapURL this}}" target="_blank" rel="noreferrer noopener" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
                       <span class="icon text-muted"><i aria-hidden="true" class="icon-lg icon-location-arrow"></i></span>
                       <span class="info">
                         {{#if address}}<span itemprop="streetAddress">{{address}},</span>{{/if}}
@@ -94,7 +94,7 @@
               {{/if}}
               {{#if website}}
                 <li class="basics-item">
-                  <a href="{{website}}" rel="author" target="_blank" itemprop="url">
+                  <a href="{{website}}" rel="author" target="_blank" rel="noreferrer noopener" itemprop="url">
                     <span class="icon text-muted"><i aria-hidden="true" class="icon-lg icon-chain"></i></span>
                     <span class="info">{{sanitizeURL website}}</span>
                   </a>
@@ -115,7 +115,7 @@
               <ul class="social-profiles nav nav-justified">
                 {{#each profiles}}
                   <li class="profile-item">
-                    <a href="{{url}}" target="_blank">
+                    <a href="{{url}}" target="_blank" rel="noreferrer noopener">
                       <span class="icon"><i aria-hidden="true" class="icon-lg icon-{{normalizeNetwork network}} network-{{normalizeNetwork network}}"></i></span>
                       <span class="info text-muted hidden-sm hidden-md hidden-lg">{{network}}</span>
                     </a>
@@ -175,7 +175,7 @@
                         {{~#if company~}}
                           ,&nbsp;
                           {{#if website}}
-                            <a href="{{website}}"  target="_blank" itemprop="url"><span itemprop="name">{{company}}</span></a>
+                            <a href="{{website}}"  target="_blank" rel="noreferrer noopener" itemprop="url"><span itemprop="name">{{company}}</span></a>
                           {{else}}
                             <span itemprop="name">{{company}}</span>
                           {{/if}}
@@ -247,7 +247,7 @@
                       <a class="anchor-link item-anchor" href="#{{itemID 'project' @index ../resume.volunteer.length}}">#</a>
                       <h4>
                         {{#if website}}
-                          <a href="{{website}}"  target="_blank" itemprop="url"><strong itemprop="name">{{organization}}</strong></a>
+                          <a href="{{website}}"  target="_blank" rel="noreferrer noopener" itemprop="url"><strong itemprop="name">{{organization}}</strong></a>
                         {{else}}
                           <strong itemprop="name">{{organization}}</strong>
                         {{/if}}
@@ -471,7 +471,7 @@
                       <h4>
                         <strong>
                           {{#if website}}
-                            <a href="{{website}}"  target="_blank" itemprop="url" rel="author"><span itemprop="name">{{name}}</span></a>
+                            <a href="{{website}}"  target="_blank" rel="noreferrer noopener" itemprop="url" rel="author"><span itemprop="name">{{name}}</span></a>
                           {{else}}
                             <span itemprop="name">{{name}}</span>
                           {{/if}}
