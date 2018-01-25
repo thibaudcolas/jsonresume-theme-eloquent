@@ -127,7 +127,7 @@
           {{/resume.basics}}
 
           <ul class="nav nav-justified hidden-xs hidden-sm">
-            <li><a href="#top" class="text-muted" data-scroll title="Scroll to top"><i aria-hidden="true" class="icon-chevron-up"></i><span class="sr-only">Go to top</span></a></li>
+            <li><a href="#top" class="text-muted" title="Scroll to top"><i aria-hidden="true" class="icon-chevron-up"></i><span class="sr-only">Go to top</span></a></li>
           </ul>
         </div>
       </section>
@@ -137,7 +137,7 @@
           <div class="card">
             <div class="detail" id="about">
               <h3 class="text-uppercase">
-                <a class="anchor-link text-muted" data-scroll href="#about">
+                <a class="anchor-link text-muted" href="#about">
                   <i aria-hidden="true" class="icon-lg icon-user"></i> About
                   <span class="anchor-icon" aria-hidden="true"></span>
                 </a>
@@ -159,7 +159,7 @@
           {{#if resume.work}}
             <div class="detail" id="experience">
               <h3 class="text-uppercase">
-                <a class="anchor-link text-muted" data-scroll href="#experience">
+                <a class="anchor-link text-muted" href="#experience">
                   <i aria-hidden="true" class="icon-lg icon-building"></i> Experience
                   <span class="anchor-icon" aria-hidden="true"></span>
                 </a>
@@ -169,7 +169,7 @@
                 {{#each resume.work}}
                   <li class="detail-item row" id="{{itemID 'experience' @index ../resume.work.length}}" itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" data-scroll href="#{{itemID 'experience' @index ../resume.work.length}}">#</a>
+                      <a class="anchor-link item-anchor" href="#{{itemID 'experience' @index ../resume.work.length}}">#</a>
                       <h4>
                         <strong>{{position}}</strong>
                         {{~#if company~}}
@@ -234,7 +234,7 @@
           {{#if resume.volunteer}}
             <div class="detail" id="projects">
               <h3 class="text-uppercase">
-                <a class="anchor-link text-muted" data-scroll href="#projects">
+                <a class="anchor-link text-muted" href="#projects">
                   <i aria-hidden="true" class="icon-lg icon-bookmark"></i> Projects
                   <span class="anchor-icon" aria-hidden="true"></span>
                 </a>
@@ -244,7 +244,7 @@
                 {{#each resume.volunteer}}
                   <li class="detail-item row" id="{{itemID 'project' @index ../resume.volunteer.length}}" itemprop="memberOf" itemscope itemtype="http://schema.org/Organization">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" data-scroll href="#{{itemID 'project' @index ../resume.volunteer.length}}">#</a>
+                      <a class="anchor-link item-anchor" href="#{{itemID 'project' @index ../resume.volunteer.length}}">#</a>
                       <h4>
                         {{#if website}}
                           <a href="{{website}}"  target="_blank" itemprop="url"><strong itemprop="name">{{organization}}</strong></a>
@@ -308,7 +308,7 @@
           {{#if resume.education}}
             <div class="detail" id="education">
               <h3 class="text-uppercase">
-                <a class="anchor-link text-muted" data-scroll href="#education">
+                <a class="anchor-link text-muted" href="#education">
                   <i aria-hidden="true" class="icon-lg icon-graduation-cap"></i> Education
                   <span class="anchor-icon" aria-hidden="true"></span>
                 </a>
@@ -318,7 +318,7 @@
                 {{#each resume.education}}
                   <li class="detail-item row" id="{{itemID 'education' @index ../resume.education.length}}" itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" data-scroll href="#{{itemID 'education' @index ../resume.education.length}}">#</a>
+                      <a class="anchor-link item-anchor" href="#{{itemID 'education' @index ../resume.education.length}}">#</a>
                       <h4>
                         <strong>{{area}}</strong>
                         {{~#if studyType~}}
@@ -382,7 +382,7 @@
           {{#if resume.skills}}
             <div class="detail" id="skills">
               <h3 class="text-uppercase">
-                <a class="anchor-link text-muted" data-scroll href="#skills">
+                <a class="anchor-link text-muted" href="#skills">
                   <i aria-hidden="true" class="icon-lg icon-code"></i> Skills
                   <span class="anchor-icon" aria-hidden="true"></span>
                 </a>
@@ -392,7 +392,7 @@
                 {{#each resume.skills}}
                   <li class="detail-item row" id="{{itemID 'skill' @index ../resume.skills.length}}">
                     <div class="col-xs-12 detail-item-content">
-                      <a class="anchor-link item-anchor" data-scroll href="#{{itemID 'skill' @index ../resume.skills.length}}">#</a>
+                      <a class="anchor-link item-anchor" href="#{{itemID 'skill' @index ../resume.skills.length}}">#</a>
                       <h4>{{name}} {{#if level}}<span class="text-muted">— <em>{{level}}</em></span>{{/if}}</h4>
 
                       {{#if keywords}}
@@ -410,7 +410,7 @@
           {{#if resume.awards}}
             <div class="detail" id="awards">
               <h3 class="text-uppercase">
-                <a class="anchor-link text-muted" data-scroll href="#awards">
+                <a class="anchor-link text-muted" href="#awards">
                   <i aria-hidden="true" class="icon-lg icon-trophy"></i> Awards
                   <span class="anchor-icon" aria-hidden="true"></span>
                 </a>
@@ -420,7 +420,7 @@
                 {{#each resume.awards}}
                   <li class="detail-item row" id="{{itemID 'award' @index ../resume.awards.length}}">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" data-scroll href="#{{itemID 'award' @index ../resume.awards.length}}">#</a>
+                      <a class="anchor-link item-anchor" href="#{{itemID 'award' @index ../resume.awards.length}}">#</a>
                       <h4 itemprop="award">
                         <strong>{{title}}</strong>
                         {{~#if awarder~}}
@@ -457,7 +457,7 @@
           {{#if resume.publications}}
             <div class="detail" id="publications">
               <h3 class="text-uppercase">
-                <a class="anchor-link text-muted" data-scroll href="#publications">
+                <a class="anchor-link text-muted" href="#publications">
                   <i aria-hidden="true" class="icon-lg icon-book"></i> Publications
                   <span class="anchor-icon" aria-hidden="true"></span>
                 </a>
@@ -467,7 +467,7 @@
                 {{#each resume.publications}}
                   <li class="detail-item row" id="{{itemID 'publication' @index ../resume.publications.length}}" itemscope itemtype="http://schema.org/CreativeWork">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" data-scroll href="#{{itemID 'publication' @index ../resume.publications.length}}">#</a>
+                      <a class="anchor-link item-anchor" href="#{{itemID 'publication' @index ../resume.publications.length}}">#</a>
                       <h4>
                         <strong>
                           {{#if website}}
@@ -508,7 +508,7 @@
           {{#if resume.interests}}
             <div class="detail" id="interests">
               <h3 class="text-uppercase">
-                <a class="anchor-link text-muted" data-scroll href="#interests">
+                <a class="anchor-link text-muted" href="#interests">
                   <i aria-hidden="true" class="icon-lg icon-heart"></i> Interests
                   <span class="anchor-icon" aria-hidden="true"></span>
                 </a>
@@ -518,7 +518,7 @@
                 {{#each resume.interests}}
                   <li class="detail-item row" id="{{itemID 'interest' @index ../resume.interests.length}}">
                     <div class="col-xs-12 detail-item-content">
-                      <a class="anchor-link item-anchor" data-scroll href="#{{itemID 'interest' @index ../resume.interests.length}}">#</a>
+                      <a class="anchor-link item-anchor" href="#{{itemID 'interest' @index ../resume.interests.length}}">#</a>
                       <h4>{{name}}</h4>
 
                       {{#if keywords}}
@@ -536,7 +536,7 @@
           {{#if resume.languages}}
             <div class="detail" id="languages">
               <h3 class="text-uppercase">
-                <a class="anchor-link text-muted" data-scroll href="#languages">
+                <a class="anchor-link text-muted" href="#languages">
                   <i aria-hidden="true" class="icon-lg icon-comment"></i> Languages
                   <span class="anchor-icon" aria-hidden="true"></span>
                 </a>
@@ -546,7 +546,7 @@
                 {{#each resume.languages}}
                   <li class="detail-item row" id="{{itemID 'language' @index ../resume.languages.length}}">
                     <div class="col-xs-12 detail-item-content">
-                      <a class="anchor-link item-anchor" data-scroll href="#{{itemID 'language' @index ../resume.languages.length}}">#</a>
+                      <a class="anchor-link item-anchor" href="#{{itemID 'language' @index ../resume.languages.length}}">#</a>
                       <h4>
                         <strong>{{language}}</strong>
                         {{~#if fluency~}}
@@ -564,7 +564,7 @@
           {{#if resume.references}}
             <div class="detail" id="references">
               <h3 class="text-uppercase">
-                <a class="anchor-link text-muted" data-scroll href="#references">
+                <a class="anchor-link text-muted" href="#references">
                   <i aria-hidden="true" class="icon-lg icon-thumbs-up"></i> References
                   <span class="anchor-icon" aria-hidden="true"></span>
                 </a>
@@ -574,7 +574,7 @@
                 {{#each resume.references}}
                   <li class="detail-item row" id="{{itemID 'reference' @index ../resume.references.length}}">
                     <div class="col-xs-12 detail-item-content">
-                      <a class="anchor-link item-anchor" data-scroll href="#{{itemID 'reference' @index ../resume.references.length}}">#</a>
+                      <a class="anchor-link item-anchor" href="#{{itemID 'reference' @index ../resume.references.length}}">#</a>
                       <blockquote>
                         <p itemprop="description">{{nl2br reference}}</p>
                         <footer itemprop="knows" itemscope itemtype="http://schema.org/Person"><cite title="{{name}}" itemprop="description">{{name}}</cite></footer>
