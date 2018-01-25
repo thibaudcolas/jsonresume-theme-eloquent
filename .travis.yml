@@ -8,9 +8,7 @@ install:
 script:
 - npm run test
 notifications:
-  email:
-    on_success: change
-    on_failure: always
+  email: false
 deploy:
   provider: npm
   email: thibaudcolas@gmail.com
