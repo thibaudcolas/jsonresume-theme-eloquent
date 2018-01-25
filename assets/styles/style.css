@@ -1,113 +1,110 @@
 .profile-card-wrapper {
-  position: relative;
-  padding-bottom: 0;
-  padding-right: 10px;
+    position: relative;
+    padding-bottom: 0;
+    padding-right: 10px;
 }
 
 @media (min-width: 992px) {
-  .profile-card-wrapper {
-    position: fixed;
-    height: 100%;
-    padding-right: 0;
-    padding-bottom: 10px;
-    overflow-y: hidden;
-  }
+    .profile-card-wrapper {
+        position: fixed;
+        height: 100%;
+        padding-right: 0;
+        padding-bottom: 10px;
+        overflow-y: hidden;
+    }
 
-  .card-wrapper {
-    float: right;
-  }
+    .card-wrapper {
+        float: right;
+    }
 }
 
 .profile-card-wrapper + .card-wrapper {
-  padding-bottom: 0px;
+    padding-bottom: 0px;
 }
 
 .detail {
-  padding: 5px;
+    padding: 5px;
 }
 
 .detail h3 {
-  position: static;
-  left: -44px;
+    position: static;
+    left: -44px;
 }
 
 .detail-highlights {
-  list-style-type: none;
-  padding-left: 0;
+    list-style-type: none;
+    padding-left: 0;
 }
 
 .detail-highlights li {
-  padding-left: 1em;
+    padding-left: 1em;
 }
 
 .detail-highlights li:before {
-  content: '-';
-  display: inline-block;
-  width: 1em;
-  margin-left: -1em;
-  color: #66757f;
-  font-weight: bold;
+    content: '-';
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    color: #66757f;
+    font-weight: bold;
 }
 
 @media (min-width: 768px) {
-  .detail {
-    padding: 10px 10px 10px 50px;
-  }
+    .detail {
+        padding: 10px 10px 10px 50px;
+    }
 
-  .detail h3 {
-    position: relative;
-  }
+    .detail h3 {
+        position: relative;
+    }
 }
 
 .detail h3 i {
-  min-width: 40px;
-  min-height: 20px;
-  text-align: center;
+    min-width: 40px;
+    min-height: 20px;
+    text-align: center;
 }
 
 .detail-item {
-  padding: 10px 0;
-  margin: 0 3px;
-  border-top: 1px solid #ccd6dd;
+    padding: 10px 0;
+    margin: 0 3px;
+    border-top: 1px solid #ccd6dd;
 }
 
 .detail-item-content {
-  padding: 0;
+    padding: 0;
 }
 
 @media (min-width: 768px) {
-  .detail-item-content {
-    padding-right: 10px;
-  }
+    .detail-item-content {
+        padding-right: 10px;
+    }
 
-  .detail-item-content.col-sm-9 {
-    border-right: 1px solid #ccd6dd;
-  }
+    .detail-item-content.col-sm-9 {
+        border-right: 1px solid #ccd6dd;
+    }
 }
 
 .detail-highlights li {
-  margin-bottom: 2px;
+    margin-bottom: 2px;
 }
 
 .labels {
-  line-height: 2;
-  word-spacing: 5px;
+    line-height: 2;
+    word-spacing: 5px;
 }
 
 .label-keyword {
-  font-size: inherit;
-  background-color: #7eb0db;
-  margin-right: 5px;
+    font-size: inherit;
+    background-color: #7eb0db;
+    margin-right: 5px;
 }
 
-#about p {
-  text-align: justify;
-}
-
-#skills h4, #interests h4 {
-  font-weight: bold;
+#skills h4,
+#interests h4 {
+    font-weight: bold;
 }
 
 #references .detail-item {
-  border: none;
+    border: none;
 }
