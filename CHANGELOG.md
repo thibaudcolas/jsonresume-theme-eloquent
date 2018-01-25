@@ -3,6 +3,25 @@
 > All notable changes to this project will be documented in this file.
 > This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [[v4.0.0]](https://github.com/thibaudcolas/jsonresume-theme-eloquent/releases/tag/4.0.0) - 2018-01-25
+
+### Added
+
+* Add optional GA tracking via `google_analytics_id` property on resume.
+* Add `rel="noreferrer noopener"` on all target `_blank` links.
+
+### Changed
+
+* Change license from ISC to MIT.
+* Stop testing in Node 0.12.
+
+### Removed
+
+* Remove outdated IE8/9/10 compatibility code.
+* Remove smooth scrolling from the project.
+* Remove harmful alt on profile picture image.
+* Stop justifying about text (hard to read for people with dyslexia).
+
 ## [[v3.0.0]](https://github.com/thibaudcolas/jsonresume-theme-eloquent/releases/tag/3.0.0) - 2016-03-27
 
 ### Added
