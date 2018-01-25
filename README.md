@@ -1,7 +1,4 @@
-jsonresume-theme-eloquent
-=========================
-
-[![npm](https://img.shields.io/npm/v/jsonresume-theme-eloquent.svg?style=flat-square)](https://www.npmjs.com/package/jsonresume-theme-eloquent) [![Build Status](https://img.shields.io/travis/thibaudcolas/jsonresume-theme-eloquent.svg?style=flat-square)](https://travis-ci.org/thibaudcolas/jsonresume-theme-eloquent)
+# jsonresume-theme-eloquent [![npm](https://img.shields.io/npm/v/jsonresume-theme-eloquent.svg?style=flat-square)](https://www.npmjs.com/package/jsonresume-theme-eloquent) [![Build Status](https://img.shields.io/travis/thibaudcolas/jsonresume-theme-eloquent.svg?style=flat-square)](https://travis-ci.org/thibaudcolas/jsonresume-theme-eloquent)
 
 An eloquent JSON Resume theme: fluent, persuasive, for developers. [See it live](https://rawgit.com/thibaudcolas/jsonresume-theme-eloquent/master/test/resume.html).
 
@@ -11,35 +8,36 @@ An eloquent JSON Resume theme: fluent, persuasive, for developers. [See it live]
 
 ## Features
 
-- Mobile First theme based on Bootstrap.
-- Download your resume with a single click, in a single file.
-- Keep your resume offline if you want to: the theme is self-contained.
-- Obfuscates your email address and phone number from spam bots.
-- Great Font Awesome icons.
-- Gorgeous Open Sans web font.
-- Optimized for print and screen readers.
-- Contains Schema.org markup to make the most of your content.
-- Uses Open Graph & Twitter metas to improve social sharing.
-- All fields are optional, pick what you need!
+* Mobile First theme based on Bootstrap.
+* Download your resume with a single click, in a single file.
+* Keep your resume offline if you want to: the theme is self-contained.
+* Obfuscates your email address and phone number from spam bots.
+* Great Font Awesome icons.
+* Gorgeous Open Sans web font.
+* Optimized for print and screen readers.
+* Contains Schema.org markup to make the most of your content.
+* Uses Open Graph & Twitter metas to improve social sharing.
+* All fields are optional, pick what you need!
 
 ## Usage
 
 Install the theme with `npm install --save jsonresume-theme-eloquent`, then:
 
 ```js
-'use strict';
+"use strict";
 
-var fs = require('fs');
-var path = require('path');
-var eloquent = require('jsonresume-theme-eloquent');
+var fs = require("fs");
+var path = require("path");
+var eloquent = require("jsonresume-theme-eloquent");
 
-var resumeJSON = JSON.parse(fs.readFileSync(path.join(__dirname, '/resume.json'), 'utf-8'));
+var resumeJSON = JSON.parse(
+    fs.readFileSync(path.join(__dirname, "/resume.json"), "utf-8")
+);
 var resumeHTML = eloquent.render(resumeJSON);
 
-fs.writeFile(path.join(__dirname, '/resume.html'), resumeHTML, function(err) {
-    console.log(err || 'Resume exported to resume.html');
+fs.writeFile(path.join(__dirname, "/resume.html"), resumeHTML, function(err) {
+    console.log(err || "Resume exported to resume.html");
 });
-
 ```
 
 ## Contributing
@@ -77,9 +75,9 @@ npm publish
 
 ## Built with
 
-- [Bootstrap](http://getbootstrap.com/): custom build
-- [IcoMoon](https://icomoon.io/): custom [Font Awesome](https://fortawesome.github.io/Font-Awesome/) build
-- [Open Sans](http://www.google.com/fonts/specimen/Open+Sans): great web font-face, taken from Google Fonts
-- [saveAs polyfill](https://github.com/eligrey/FileSaver.js)
-- [domready](https://github.com/ded/domready)
-- [smoothScroll](https://github.com/cferdinandi/smooth-scroll)
+* [Bootstrap](http://getbootstrap.com/): custom build
+* [IcoMoon](https://icomoon.io/): custom [Font Awesome](https://fortawesome.github.io/Font-Awesome/) build
+* [Open Sans](http://www.google.com/fonts/specimen/Open+Sans): great web font-face, taken from Google Fonts
+* [saveAs polyfill](https://github.com/eligrey/FileSaver.js)
+* [domready](https://github.com/ded/domready)
+* [smoothScroll](https://github.com/cferdinandi/smooth-scroll)
