@@ -17,6 +17,7 @@ An eloquent JSON Resume theme: fluent, persuasive, for developers. [See it live]
 * Optimized for print and screen readers.
 * Contains Schema.org markup to make the most of your content.
 * Uses Open Graph & Twitter metas to improve social sharing.
+* Optionally use Google Analytics to track page views on your resume.
 * All fields are optional, pick what you need!
 
 ## Usage
