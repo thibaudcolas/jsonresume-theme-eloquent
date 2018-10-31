@@ -71,6 +71,10 @@
   content: "\f09b";
 }
 
+.icon-medium:before {
+  content: "\f23a";
+}
+
 .icon-chain:before {
   content: "\f0c1";
 }
