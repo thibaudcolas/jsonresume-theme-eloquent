@@ -24,6 +24,11 @@
         "network": "SoundCloud",
         "username": "dandymusicnl",
         "url": "https://soundcloud.com/dandymusicnl"
+      },
+      {
+        "network": "Medium",
+        "username": "neutralthoughts",
+        "url": "https://medium.com/@neutralthoughts"
       }
     ]
   },
