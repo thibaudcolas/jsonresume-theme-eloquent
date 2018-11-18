@@ -1,4 +1,4 @@
-# jsonresume-theme-eloquent [![npm](https://img.shields.io/npm/v/jsonresume-theme-eloquent.svg?style=flat-square)](https://www.npmjs.com/package/jsonresume-theme-eloquent) [![Build Status](https://img.shields.io/travis/thibaudcolas/jsonresume-theme-eloquent.svg?style=flat-square)](https://travis-ci.org/thibaudcolas/jsonresume-theme-eloquent)
+# Eloquent [![npm](https://img.shields.io/npm/v/jsonresume-theme-eloquent.svg)](https://www.npmjs.com/package/jsonresume-theme-eloquent) [![Build Status](https://img.shields.io/travis/thibaudcolas/jsonresume-theme-eloquent.svg)](https://travis-ci.org/thibaudcolas/jsonresume-theme-eloquent)
 
 An eloquent JSON Resume theme: fluent, persuasive, for developers. [See it live](https://rawgit.com/thibaudcolas/jsonresume-theme-eloquent/master/test/resume.html).
 
@@ -22,7 +22,13 @@ An eloquent JSON Resume theme: fluent, persuasive, for developers. [See it live]
 
 ## Usage
 
-Install the theme with `npm install --save jsonresume-theme-eloquent`, then:
+Install the theme,
+
+```sh
+npm install --save jsonresume-theme-eloquent
+```
+
+Then use it:
 
 ```js
 'use strict';
