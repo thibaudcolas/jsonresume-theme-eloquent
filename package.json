@@ -76,6 +76,7 @@
     "test:unit:watch": "mocha --watch --compilers js:babel/register",
     "test:render": "node test/render.js",
     "test": "npm run test:unit -s && npm run test:render -s",
+    "report:package": "npm pack --loglevel notice 2>&1 >/dev/null | sed -e 's/^npm notice //' | tee dist/package.txt && rm *.tgz",
     "webfont": "webfont-dl 'https://fonts.googleapis.com/css?family=Open+Sans:400' -o assets/styles/opensans.css --woff1=data --woff2=omit --svg=omit --ttf=omit --eot=omit"
   }
 }

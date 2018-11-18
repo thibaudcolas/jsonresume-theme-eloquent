@@ -4,5 +4,6 @@ install:
 - npm install
 script:
 - npm run test
+- npm run report:package
 notifications:
   email: false
