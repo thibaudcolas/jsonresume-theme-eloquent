@@ -3,7 +3,17 @@
 > All notable changes to this project will be documented in this file.
 > This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [[v4.0.0]](https://github.com/thibaudcolas/jsonresume-theme-eloquent/releases/tag/4.0.0) - 2018-01-25
+## [[v4.1.0]](https://github.com/thibaudcolas/jsonresume-theme-eloquent/releases/tag/v4.1.0) - 2018-11-18
+
+### Added
+
+* Add new icon for Medium ([#15](https://github.com/thibaudcolas/jsonresume-theme-eloquent/pull/15)).
+
+### Changed
+
+* Upgrade all dependencies to latest
+
+## [[v4.0.0]](https://github.com/thibaudcolas/jsonresume-theme-eloquent/releases/tag/v4.0.0) - 2018-01-25
 
 ### Added
 
