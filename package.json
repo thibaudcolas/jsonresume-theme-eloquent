@@ -68,7 +68,7 @@
     "build:js": "browserify -t babelify assets/scripts/main.js | uglifyjs > dist/bundle.js",
     "build:clean": "rm -rf dist/ && mkdir dist/",
     "build": "npm run build:clean -s && npm run build:js -s && npm run build:css -s",
-    "prepublish": "npm run build -s",
+    "prepublishOnly": "npm run build -s",
     "start": "nodemon server.js -w lib -e js",
     "lint": "jshint index.js server.js lib/*.js",
     "pretest": "npm run lint -s && npm run build -s",
