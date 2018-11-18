@@ -44,9 +44,9 @@
     "proseWrap": "preserve"
   },
   "dependencies": {
-    "email-scramble": "^2.0.0",
-    "handlebars": "^4.0.3",
-    "moment": "^2.11.2"
+    "email-scramble": "^2.0.1",
+    "handlebars": "^4.0.12",
+    "moment": "^2.22.2"
   },
   "devDependencies": {
     "babel": "^5.8.29",
