@@ -1,30 +1,53 @@
-import saveAs from 'browser-saveas';
-import emailScramble from 'email-scramble';
+const rot = (charRot, numRot, str) => {
+  var numbers = "0123456789";
+  var lowercase = "abcdefghijklmnopqrstuvwxyz";
+  var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  var regexNumber = /[0-9]/;
+  var regexLowercase = /[a-z]/;
+  var regexUppercase = /[A-Z]/;
 
-const document = global.document;
-const downloadName = global.downloadName;
-const isServedOnline = global.location.protocol.indexOf('http') !== -1;
+  str = String(str);
 
-if (isServedOnline) {
-    // Created before download in order to be JS-modifications-free.
-    const blob = new Blob(
-        ['<!doctype html>' + document.documentElement.outerHTML],
-        {
-            type: 'text/html;charset=utf-8',
-        }
-    );
-    document.getElementsByClassName('js-download-trigger')[0].style.display =
-        'block';
+  if (charRot < 0) {
+    charRot += 26;
+  }
+  if (numRot < 0) {
+    numRot += 10;
+  }
+  var length = str.length; // note: no need to account for astral symbols
+  var index = -1;
+  var result = "";
+  var character;
+  var currentPosition;
+  var shiftedPosition;
+  while (++index < length) {
+    character = str.charAt(index);
+    if (regexNumber.test(character)) {
+      currentPosition = numbers.indexOf(character);
+      shiftedPosition = (currentPosition + numRot) % 10;
+      result += numbers.charAt(shiftedPosition);
+    } else if (regexLowercase.test(character)) {
+      currentPosition = lowercase.indexOf(character);
+      shiftedPosition = (currentPosition + charRot) % 26;
+      result += lowercase.charAt(shiftedPosition);
+    } else if (regexUppercase.test(character)) {
+      currentPosition = uppercase.indexOf(character);
+      shiftedPosition = (currentPosition + charRot) % 26;
+      result += uppercase.charAt(shiftedPosition);
+    } else {
+      result += character;
+    }
+  }
+  return result;
+};
 
-    document.getElementById('js-download').addEventListener('click', () => {
-        saveAs(blob, downloadName);
-    });
-}
+const isServedOnline = window.location.protocol.startsWith("http");
 
-const mailtoLink = document.querySelectorAll('[data-scrambled-email-link]')[0];
+document.querySelector("[data-download-resume]").hidden = !isServedOnline;
+
+const mailtoLink = document.querySelector("[data-scrambled-email-link]");
 mailtoLink.href =
-    'mailto:' + emailScramble.decode(mailtoLink.href.replace('mailto:', ''));
+  "mailto:" + rot(13, 5, mailtoLink.href.replace("mailto:", ""));
 
-const phoneLink = document.querySelectorAll('[data-scrambled-phone-link]')[0];
-phoneLink.href =
-    'tel:' + emailScramble.decode(phoneLink.href.replace('tel:', ''));
+const phoneLink = document.querySelector("[data-scrambled-phone-link]");
+phoneLink.href = "tel:" + rot(13, 5, phoneLink.href.replace("tel:", ""));

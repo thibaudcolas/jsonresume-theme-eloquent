@@ -8,17 +8,16 @@ An eloquent JSON Resume theme: fluent, persuasive, for developers. [See it live]
 
 ## Features
 
-* Mobile First theme based on Bootstrap.
-* Download your resume with a single click, in a single file.
-* Keep your resume offline if you want to: the theme is self-contained.
-* Obfuscates your email address and phone number from spam bots.
-* Great Font Awesome icons.
-* Gorgeous Open Sans web font.
-* Optimized for print and screen readers.
-* Contains Schema.org markup to make the most of your content.
-* Uses Open Graph & Twitter metas to improve social sharing.
-* Optionally use Google Analytics to track page views on your resume.
-* All fields are optional, pick what you need!
+- Mobile First theme based on Bootstrap.
+- Download your resume with a single click, in a single file.
+- Keep your resume offline if you want to: the theme is self-contained.
+- Obfuscates your email address and phone number from spam bots.
+- Great Font Awesome icons.
+- Optimized for print and screen readers.
+- Contains Schema.org markup to make the most of your content.
+- Uses Open Graph & Twitter metas to improve social sharing.
+- Optionally use Google Analytics to track page views on your resume.
+- All fields are optional, pick what you need!
 
 ## Usage
 
@@ -31,11 +30,11 @@ npm install --save jsonresume-theme-eloquent
 Then use it:
 
 ```js
-'use strict';
+"use strict";
 
-var theme = require('jsonresume-theme-eloquent');
+var theme = require("jsonresume-theme-eloquent");
 
-var resume = require('./resume.json');
+var resume = require("./resume.json");
 process.stdout.write(theme.render(resume));
 ```
 
@@ -74,7 +73,5 @@ npm publish
 
 ## Built with
 
-* [Bootstrap](http://getbootstrap.com/): custom build
-* [IcoMoon](https://icomoon.io/): custom [Font Awesome](https://fortawesome.github.io/Font-Awesome/) build
-* [Open Sans](http://www.google.com/fonts/specimen/Open+Sans): great web font-face, taken from Google Fonts
-* [saveAs polyfill](https://github.com/eligrey/FileSaver.js)
+- [Bootstrap](http://getbootstrap.com/): custom build
+- [IcoMoon](https://icomoon.io/): custom [Font Awesome](https://fortawesome.github.io/Font-Awesome/) build

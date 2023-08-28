@@ -10,73 +10,13 @@
     "type": "git",
     "url": "https://github.com/thibaudcolas/jsonresume-theme-eloquent.git"
   },
-  "bugs": {
-    "url": "https://github.com/thibaudcolas/jsonresume-theme-eloquent/issues"
-  },
-  "engines": {
-    "node": ">=4.0"
-  },
-  "keywords": [
-    "jsonresume",
-    "jsonresume-theme",
-    "jsonresume-theme-eloquent",
-    "theme",
-    "eloquent",
-    "elegant",
-    "resume",
-    "cv",
-    "curriculum vitae",
-    "curriculum",
-    "portfolio",
-    "json resume",
-    "jsonresume theme",
-    "theme"
-  ],
-  "prettier": {
-    "printWidth": 80,
-    "tabWidth": 4,
-    "useTabs": false,
-    "semi": true,
-    "singleQuote": true,
-    "trailingComma": "es5",
-    "bracketSpacing": true,
-    "arrowParens": "always",
-    "proseWrap": "preserve"
-  },
   "dependencies": {
-    "email-scramble": "^2.0.1",
-    "handlebars": "^4.0.12",
-    "moment": "^2.22.2"
-  },
-  "devDependencies": {
-    "babel": "^5.8.29",
-    "babelify": "^6.4.0",
-    "browser-saveas": "^1.0.0",
-    "browser-sync": "^2.8.2",
-    "browserify": "^13.0.1",
-    "chai": "^3.4.0",
-    "jshint": "^2.5.6",
-    "mocha": "^3.0.0",
-    "nodemon": "^1.18.7",
-    "pleeease-cli": "^4.0.0",
-    "resume-schema": "0.0.16",
-    "uglify-js": "^2.5.0",
-    "webfont-dl": "^0.1.1"
+    "dayjs": "^1.11.9",
+    "email-scramble": "^3.0.0",
+    "handlebars": "^4.7.8"
   },
   "scripts": {
-    "build:css": "pleeease-compile",
-    "build:js": "browserify -t babelify assets/scripts/main.js | uglifyjs > dist/bundle.js",
-    "build:clean": "rm -rf dist/ && mkdir dist/",
-    "build": "npm run build:clean -s && npm run build:js -s && npm run build:css -s",
-    "prepublishOnly": "npm run build -s",
-    "start": "nodemon server.js -w lib -e js",
-    "lint": "jshint index.js server.js lib/*.js",
-    "pretest": "npm run lint -s && npm run build -s",
-    "test:unit": "mocha --compilers js:babel/register",
-    "test:unit:watch": "mocha --watch --compilers js:babel/register",
-    "test:render": "node test/render.js",
-    "test": "npm run test:unit -s && npm run test:render -s",
-    "report:package": "npm pack --loglevel notice 2>&1 >/dev/null | sed -e 's/^npm notice //' | tee dist/package.txt && rm *.tgz",
-    "webfont": "webfont-dl 'https://fonts.googleapis.com/css?family=Open+Sans:400' -o assets/styles/opensans.css --woff1=data --woff2=omit --svg=omit --ttf=omit --eot=omit"
+    "start": "node server.js -w lib -e js",
+    "test:render": "jest && node test/render.js"
   }
 }
