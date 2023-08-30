@@ -1,10 +1,10 @@
-# Eloquent [![npm](https://img.shields.io/npm/v/jsonresume-theme-eloquent.svg)](https://www.npmjs.com/package/jsonresume-theme-eloquent) [![Build Status](https://img.shields.io/travis/thibaudcolas/jsonresume-theme-eloquent.svg)](https://travis-ci.org/thibaudcolas/jsonresume-theme-eloquent)
+# [jsonresume-theme-eloquent](https://www.npmjs.com/package/jsonresume-theme-eloquent)
 
-An eloquent JSON Resume theme: fluent, persuasive, for developers. [See it live](https://rawgit.com/thibaudcolas/jsonresume-theme-eloquent/master/test/resume.html).
+An eloquent [JSON Resume](https://jsonresume.org/) theme: fluent, persuasive, for developers. [See it live](https://thibaudcolas.github.io/jsonresume-theme-eloquent/).
 
-[![Theme screenshot](raw/theme-screenshot.png)](https://rawgit.com/thibaudcolas/jsonresume-theme-eloquent/master/test/resume.html)
+[![Theme screenshot](raw/theme-screenshot.png)](https://thibaudcolas.github.io/jsonresume-theme-eloquent/)
 
-> [Online demo](https://rawgit.com/thibaudcolas/jsonresume-theme-eloquent/master/test/resume.html)
+> [Online demo](https://thibaudcolas.github.io/jsonresume-theme-eloquent/)
 
 ## Features
 
@@ -46,20 +46,8 @@ Install the project with:
 git clone git@github.com:thibaudcolas/jsonresume-theme-eloquent.git
 cd jsonresume-theme-eloquent
 npm install
-./.githooks/deploy
 # To actively work on the theme.
 npm run start
-```
-
-To run the tests locally:
-
-```sh
-# To create a reference resume export.
-npm run test
-cp test/resume.html test/old-resume.html
-# To compare the result of your changes against the reference.
-npm run test
-diff -u test/old-resume.html test/resume.html
 ```
 
 To release a new version:
