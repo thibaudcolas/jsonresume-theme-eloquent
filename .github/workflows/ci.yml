@@ -1,0 +1,41 @@
+name: CI
+on:
+  push:
+    branches-ignore:
+      - "gh-pages"
+  pull_request:
+    paths-ignore:
+      - "**/*.md"
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - id: node-cache
+        uses: actions/cache@v3
+        with:
+          # Cache node_modules rather than the npm cache, as we rarely update npm packages.
+          path: node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+      - if: steps.node-cache.outputs.cache-hit != 'true'
+        run: npm ci --no-audit
+      - run: npm run start &
+      - run: npm pack --dry-run --loglevel notice 2>&1 >/dev/null | sed -e 's/^npm notice //'
+      - run: mkdir site
+      - run: curl -s http://localhost:3000/ > site/index.html
+      - uses: actions/configure-pages@v3
+      - uses: actions/upload-pages-artifact@v2
+        with:
+          path: site
+  deploy:
+    needs: test
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    steps:
+      - uses: actions/deploy-pages@v2
