@@ -3,7 +3,7 @@
 > All notable changes to this project will be documented in this file.
 > This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [[v5.0.0]](https://github.com/thibaudcolas/jsonresume-theme-eloquent/releases/tag/v5.0.0) - 2023-08-29
+## [[v5.0.0]](https://github.com/thibaudcolas/jsonresume-theme-eloquent/releases/tag/v5.0.0) - 2023-08-30
 
 ### Changed
 
